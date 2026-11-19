@@ -93,3 +93,21 @@ class SecurityHeadersMiddleware:
         )
         response.setdefault("Cross-Origin-Opener-Policy", "same-origin")
         return response
+
+
+class HealthCheckMiddleware:
+    """Answer /healthz before HTTPS redirects and host checks.
+
+    Platforms probe the container directly over plain HTTP, by IP or `localhost`, so the
+    probe must not be redirected to HTTPS or rejected for its Host header.
+    """
+
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        if request.path == "/healthz":
+            from .views import healthz
+
+            return healthz(request)
+        return self.get_response(request)
