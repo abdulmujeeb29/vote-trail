@@ -96,10 +96,11 @@ class SecurityHeadersMiddleware:
 
 
 class HealthCheckMiddleware:
-    """Answer /healthz before HTTPS redirects and host checks.
+    """Let platform health probes through the HTTPS redirect and the host check.
 
-    Platforms probe the container directly over plain HTTP, by IP or `localhost`, so the
-    probe must not be redirected to HTTPS or rejected for its Host header.
+    Platforms probe the container directly over plain HTTP, by IP or `localhost`. For
+    /healthz only, treat the probe as HTTPS and as addressed to our own host. It still passes
+    through every other middleware (security headers, cookies).
     """
 
     def __init__(self, get_response):
@@ -107,7 +108,11 @@ class HealthCheckMiddleware:
 
     def __call__(self, request):
         if request.path == "/healthz":
-            from .views import healthz
-
-            return healthz(request)
+            hosts = [h for h in settings.ALLOWED_HOSTS if h != "*" and not h.startswith(".")]
+            if hosts:
+                request.META["HTTP_HOST"] = hosts[0]
+            request.META["wsgi.url_scheme"] = "https"
+            proxy = getattr(settings, "SECURE_PROXY_SSL_HEADER", None)
+            if proxy:
+                request.META[proxy[0]] = proxy[1]
         return self.get_response(request)
