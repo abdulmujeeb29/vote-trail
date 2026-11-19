@@ -1,0 +1,18 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Election day" %} · PU {{ pu.code }}{% endblock %}
+{% block back %}{% include "_back.html" with back_url="/pu/"|add:pu.url_code|add:"/" back_label="POLLING UNIT" %}{% endblock %}
+{% block content %}
+<div class="k">{% translate "ELECTION DAY" %} · PU {{ pu.code }}</div>
+<h1>{% translate "Is it open?" %}</h1>
+<span hidden data-live-url="{% url 'journey:today_api' pu.url_code %}" data-live-key="updated" data-live-value="{{ day.updated.isoformat|default:'' }}"></span>
+<section class="card stack" aria-live="polite">
+  <span class="tag {{ day.tone }}">{{ day.headline }}</span>
+  {% if day.lines %}<ul class="list">{% for l in day.lines %}<li>{{ l }}</li>{% endfor %}</ul>{% else %}<p class="mute">{% translate "No reports yet. Officials check in by USSD; voters can report below." %}</p>{% endif %}
+  {% if day.updated %}<p class="mute" style="font-size:.8rem">{% translate "Updated" %} {{ day.updated|date:"H:i" }}</p>{% endif %}
+</section>
+<h2>{% translate "Are you there? Tell others" %}</h2>
+<form method="post" action="{% url 'journey:checkin' pu.url_code %}" class="lang-grid">{% csrf_token %}
+  {% for value, label in kinds %}<button class="btn" name="kind" value="{{ value }}">{{ label }}</button>{% endfor %}
+</form>
+<p class="mute" style="font-size:.8rem;margin-top:10px">{% translate "Crowd reports show only when at least two different people agree." %}</p>
+{% endblock %}

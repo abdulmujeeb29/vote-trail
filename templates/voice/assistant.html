@@ -1,0 +1,30 @@
+{% extends "base.html" %}{% load i18n static %}
+{% block title %}{% translate "Ask by voice" %}{% endblock %}
+{% block content %}
+<div class="k">ASK{% if me.language == "pcm" %} · PIDGIN{% endif %}</div>
+<h1>Talk to me</h1>
+<p class="mute">{% translate "Talk in English, Pidgin, Hausa, Yoruba or Igbo. Answers come from INEC's published information." %}</p>
+
+<div class="field">
+  <label for="lang">{% translate "Language" %}</label>
+  <select id="lang">
+    <option value="en" {% if me.language == "en" %}selected{% endif %}>English</option><option value="pcm" {% if me.language == "pcm" %}selected{% endif %}>Naijá (Pidgin)</option>
+    <option value="yo" {% if me.language == "yo" %}selected{% endif %}>Yorùbá</option><option value="ha" {% if me.language == "ha" %}selected{% endif %}>Hausa</option><option value="ig" {% if me.language == "ig" %}selected{% endif %}>Igbo</option>
+  </select>
+</div>
+
+<section class="panel corner stack" style="text-align:center">
+  <button class="orb" id="orb" aria-pressed="false" aria-describedby="orb-status">TAP TO TALK<span class="sr-only"> (start or stop the voice assistant)</span></button>
+  <p id="orb-status" class="mute" aria-live="polite">{% translate "Tap to talk" %}</p>
+</section>
+
+<h2>{% translate "Conversation" %}</h2>
+<div class="decrypt" aria-live="polite"><ol id="transcript" class="mono" style="list-style:none;margin:0;padding:0;position:relative;z-index:1"></ol></div>
+
+<h2>{% translate "Or send a voice note" %}</h2>
+<p class="mute">{% translate "Record up to 60 seconds: a question, or a rumour you heard." %}</p>
+<button class="btn block" id="note-btn">{% translate "Record voice note" %}</button>
+<div id="note-result" class="card" hidden aria-live="polite" style="margin-top:12px"></div>
+{% endblock %}
+
+{% block scripts %}<script type="module" src="{% static 'js/voice.js' %}"></script>{% endblock %}

@@ -1,0 +1,1020 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 14:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pcm\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Vote buying"
+msgstr "Vote buying"
+
+msgid "Violence"
+msgstr "Wahala / fight"
+
+msgid "Officials late"
+msgstr "Officials late"
+
+msgid "Missing materials"
+msgstr "Materials no reach"
+
+msgid "BVAS failure"
+msgstr "BVAS no work"
+
+msgid "Polling unit moved"
+msgstr "Polling unit don move"
+
+msgid "Results"
+msgstr "Results"
+
+msgid "Other"
+msgstr "Other one"
+
+msgid "MY VOTE"
+msgstr "MY VOTE"
+
+msgid "VERIFY"
+msgstr "CHECK AM"
+
+msgid "POLLING UNIT"
+msgstr "POLLING UNIT"
+
+msgid "BACK"
+msgstr "BACK"
+
+msgid "I'm registered"
+msgstr "I don register"
+
+msgid "Registered"
+msgstr "Don register"
+
+msgid "I have my PVC"
+msgstr "I don get my PVC"
+
+msgid "PVC collected"
+msgstr "PVC don collect"
+
+msgid "Polling unit opened"
+msgstr "Polling unit don open"
+
+msgid "Materials arrived"
+msgstr "Materials don land"
+
+msgid "BVAS working"
+msgstr "BVAS dey work"
+
+msgid "BVAS not working"
+msgstr "BVAS no dey work"
+
+msgid "Long queue"
+msgstr "Line long well well"
+
+msgid "Not open yet"
+msgstr "E never open"
+
+msgid "Find your polling unit"
+msgstr "Find your polling unit"
+
+msgid "Use your location or the code on your voter's card."
+msgstr "Use your location or the code wey dey your voter card."
+
+msgid "Find it"
+msgstr "Find am"
+
+msgid "Visit your new polling unit before election day"
+msgstr "Go see your new polling unit before election day"
+
+msgid "So you know the way on the morning."
+msgstr "So you go know the road that morning."
+
+msgid "Directions"
+msgstr "Direction"
+
+msgid "Is your polling unit open?"
+msgstr "Your polling unit don open?"
+
+msgid "See live check-ins from officials and voters."
+msgstr "See wetin officials and voters dey report live."
+
+msgid "Check now"
+msgstr "Check am now"
+
+msgid "Photograph the result sheet on the wall"
+msgstr "Snap the result sheet wey dem paste for wall"
+
+msgid ""
+"We compare it with IReV. Two independent photos are needed to flag a "
+"mismatch."
+msgstr ""
+"We go compare am with IReV. We need photo from two different people before "
+"we talk say e no match."
+
+msgid "Open camera"
+msgstr "Open camera"
+
+msgid "See your polling unit's result check"
+msgstr "See the result check for your polling unit"
+
+msgid "Wall sheet vs IReV, with reasons."
+msgstr "Wall sheet vs IReV, with reason."
+
+msgid "View"
+msgstr "See am"
+
+msgid "Make sure you're registered"
+msgstr "Make sure say you don register"
+
+msgid ""
+"Pre-register online, then finish in person. Only on cvr.inecnigeria.org."
+msgstr ""
+"Start am online, then go finish am by yourself. Only for "
+"cvr.inecnigeria.org."
+
+msgid "How to register"
+msgstr "How to register"
+
+msgid "Collect your PVC"
+msgstr "Collect your PVC"
+
+msgid "In person only. Only voters with a PVC can vote."
+msgstr "Na only you fit collect am. Na only people wey get PVC fit vote."
+
+msgid "Where and how"
+msgstr "Where and how"
+
+msgid "Turn on alerts"
+msgstr "On alert"
+
+msgid "Get an SMS if your unit moves or a result is checked."
+msgstr "We go SMS you if your unit move or dem check result."
+
+msgid "Turn on"
+msgstr "On am"
+
+msgid "Heard something? Check it before you forward it"
+msgstr "You hear something? Check am before you forward am"
+
+msgid "Forwards are not confirmation."
+msgstr "Forward no be confirmation."
+
+msgid "Check a rumour"
+msgstr "Check rumour"
+
+msgid "MOVED"
+msgstr "DON MOVE"
+
+msgid "SET"
+msgstr "DON SET"
+
+msgid "TO DO"
+msgstr "NEVER DO"
+
+msgid "DONE"
+msgstr "DON DO"
+
+msgid "Know your unit"
+msgstr "Know your unit"
+
+msgid "Election day"
+msgstr "Election day"
+
+msgid "TODAY"
+msgstr "TODAY"
+
+msgid "Check the result"
+msgstr "Check the result"
+
+msgid "NOW"
+msgstr "NOW NOW"
+
+msgid "OPEN"
+msgstr "OPEN"
+
+msgid "AFTER COUNT"
+msgstr "AFTER COUNT"
+
+msgid "Accessibility help"
+msgstr "Help for elderly and disabled"
+
+msgid "INFO"
+msgstr "INFO"
+
+#, python-format
+msgid "%(what)s at %(time)s (polling official)"
+msgstr "%(what)s for %(time)s (polling official)"
+
+#, python-format
+msgid "%(what)s: reported by %(n)d people"
+msgstr "%(what)s: %(n)d people report am"
+
+msgid "BVAS problem reported"
+msgstr "Dem report BVAS wahala"
+
+#, python-format
+msgid "Open since %(time)s"
+msgstr "Don open since %(time)s"
+
+msgid "Not open yet (crowd reports)"
+msgstr "E never open (people report am)"
+
+msgid "No updates yet"
+msgstr "No update yet"
+
+msgid "Good morning"
+msgstr "Good morning"
+
+msgid "Good afternoon"
+msgstr "Good afternoon"
+
+msgid "Good evening"
+msgstr "Good evening"
+
+msgid "We couldn't find that code. Check your voter's card."
+msgstr "We no see that code. Check your voter card."
+
+#, python-format
+msgid "Saved. %(code)s is now your polling unit."
+msgstr "E don save. %(code)s na your polling unit now."
+
+msgid "Too many reports. Try again in a few minutes."
+msgstr "Report don too much. Try again after small time."
+
+msgid "SAVED"
+msgstr "SAVED"
+
+msgid "SENT"
+msgstr "SENT"
+
+msgid "READING"
+msgstr "READING"
+
+msgid "COMPARED"
+msgstr "COMPARED"
+
+msgid "RESULT"
+msgstr "RESULT"
+
+msgid "Rumour you checked"
+msgstr "Rumour wey you check"
+
+msgid "Alert sent to your phone"
+msgstr "We don send alert to your phone"
+
+msgid "REPORTED"
+msgstr "YOU REPORT"
+
+#, python-format
+msgid "You reported: %(what)s"
+msgstr "You report: %(what)s"
+
+#, python-format
+msgid "Alerts on for PU %(code)s. We sent a confirmation SMS."
+msgstr "Alert don on for PU %(code)s. We don send confirmation SMS."
+
+msgid "Thanks. Your report helps other voters."
+msgstr "Thank you. Your report dey help other voters."
+
+msgid "Pending"
+msgstr "E still dey wait"
+
+msgid "Matches IReV"
+msgstr "E match IReV"
+
+msgid "Mismatch with IReV"
+msgstr "E no match IReV"
+
+msgid "Needs review"
+msgstr "Person go check am"
+
+msgid "Result cancelled"
+msgstr "Dem cancel result"
+
+msgid ""
+"No result-sheet photos yet. Results appear after counting at the polling "
+"unit."
+msgstr ""
+"No result-sheet photo yet. Result go show after dem count for the polling "
+"unit."
+
+#, python-format
+msgid "%(n)d independent upload"
+msgid_plural "%(n)d independent uploads"
+msgstr[0] "%(n)d different upload"
+msgstr[1] "%(n)d different uploads"
+
+msgid ", including agents from different parties"
+msgstr ", plus agents from different parties"
+
+#, python-format
+msgid "%(who)s match the sheet on IReV."
+msgstr "%(who)s match the sheet for IReV."
+
+#, python-format
+msgid ""
+"%(who)s agree with each other but differ from the sheet on IReV. Observers "
+"have been alerted."
+msgstr ""
+"%(who)s agree with each other but dem no match the sheet for IReV. We don "
+"tell observers."
+
+msgid "The result sheet is endorsed 'Result Cancelled'."
+msgstr "Dem write 'Result Cancelled' for the result sheet."
+
+#, python-format
+msgid "%(who)s received. Waiting for INEC's IReV upload to compare."
+msgstr "%(who)s don reach us. We dey wait for INEC IReV upload to compare."
+
+msgid "Waiting for result-sheet photos from this polling unit."
+msgstr "We dey wait for result-sheet photo from this polling unit."
+
+msgid ""
+"One upload differs from IReV. We need a second independent upload before "
+"flagging a mismatch."
+msgstr ""
+"One upload no match IReV. We need another person upload before we talk say e"
+" no match."
+
+msgid "Part of the sheet was hard to read. A verifier will check it."
+msgstr "Some part of the sheet hard to read. Verifier go check am."
+
+msgid "The numbers on a sheet don't add up. A verifier will check it."
+msgstr "The numbers for the sheet no add up. Verifier go check am."
+
+msgid "Uploads from different people don't agree. A verifier will check them."
+msgstr "Upload from different people no agree. Verifier go check dem."
+
+msgid "A verifier needs to check this before we show a result status."
+msgstr "Verifier must check am before we show result status."
+
+msgid "Back"
+msgstr "Back"
+
+msgid "Skip to content"
+msgstr "Go to content"
+
+msgid "My vote"
+msgstr "My vote"
+
+msgid "Verify"
+msgstr "Check am"
+
+msgid "Ask"
+msgstr "Ask"
+
+msgid "Activity"
+msgstr "Wetin happen"
+
+msgid "Larger text"
+msgstr "Bigger letter"
+
+msgid "Low power: fewer effects"
+msgstr "Save battery: less effect"
+
+msgid "Low power mode"
+msgstr "Save battery mode"
+
+msgid "Basic phone simulator"
+msgstr "Small phone simulator"
+
+msgid "Basic phone"
+msgstr "Small phone"
+
+msgid ""
+"This simulator runs the real USSD and SMS service. On a real phone, dial the"
+" code; no data needed."
+msgstr ""
+"This simulator dey run the real USSD and SMS service. For real phone, dial "
+"the code; you no need data."
+
+msgid "Simulator"
+msgstr "Simulator"
+
+msgid "Dial"
+msgstr "Dial"
+
+msgid "Reply"
+msgstr "Reply"
+
+msgid "Send"
+msgstr "Send"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Phone number on this simulator"
+msgstr "Phone number for this simulator"
+
+msgid "SMS inbox"
+msgstr "SMS inbox"
+
+msgid "Send an SMS to VoteTrail"
+msgstr "Send SMS to VoteTrail"
+
+msgid "Send SMS"
+msgstr "Send SMS"
+
+msgid "undo"
+msgstr "undo"
+
+msgid "Accessibility"
+msgstr "Help for everybody"
+
+msgid "HELP"
+msgstr "HELP"
+
+msgid "Elderly and disabled voters"
+msgstr "Old people and people wey get disability"
+
+msgid ""
+"If you're blind, visually impaired or have a disability, a person of your "
+"choice can help you vote. Tell the presiding officer."
+msgstr ""
+"If you blind, your eye no too see, or you get disability, person wey you "
+"choose fit help you vote. Tell the presiding officer."
+
+msgid "Ask about priority in the queue and assistive materials."
+msgstr "Ask make dem put you for front of line and give you help materials."
+
+msgid "Prefer talking? Use Ask in your language."
+msgstr "You prefer to talk? Use Ask for your language."
+
+msgid ""
+"No smartphone? Dial the short code. Community leaders also get voice notes "
+"to share."
+msgstr ""
+"No smartphone? Dial the short code. Community leaders still dey get voice "
+"note to share."
+
+msgid "YOUR UNIT"
+msgstr "YOUR UNIT"
+
+msgid "SOURCE"
+msgstr "SOURCE"
+
+msgid "Everything,"
+msgstr "Everything,"
+
+msgid "in one place."
+msgstr "for one place."
+
+msgid "Your uploads, rumour checks, alerts and reports, as they happen."
+msgstr "Your upload, rumour check, alert and report, as e dey happen."
+
+msgid "Timeline"
+msgstr "Timeline"
+
+msgid "Nothing yet. Your uploads, rumour checks and alerts will appear here."
+msgstr "Nothing yet. Your upload, rumour check and alert go show here."
+
+msgid "Your upload · EC8A"
+msgstr "Your upload · EC8A"
+
+msgid "Not accepted. Use the in-app camera at the polling unit."
+msgstr "We no accept am. Use the app camera for the polling unit."
+
+msgid "Result uploads"
+msgstr "Result upload"
+
+msgid "None yet"
+msgstr "None yet"
+
+msgid ""
+"When you photograph a result sheet, you'll see it move through: received, "
+"reading, checking, compared."
+msgstr ""
+"When you snap result sheet, you go see am move: we don receive am, we dey "
+"read am, we dey check am, we don compare am."
+
+msgid "Go to Verify"
+msgstr "Go Check am"
+
+msgid "FIND"
+msgstr "FIND"
+
+msgid "Use my location"
+msgstr "Use my location"
+
+msgid "Or search by code or place"
+msgstr "Or search with code or place"
+
+msgid "Search"
+msgstr "Search"
+
+msgid "No polling unit found. Check the code on your voter's card."
+msgstr "We no see polling unit. Check the code for your voter card."
+
+msgid "NAMES FROM INEC'S OFFICIAL LOCATOR · FCT SAMPLE"
+msgstr "NAMES FROM INEC OFFICIAL LOCATOR · FCT SAMPLE"
+
+msgid "Here's your vote."
+msgstr "See your vote."
+
+msgid "Time until polls open"
+msgstr "Time before voting start"
+
+msgid "DAYS"
+msgstr "DAYS"
+
+msgid "HRS"
+msgstr "HRS"
+
+msgid "MIN"
+msgstr "MIN"
+
+msgid "Until"
+msgstr "Before"
+
+msgid "Moved"
+msgstr "Don move"
+
+msgid "Your polling unit has moved."
+msgstr "Your polling unit don move."
+
+msgid "Vote at"
+msgstr "Go vote for"
+
+msgid "INEC notice"
+msgstr "INEC notice"
+
+msgid "See your new unit"
+msgstr "See your new unit"
+
+msgid "Do this next"
+msgstr "Do this one next"
+
+msgid "Done"
+msgstr "Done"
+
+msgid "Your voter details"
+msgstr "Your voter details"
+
+msgid "Your polling unit"
+msgstr "Your polling unit"
+
+msgid "PVC: to do"
+msgstr "PVC: never do"
+
+msgid "CODE"
+msgstr "CODE"
+
+msgid "WARD"
+msgstr "WARD"
+
+msgid "Not set yet"
+msgstr "You never set am"
+
+msgid ""
+"Everything follows your polling unit: alerts, election day and result "
+"checks."
+msgstr ""
+"Everything dey follow your polling unit: alert, election day and result "
+"check."
+
+msgid "Set your polling unit"
+msgstr "Set your polling unit"
+
+msgid "Your journey"
+msgstr "Your journey"
+
+#, python-format
+msgid "%(done)s of %(total)s done"
+msgstr "%(done)s out of %(total)s don do"
+
+msgid "After counting"
+msgstr "After count"
+
+msgid "Check a result sheet"
+msgstr "Check result sheet"
+
+msgid ""
+"Photograph the sheet on the wall. We compare it with INEC's IReV upload."
+msgstr "Snap the sheet for wall. We go compare am with INEC IReV upload."
+
+msgid "Heard something?"
+msgstr "You hear something?"
+
+msgid ""
+"Paste the message. Get a clear verdict, with reasons, in your language."
+msgstr "Paste the message. Get clear answer, with reason, for your language."
+
+msgid "Check it"
+msgstr "Check am"
+
+msgid "Voice"
+msgstr "Voice"
+
+msgid "Talk in your language. Answers come from INEC's information."
+msgstr "Talk for your language. Answer dey come from INEC information."
+
+msgid "Start talking"
+msgstr "Start to talk"
+
+msgid "DEMO SCENARIO"
+msgstr "DEMO SCENARIO"
+
+msgid "Make this my polling unit"
+msgstr "Make this one my polling unit"
+
+msgid "YOUR POLLING UNIT"
+msgstr "YOUR POLLING UNIT"
+
+msgid "location approximate"
+msgstr "location no too exact"
+
+msgid "Result check"
+msgstr "Result check"
+
+msgid "PENDING"
+msgstr "E DEY WAIT"
+
+msgid "Alerts for this unit"
+msgstr "Alert for this unit"
+
+msgid "ALERTS ON"
+msgstr "ALERT DON ON"
+
+msgid "to your saved number"
+msgstr "to the number wey you save"
+
+msgid "Phone number"
+msgstr "Phone number"
+
+msgid "Voice notes too"
+msgstr "Voice note too"
+
+msgid "Turn on SMS alerts"
+msgstr "On SMS alert"
+
+msgid "Stored encrypted. Send STOP to end."
+msgstr "We lock am well. Send STOP to end am."
+
+msgid "STEP · PVC"
+msgstr "STEP · PVC"
+
+msgid "Collect it yourself. No one can collect it for you."
+msgstr "Collect am by yourself. Nobody fit collect am for you."
+
+msgid "IN PERSON"
+msgstr "BY YOURSELF"
+
+msgid "Only voters with a PVC can vote."
+msgstr "Na only people wey get PVC fit vote."
+
+msgid "REQUIRED"
+msgstr "YOU MUST GET AM"
+
+msgid ""
+"Nationwide collection began 9 Oct 2026, usually at your LGA INEC office."
+msgstr ""
+"Collection for the whole country start 9 Oct 2026, mostly for your LGA INEC "
+"office."
+
+msgid "Cards are usually ready 1–3 months after registration."
+msgstr "Card dey usually ready 1–3 months after you register."
+
+msgid "SOURCES"
+msgstr "SOURCES"
+
+msgid "Register or transfer"
+msgstr "Register or transfer"
+
+msgid "STEP · REGISTRATION"
+msgstr "STEP · REGISTRATION"
+
+msgid "ONLY CVR.INECNIGERIA.ORG"
+msgstr "ONLY CVR.INECNIGERIA.ORG"
+
+msgid ""
+"INEC has warned about fake registration websites. Registration is free."
+msgstr "INEC don warn about fake registration website. Registration na free."
+
+msgid "Pre-register online on INEC's CVR portal"
+msgstr "Start registration online for INEC CVR portal"
+
+msgid "Finish in person: fingerprints and photo at an INEC office"
+msgstr "Go finish am by yourself: fingerprint and photo for INEC office"
+
+msgid ""
+"Moved house? Transfer on the same portal. You need the VIN on your card"
+msgstr ""
+"You don change house? Transfer for the same portal. You need the VIN wey dey"
+" your card"
+
+msgid "Open INEC's CVR portal"
+msgstr "Open INEC CVR portal"
+
+msgid "Rumour check"
+msgstr "Rumour check"
+
+msgid "RUMOUR CHECK"
+msgstr "RUMOUR CHECK"
+
+msgid "Verdict"
+msgstr "Answer"
+
+msgid "reports"
+msgstr "report"
+
+msgid "forwarded"
+msgstr "forward"
+
+msgid "independent sources"
+msgstr "different source"
+
+msgid "Public sources checked"
+msgstr "Public source wey we check"
+
+msgid "Check another"
+msgstr "Check another one"
+
+msgid ""
+"Paste a message you received or describe what you saw. We check it against "
+"other reports, verifiers and public sources."
+msgstr ""
+"Paste message wey you receive or talk wetin you see. We go check am with "
+"other report, verifier and public source."
+
+msgid "Message or what you saw"
+msgstr "Message or wetin you see"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Polling unit or ward code (optional)"
+msgstr "Polling unit or ward code (if you get am)"
+
+msgid "I received this from someone else"
+msgstr "Na another person send am give me"
+
+msgid "Recent checks"
+msgstr "Recent check"
+
+msgid "Demo"
+msgstr "Demo"
+
+msgid "No rumours checked yet."
+msgstr "Nobody don check rumour yet."
+
+msgid "Set up"
+msgstr "Set up"
+
+msgid "Ready"
+msgstr "Ready"
+
+msgid "You're set."
+msgstr "You don set."
+
+msgid "Everything now follows your polling unit and language."
+msgstr "Everything dey follow your polling unit and language now."
+
+msgid "Open my vote"
+msgstr "Open my vote"
+
+#, python-format
+msgid "Setup · step %(step)s of 3"
+msgstr "Setup · step %(step)s of 3"
+
+msgid "Choose your language."
+msgstr "Choose your language."
+
+msgid "Used for alerts, voice and every screen."
+msgstr "We go use am for alert, voice and every screen."
+
+msgid "Continue"
+msgstr "Continue"
+
+msgid "Where do you vote?"
+msgstr "Where you dey vote?"
+
+msgid "Use your location, or type the code on your voter's card."
+msgstr "Use your location, or type the code wey dey your voter card."
+
+msgid "Or type your PU code"
+msgstr "Or type your PU code"
+
+msgid "This is my unit"
+msgstr "Na my unit be this"
+
+msgid "Skip for now"
+msgstr "Skip am for now"
+
+msgid "Get alerts?"
+msgstr "You want alert?"
+
+msgid ""
+"If your unit moves or a result is checked, we'll tell you, even on a basic "
+"phone."
+msgstr ""
+"If your unit move or dem check result, we go tell you, even for small phone."
+
+msgid "Finish"
+msgstr "Finish"
+
+msgid "No thanks"
+msgstr "No thank you"
+
+msgid "Stored encrypted. Send STOP any time."
+msgstr "We lock am well. Send STOP any time."
+
+msgid "ELECTION DAY"
+msgstr "ELECTION DAY"
+
+msgid "Is it open?"
+msgstr "E don open?"
+
+msgid "No reports yet. Officials check in by USSD; voters can report below."
+msgstr ""
+"No report yet. Officials dey check in with USSD; voters fit report for down."
+
+msgid "Updated"
+msgstr "Update"
+
+msgid "Are you there? Tell others"
+msgstr "You dey there? Tell others"
+
+msgid "Crowd reports show only when at least two different people agree."
+msgstr "Crowd report go show only when at least two different people agree."
+
+msgid "Check it,"
+msgstr "Check am,"
+
+msgid "don't forward it."
+msgstr "no forward am."
+
+msgid ""
+"Compare the result sheet on the wall with INEC's upload, or check a message "
+"before you share it."
+msgstr ""
+"Compare the result sheet for wall with INEC upload, or check message before "
+"you share am."
+
+msgid "What to check"
+msgstr "Wetin to check"
+
+msgid "Result sheet"
+msgstr "Result sheet"
+
+msgid "Rumour"
+msgstr "Rumour"
+
+msgid "Paste the message you received…"
+msgstr "Paste the message wey you receive…"
+
+msgid "Someone sent this to me"
+msgstr "Person send this one give me"
+
+msgid "Nothing checked yet."
+msgstr "Nothing don check yet."
+
+msgid "from your profile"
+msgstr "from your profile"
+
+msgid "No polling unit yet"
+msgstr "No polling unit yet"
+
+msgid "Set your polling unit first, or type it on the next screen."
+msgstr "Set your polling unit first, or type am for next screen."
+
+msgid "Photograph the result sheet"
+msgstr "Snap the result sheet"
+
+msgid "Last check"
+msgstr "Last check"
+
+msgid "Party"
+msgstr "Party"
+
+msgid "Wall"
+msgstr "Wall"
+
+msgid "Full details"
+msgstr "Full details"
+
+msgid "How it works"
+msgstr "How e dey work"
+
+msgid "After counting, the result sheet (Form EC8A) is posted on the wall"
+msgstr "After count, dem go paste the result sheet (Form EC8A) for wall"
+
+msgid "Photograph it here. It works offline"
+msgstr "Snap am here. E dey work without network"
+
+msgid "We read it and compare it with INEC's IReV upload"
+msgstr "We go read am and compare am with INEC IReV upload"
+
+msgid "You get Match or Mismatch, with reasons"
+msgstr "You go get Match or Mismatch, with reason"
+
+msgid "See an example"
+msgstr "See example"
+
+msgid "Photograph a result sheet"
+msgstr "Snap result sheet"
+
+msgid ""
+"Take a clear photo of Form EC8A on the wall. Works offline: it's saved on "
+"your phone and sent when you have signal."
+msgstr ""
+"Snap clear photo of Form EC8A for wall. E dey work without network: e go "
+"save for your phone and send when network come."
+
+msgid "Polling unit code"
+msgstr "Polling unit code"
+
+msgid "Fill from my location"
+msgstr "Fill am from my location"
+
+msgid "Camera preview"
+msgstr "Camera preview"
+
+msgid "Captured photo"
+msgstr "Photo wey you snap"
+
+msgid "Take photo"
+msgstr "Snap photo"
+
+msgid "Use phone camera"
+msgstr "Use phone camera"
+
+msgid "Save and send"
+msgstr "Save and send"
+
+msgid "Your uploads"
+msgstr "Your uploads"
+
+msgid "Nothing saved yet."
+msgstr "Nothing don save yet."
+
+msgid "Demo data"
+msgstr "Demo data"
+
+msgid ""
+"VoteTrail compares citizen photos with INEC's IReV upload. Only INEC "
+"declares results."
+msgstr ""
+"VoteTrail dey compare citizen photo with INEC IReV upload. Na only INEC fit "
+"declare result."
+
+msgid "Wall sheet vs IReV"
+msgstr "Wall sheet vs IReV"
+
+msgid "Party scores from citizen photos and from IReV"
+msgstr "Party score from citizen photo and from IReV"
+
+msgid "Wall photo"
+msgstr "Wall photo"
+
+msgid "mock"
+msgstr "mock"
+
+msgid "differs"
+msgstr "e no match"
+
+msgid "Photograph this result sheet"
+msgstr "Snap this result sheet"
+
+msgid "Download evidence pack"
+msgstr "Download evidence pack"
+
+msgid "History"
+msgstr "History"
+
+msgid "Ask by voice"
+msgstr "Ask with voice"
+
+msgid ""
+"Talk in English, Pidgin, Hausa, Yoruba or Igbo. Answers come from INEC's "
+"published information."
+msgstr ""
+"Talk for English, Pidgin, Hausa, Yoruba or Igbo. Answer dey come from wetin "
+"INEC publish."
+
+msgid "Language"
+msgstr "Language"
+
+msgid "Tap to talk"
+msgstr "Touch am to talk"
+
+msgid "Conversation"
+msgstr "Talk-talk"
+
+msgid "Or send a voice note"
+msgstr "Or send voice note"
+
+msgid "Record up to 60 seconds: a question, or a rumour you heard."
+msgstr "Record reach 60 seconds: question, or rumour wey you hear."
+
+msgid "Record voice note"
+msgstr "Record voice note"

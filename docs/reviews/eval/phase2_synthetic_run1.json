@@ -1,0 +1,105 @@
+{
+  "summary": {
+    "sheets": 32,
+    "fields": 432,
+    "field_accuracy": 0.9838,
+    "readable_accuracy": 0.986,
+    "sheet_exact": 0.875,
+    "silent_wrong": 4,
+    "smudge_guessed": 1,
+    "confident_accuracy": 0.9906,
+    "flag_rate": 0.0116
+  },
+  "misses": [
+    {
+      "sheet": "ec8a_11",
+      "field": "spoilt",
+      "expected": 1,
+      "got": null,
+      "flagged": true,
+      "ok": false,
+      "kind": "wrong_flagged"
+    },
+    {
+      "sheet": "ec8a_11",
+      "field": "rejected",
+      "expected": null,
+      "got": null,
+      "flagged": true,
+      "ok": true,
+      "kind": "smudge_flagged"
+    },
+    {
+      "sheet": "ec8a_19",
+      "field": "registered",
+      "expected": 1943,
+      "got": 1993,
+      "flagged": false,
+      "ok": false,
+      "kind": "silent_wrong"
+    },
+    {
+      "sheet": "ec8a_19",
+      "field": "ballots_issued",
+      "expected": 1943,
+      "got": 1993,
+      "flagged": false,
+      "ok": false,
+      "kind": "silent_wrong"
+    },
+    {
+      "sheet": "ec8a_19",
+      "field": "rejected",
+      "expected": null,
+      "got": null,
+      "flagged": true,
+      "ok": true,
+      "kind": "smudge_flagged"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "registered",
+      "expected": 1494,
+      "got": 1499,
+      "flagged": false,
+      "ok": false,
+      "kind": "silent_wrong"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "ballots_issued",
+      "expected": 1494,
+      "got": 1499,
+      "flagged": false,
+      "ok": false,
+      "kind": "silent_wrong"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "spoilt",
+      "expected": 1,
+      "got": null,
+      "flagged": true,
+      "ok": false,
+      "kind": "wrong_flagged"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "rejected",
+      "expected": null,
+      "got": null,
+      "flagged": true,
+      "ok": true,
+      "kind": "smudge_flagged"
+    },
+    {
+      "sheet": "ec8a_31",
+      "field": "party:PB",
+      "expected": null,
+      "got": 149,
+      "flagged": false,
+      "ok": false,
+      "kind": "smudge_guessed"
+    }
+  ]
+}

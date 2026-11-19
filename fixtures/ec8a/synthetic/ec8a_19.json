@@ -1,0 +1,158 @@
+{
+ "parties": [
+  "PA",
+  "PB",
+  "PC"
+ ],
+ "spec": {
+  "accredited": null,
+  "ballots_issued": null,
+  "cancelled": false,
+  "damage": "heavy",
+  "election": "PRESIDENTIAL",
+  "lga": "Bwari",
+  "override_total_valid": null,
+  "parties": {
+   "PA": 52,
+   "PB": 115,
+   "PC": 129
+  },
+  "pu_code": "37/02/02/004",
+  "pu_name": "Kuchiko C.D.S. / Old Gss Bwari",
+  "registered": 1943,
+  "rejected": 2,
+  "seed": 1019,
+  "smudge": "rejected",
+  "spoilt": 0,
+  "state": "FCT",
+  "ward": "Kuduru"
+ },
+ "truth": {
+  "accredited": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 301
+  },
+  "ballots_issued": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1943
+  },
+  "cancelled": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": false
+  },
+  "election": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "PRESIDENTIAL"
+  },
+  "lga": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Bwari"
+  },
+  "parties": [
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 52
+    },
+    "party": "PA",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "fifty-two"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 115
+    },
+    "party": "PB",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "one hundred and fifteen"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 129
+    },
+    "party": "PC",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "one hundred and twenty-nine"
+    }
+   }
+  ],
+  "pu_code": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "37/02/02/004"
+  },
+  "pu_name": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Kuchiko C.D.S. / Old Gss Bwari"
+  },
+  "registered": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1943
+  },
+  "rejected": {
+   "confidence": 0.0,
+   "unreadable": true,
+   "value": null
+  },
+  "signed_by_agents": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "spoilt": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 0
+  },
+  "stamped": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "state": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "FCT"
+  },
+  "total_used": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 298
+  },
+  "total_valid": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 296
+  },
+  "unused": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1645
+  },
+  "ward": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Kuduru"
+  }
+ }
+}

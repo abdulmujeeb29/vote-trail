@@ -1,0 +1,70 @@
+{
+ "claims_forwards": {
+  "ok": true,
+  "seconds": 8.1,
+  "out": {
+   "status": "unconfirmed",
+   "forwards": 12,
+   "origins": 1,
+   "evidence": 16,
+   "web": 4,
+   "valid": 16,
+   "verdict_pcm": {
+    "status": "unconfirmed",
+    "headline": "We never confirm am",
+    "reasons": [
+     "Na only one person report am.",
+     "People don forward am 12 times, but forward no be confirmation."
+    ],
+    "unknown": "Wetin we no know: who first see am and whether e still dey happen.",
+    "language": "pcm"
+   }
+  }
+ },
+ "announcement": {
+  "ok": true,
+  "seconds": 1.5,
+  "out": {
+   "state": "applied",
+   "kind": "pu_relocation",
+   "affected": {
+    "affected": [
+     {
+      "pu_code": "37/06/02/002",
+      "new_pu_code": "37/06/02/004",
+      "quote": "polling unit 37/06/02/002 (Garki Village/Near Da'a Social Club) has been relocated to 37/06/02/004 (Garki Village II/New Pri. Sch.)"
+     }
+    ]
+   },
+   "errors": []
+  }
+ },
+ "realtime_session": {
+  "ok": true,
+  "seconds": 1.4,
+  "out": {
+   "token_prefix": "ek_",
+   "rtc_url": "/v1/realtime/calls",
+   "has_key": false
+  }
+ },
+ "tts": {
+  "ok": true,
+  "seconds": 1.2,
+  "out": {
+   "bytes": 35778,
+   "cached_again": true,
+   "path": "/var/folders/6w/wlzrygxs3r550yr97xrgtc940000gn/T/tmpnis0z71d/media/tts/1a1975a22ae2ee45341fd81a61d8b6da9431e2e5bdb43438078b27e15ef6985b.mp3"
+  }
+ },
+ "voice_note": {
+  "ok": true,
+  "seconds": 3.4,
+  "out": {
+   "transcript": "Dem dey share money for Garki Ward 5 polling unit, make una check am.",
+   "english": "They are sharing money at Garki Ward 5 polling unit, please check it.",
+   "language": "pcm",
+   "intent": "rumour"
+  }
+ }
+}

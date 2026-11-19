@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Rumours{% endblock %}
+{% block content %}
+{% include "dashboard/_nav.html" %}
+<h1>Rumours and incidents</h1>
+{% for it in items %}<article class="card stack" style="margin-bottom:12px">
+  <p>“{{ it.claim.text|truncatechars:160 }}”</p>
+  <p><span class="badge tone-info">{{ it.verdict.headline }}</span> <span class="tag">{{ it.reports }} reports</span> <a href="{% url 'journey:rumour' it.claim.pk %}">Public page</a></p>
+  <form method="post" action="{% url 'dashboard:claim_evidence' it.claim.pk %}" class="stack">{% csrf_token %}
+    <label class="sr-only" for="note-{{ it.claim.pk }}">What you verified</label>
+    <textarea id="note-{{ it.claim.pk }}" name="note" placeholder="What did your observer see, where and when?" required minlength="10"></textarea>
+    <div class="cta-row"><button class="btn" name="stance" value="supports">Supports</button><button class="btn" name="stance" value="opposes">Contradicts</button></div>
+  </form>
+</article>{% empty %}<p class="mute">No rumours yet.</p>{% endfor %}
+{% endblock %}

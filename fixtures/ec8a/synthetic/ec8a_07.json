@@ -1,0 +1,158 @@
+{
+ "parties": [
+  "PA",
+  "PB",
+  "PC"
+ ],
+ "spec": {
+  "accredited": null,
+  "ballots_issued": null,
+  "cancelled": false,
+  "damage": "heavy",
+  "election": "PRESIDENTIAL",
+  "lga": "Municipal",
+  "override_total_valid": null,
+  "parties": {
+   "PA": 411,
+   "PB": 331,
+   "PC": 313
+  },
+  "pu_code": "37/06/02/004",
+  "pu_name": "Garki Village Ii/New Pri. Sch.",
+  "registered": 2248,
+  "rejected": 23,
+  "seed": 1007,
+  "smudge": null,
+  "spoilt": 4,
+  "state": "FCT",
+  "ward": "Garki"
+ },
+ "truth": {
+  "accredited": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1081
+  },
+  "ballots_issued": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 2248
+  },
+  "cancelled": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": false
+  },
+  "election": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "PRESIDENTIAL"
+  },
+  "lga": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Municipal"
+  },
+  "parties": [
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 411
+    },
+    "party": "PA",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "four hundred and eleven"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 331
+    },
+    "party": "PB",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "three hundred and thirty-one"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 313
+    },
+    "party": "PC",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "three hundred and thirteen"
+    }
+   }
+  ],
+  "pu_code": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "37/06/02/004"
+  },
+  "pu_name": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Garki Village Ii/New Pri. Sch."
+  },
+  "registered": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 2248
+  },
+  "rejected": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 23
+  },
+  "signed_by_agents": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "spoilt": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 4
+  },
+  "stamped": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "state": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "FCT"
+  },
+  "total_used": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1078
+  },
+  "total_valid": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1055
+  },
+  "unused": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1166
+  },
+  "ward": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Garki"
+  }
+ }
+}

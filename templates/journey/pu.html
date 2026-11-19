@@ -1,0 +1,33 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}PU {{ pu.code }}{% endblock %}
+{% block back %}{% include "_back.html" with back_url="/vote/" back_label="MY VOTE" %}{% endblock %}
+{% block content %}
+<div class="k">{% translate "POLLING UNIT" %} · {{ pu.code }}</div>
+<h1>{{ pu.name }}</h1>
+<p class="mute">{{ pu.ward.name }} · {{ pu.ward.lga.name }}</p>
+{% if moved %}
+<section class="panel alert" role="alert">
+  <div class="row"><span class="tag warn">{% translate "MOVED" %}</span><span class="chip mock">{% translate "DEMO SCENARIO" %}</span></div>
+  <p class="p">{% translate "Vote at" %} <strong>{{ cur.name }}</strong> <span class="mono">({{ cur.code }})</span>.</p>
+  {% if cur.landmark %}<p class="mute">{{ cur.landmark }}</p>{% endif %}
+  {% if cur.accessibility_notes %}<p class="mute">♿ {{ cur.accessibility_notes }}</p>{% endif %}
+</section>
+{% endif %}
+{% if not is_mine %}
+<form method="post" action="{% url 'journey:set_unit' pu.url_code %}" style="margin-top:12px">{% csrf_token %}<button class="btn go block">✓ {% translate "Make this my polling unit" %}</button></form>
+{% else %}<p style="margin-top:12px"><span class="tag ok">{% translate "YOUR POLLING UNIT" %}</span></p>{% endif %}
+<section class="panel" style="margin-top:12px;padding:4px 24px">
+  {% if cur.lat %}<a class="jrow" rel="noopener" target="_blank" href="https://www.google.com/maps/dir/?api=1&destination={{ cur.lat }},{{ cur.lng }}"><span>{% translate "Directions" %} <span class="mute">· {% translate "location approximate" %}</span></span><span class="chev">↗</span></a>{% endif %}
+  <a class="jrow" href="{% url 'journey:today' cur.url_code %}"><span>{% translate "Election day" %}</span><span><span class="tag {{ day.tone }}">{{ day.headline }}</span><span class="chev">›</span></span></a>
+  <a class="jrow" href="{% url 'results:pu_result' cur.url_code %}"><span>{% translate "Result check" %}</span><span><span class="tag info">{% if result_label %}{{ result_label }}{% else %}{% translate "PENDING" %}{% endif %}</span><span class="chev">›</span></span></a>
+</section>
+<h2>{% translate "Alerts for this unit" %}</h2>
+{% if me.phone_on_file %}<p><span class="tag ok">{% translate "ALERTS ON" %}</span> <span class="mute">{% translate "to your saved number" %}</span></p>
+{% else %}
+<form method="post" action="{% url 'journey:subscribe' pu.url_code %}" class="panel stack">{% csrf_token %}
+  <div class="field"><label for="phone">{% translate "Phone number" %}</label><input id="phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="0803 123 4567" required></div>
+  <label class="check"><input type="checkbox" name="voice"> {% translate "Voice notes too" %}</label>
+  <button class="btn go block">{% translate "Turn on SMS alerts" %}</button>
+  <p class="mute" style="font-size:.8rem">{% translate "Stored encrypted. Send STOP to end." %}</p>
+</form>{% endif %}
+{% endblock %}

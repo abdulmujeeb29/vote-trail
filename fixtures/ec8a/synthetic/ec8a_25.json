@@ -1,0 +1,173 @@
+{
+ "parties": [
+  "PA",
+  "PB",
+  "PC",
+  "PD"
+ ],
+ "spec": {
+  "accredited": null,
+  "ballots_issued": null,
+  "cancelled": false,
+  "damage": "light",
+  "election": "PRESIDENTIAL",
+  "lga": "Municipal",
+  "override_total_valid": null,
+  "parties": {
+   "PA": 102,
+   "PB": 88,
+   "PC": 391,
+   "PD": 146
+  },
+  "pu_code": "37/06/01/001",
+  "pu_name": "Area I, Sect. I/Area I Pri. Sch. I",
+  "registered": 1292,
+  "rejected": 6,
+  "seed": 1025,
+  "smudge": null,
+  "spoilt": 3,
+  "state": "FCT",
+  "ward": "City Centre"
+ },
+ "truth": {
+  "accredited": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 736
+  },
+  "ballots_issued": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1292
+  },
+  "cancelled": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": false
+  },
+  "election": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "PRESIDENTIAL"
+  },
+  "lga": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Municipal"
+  },
+  "parties": [
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 102
+    },
+    "party": "PA",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "one hundred and two"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 88
+    },
+    "party": "PB",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "eighty-eight"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 391
+    },
+    "party": "PC",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "three hundred and ninety-one"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 146
+    },
+    "party": "PD",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "one hundred and forty-six"
+    }
+   }
+  ],
+  "pu_code": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "37/06/01/001"
+  },
+  "pu_name": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Area I, Sect. I/Area I Pri. Sch. I"
+  },
+  "registered": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1292
+  },
+  "rejected": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 6
+  },
+  "signed_by_agents": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "spoilt": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 3
+  },
+  "stamped": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "state": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "FCT"
+  },
+  "total_used": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 733
+  },
+  "total_valid": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 727
+  },
+  "unused": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 556
+  },
+  "ward": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "City Centre"
+  }
+ }
+}

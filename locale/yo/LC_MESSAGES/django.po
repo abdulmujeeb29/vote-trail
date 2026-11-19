@@ -1,0 +1,1017 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 14:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: yo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Vote buying"
+msgstr "Rira ibo"
+
+msgid "Violence"
+msgstr "Iwa ipa"
+
+msgid "Officials late"
+msgstr "Awon osise pe"
+
+msgid "Missing materials"
+msgstr "Ohun elo ko si"
+
+msgid "BVAS failure"
+msgstr "BVAS ko sise"
+
+msgid "Polling unit moved"
+msgstr "Won ti gbe ibudo idibo"
+
+msgid "Results"
+msgstr "Esi idibo"
+
+msgid "Other"
+msgstr "Omiiran"
+
+msgid "MY VOTE"
+msgstr "IBO MI"
+
+msgid "VERIFY"
+msgstr "YE E WO"
+
+msgid "POLLING UNIT"
+msgstr "IBUDO IDIBO"
+
+msgid "BACK"
+msgstr "PADA"
+
+msgid "I'm registered"
+msgstr "Mo ti forukosile"
+
+msgid "Registered"
+msgstr "Ti forukosile"
+
+msgid "I have my PVC"
+msgstr "Mo ti ni PVC mi"
+
+msgid "PVC collected"
+msgstr "Ti gba PVC"
+
+msgid "Polling unit opened"
+msgstr "Ibudo idibo ti si"
+
+msgid "Materials arrived"
+msgstr "Awon ohun elo ti de"
+
+msgid "BVAS working"
+msgstr "BVAS n sise"
+
+msgid "BVAS not working"
+msgstr "BVAS ko sise"
+
+msgid "Long queue"
+msgstr "Ila gigun"
+
+msgid "Not open yet"
+msgstr "Ko ti si sile"
+
+msgid "Find your polling unit"
+msgstr "Wa ibudo idibo re"
+
+msgid "Use your location or the code on your voter's card."
+msgstr "Lo ibi ti o wa tabi koodu ti o wa lori kaadi idibo re."
+
+msgid "Find it"
+msgstr "Wa a"
+
+msgid "Visit your new polling unit before election day"
+msgstr "Lo wo ibudo idibo tuntun re ki ojo idibo to de"
+
+msgid "So you know the way on the morning."
+msgstr "Ki o le mo ona ni owuro ojo naa."
+
+msgid "Directions"
+msgstr "Itosona"
+
+msgid "Is your polling unit open?"
+msgstr "Se ibudo idibo re ti si?"
+
+msgid "See live check-ins from officials and voters."
+msgstr "Wo iroyin taara lati odo awon osise ati oludibo."
+
+msgid "Check now"
+msgstr "Ye e wo bayii"
+
+msgid "Photograph the result sheet on the wall"
+msgstr "Ya foto iwe esi ti won le mo ogiri"
+
+msgid ""
+"We compare it with IReV. Two independent photos are needed to flag a "
+"mismatch."
+msgstr ""
+"A o fi we IReV. A nilo foto meji lati odo eniyan otooto ki a to so pe ko ba "
+"mu."
+
+msgid "Open camera"
+msgstr "Si kamera"
+
+msgid "See your polling unit's result check"
+msgstr "Wo ayewo esi ibudo idibo re"
+
+msgid "Wall sheet vs IReV, with reasons."
+msgstr "Iwe ogiri ati IReV, pelu idi."
+
+msgid "View"
+msgstr "Wo"
+
+msgid "Make sure you're registered"
+msgstr "Rii daju pe o ti forukosile"
+
+msgid ""
+"Pre-register online, then finish in person. Only on cvr.inecnigeria.org."
+msgstr ""
+"Bere lori ayelujara, ki o si pari re funrare. Lori cvr.inecnigeria.org "
+"nikan."
+
+msgid "How to register"
+msgstr "Bi a se n forukosile"
+
+msgid "Collect your PVC"
+msgstr "Gba PVC re"
+
+msgid "In person only. Only voters with a PVC can vote."
+msgstr "Iwo funrare nikan. Awon ti o ni PVC nikan lo le dibo."
+
+msgid "Where and how"
+msgstr "Nibo ati bawo"
+
+msgid "Turn on alerts"
+msgstr "Tan itaniji"
+
+msgid "Get an SMS if your unit moves or a result is checked."
+msgstr "Iwo yoo gba SMS ti won ba gbe ibudo re tabi ti won ba ye esi wo."
+
+msgid "Turn on"
+msgstr "Tan"
+
+msgid "Heard something? Check it before you forward it"
+msgstr "Se o gbo nnkan kan? Ye e wo ki o to fi ranse"
+
+msgid "Forwards are not confirmation."
+msgstr "Fifi ranse ki i se ijerisi."
+
+msgid "Check a rumour"
+msgstr "Ye agbaso oro wo"
+
+msgid "MOVED"
+msgstr "WON TI GBE"
+
+msgid "SET"
+msgstr "TI SETO"
+
+msgid "TO DO"
+msgstr "KO TI I SE"
+
+msgid "DONE"
+msgstr "TI PARI"
+
+msgid "Know your unit"
+msgstr "Mo ibudo re"
+
+msgid "Election day"
+msgstr "Ojo idibo"
+
+msgid "TODAY"
+msgstr "ONI"
+
+msgid "Check the result"
+msgstr "Ye esi wo"
+
+msgid "NOW"
+msgstr "BAYII"
+
+msgid "OPEN"
+msgstr "SISI"
+
+msgid "AFTER COUNT"
+msgstr "LEYIN KIKA"
+
+msgid "Accessibility help"
+msgstr "Iranlowo fun agba ati alaabo"
+
+msgid "INFO"
+msgstr "ALAYE"
+
+#, python-format
+msgid "%(what)s at %(time)s (polling official)"
+msgstr "%(what)s ni %(time)s (osise idibo)"
+
+#, python-format
+msgid "%(what)s: reported by %(n)d people"
+msgstr "%(what)s: eniyan %(n)d lo royin re"
+
+msgid "BVAS problem reported"
+msgstr "Won royin isoro BVAS"
+
+#, python-format
+msgid "Open since %(time)s"
+msgstr "O ti si lati %(time)s"
+
+msgid "Not open yet (crowd reports)"
+msgstr "Ko ti si (iroyin awon eniyan)"
+
+msgid "No updates yet"
+msgstr "Ko si iroyin tuntun"
+
+msgid "Good morning"
+msgstr "E kaaaro"
+
+msgid "Good afternoon"
+msgstr "E kaasan"
+
+msgid "Good evening"
+msgstr "E kaale"
+
+msgid "We couldn't find that code. Check your voter's card."
+msgstr "A ko ri koodu yii. Wo kaadi idibo re."
+
+#, python-format
+msgid "Saved. %(code)s is now your polling unit."
+msgstr "A ti fi pamo. %(code)s ni ibudo idibo re bayii."
+
+msgid "Too many reports. Try again in a few minutes."
+msgstr "Iroyin ti po ju. Tun gbiyanju leyin iseju die."
+
+msgid "SAVED"
+msgstr "TI FIPAMO"
+
+msgid "SENT"
+msgstr "TI FI RANSE"
+
+msgid "READING"
+msgstr "N KA A"
+
+msgid "COMPARED"
+msgstr "TI FI WE"
+
+msgid "RESULT"
+msgstr "ESI"
+
+msgid "Rumour you checked"
+msgstr "Agbaso oro ti o ye wo"
+
+msgid "Alert sent to your phone"
+msgstr "A ti fi itaniji ranse si foonu re"
+
+msgid "REPORTED"
+msgstr "O ROYIN"
+
+#, python-format
+msgid "You reported: %(what)s"
+msgstr "O royin: %(what)s"
+
+#, python-format
+msgid "Alerts on for PU %(code)s. We sent a confirmation SMS."
+msgstr "A ti tan itaniji fun PU %(code)s. A ti fi SMS ijerisi ranse."
+
+msgid "Thanks. Your report helps other voters."
+msgstr "E se. Iroyin re n ran awon oludibo miiran lowo."
+
+msgid "Pending"
+msgstr "O n duro"
+
+msgid "Matches IReV"
+msgstr "O ba IReV mu"
+
+msgid "Mismatch with IReV"
+msgstr "Ko ba IReV mu"
+
+msgid "Needs review"
+msgstr "O nilo ayewo"
+
+msgid "Result cancelled"
+msgstr "Won ti fagile esi"
+
+msgid ""
+"No result-sheet photos yet. Results appear after counting at the polling "
+"unit."
+msgstr "Ko si foto iwe esi sibesibe. Esi yoo han leyin kika ni ibudo idibo."
+
+#, python-format
+msgid "%(n)d independent upload"
+msgid_plural "%(n)d independent uploads"
+msgstr[0] "foto %(n)d otooto"
+msgstr[1] "foto %(n)d otooto"
+
+msgid ", including agents from different parties"
+msgstr ", pelu awon asoju egbe otooto"
+
+#, python-format
+msgid "%(who)s match the sheet on IReV."
+msgstr "%(who)s ba iwe IReV mu."
+
+#, python-format
+msgid ""
+"%(who)s agree with each other but differ from the sheet on IReV. Observers "
+"have been alerted."
+msgstr ""
+"%(who)s gba ara won wole sugbon won yato si iwe IReV. A ti so fun awon "
+"oluwoye."
+
+msgid "The result sheet is endorsed 'Result Cancelled'."
+msgstr "Won ko 'Result Cancelled' sori iwe esi."
+
+#, python-format
+msgid "%(who)s received. Waiting for INEC's IReV upload to compare."
+msgstr "A ti gba %(who)s. A n duro de INEC lati gbe e si IReV ki a le fi we."
+
+msgid "Waiting for result-sheet photos from this polling unit."
+msgstr "A n duro de foto iwe esi lati ibudo yii."
+
+msgid ""
+"One upload differs from IReV. We need a second independent upload before "
+"flagging a mismatch."
+msgstr ""
+"Foto kan yato si IReV. A nilo foto miiran lati odo eniyan miiran ki a to so "
+"pe ko ba mu."
+
+msgid "Part of the sheet was hard to read. A verifier will check it."
+msgstr "Apa kan iwe naa nira lati ka. Oluyewo yoo ye e wo."
+
+msgid "The numbers on a sheet don't add up. A verifier will check it."
+msgstr "Awon nomba lori iwe naa ko dogba. Oluyewo yoo ye e wo."
+
+msgid "Uploads from different people don't agree. A verifier will check them."
+msgstr ""
+"Awon foto lati odo eniyan otooto ko ba ara won mu. Oluyewo yoo ye won wo."
+
+msgid "A verifier needs to check this before we show a result status."
+msgstr "Oluyewo gbodo ye e wo ki a to fi ipo esi han."
+
+msgid "Back"
+msgstr "Pada"
+
+msgid "Skip to content"
+msgstr "Fo si akoonu"
+
+msgid "My vote"
+msgstr "Ibo mi"
+
+msgid "Verify"
+msgstr "Ye e wo"
+
+msgid "Ask"
+msgstr "Beere"
+
+msgid "Activity"
+msgstr "Ise"
+
+msgid "Larger text"
+msgstr "Leta nla"
+
+msgid "Low power: fewer effects"
+msgstr "Fi agbara pamo: ipa die"
+
+msgid "Low power mode"
+msgstr "Ipo ifipamo agbara"
+
+msgid "Basic phone simulator"
+msgstr "Afarawe foonu kekere"
+
+msgid "Basic phone"
+msgstr "Foonu kekere"
+
+msgid ""
+"This simulator runs the real USSD and SMS service. On a real phone, dial the"
+" code; no data needed."
+msgstr ""
+"Afarawe yii n lo ise USSD ati SMS gidi. Lori foonu gidi, te koodu naa; ko "
+"nilo data."
+
+msgid "Simulator"
+msgstr "Afarawe"
+
+msgid "Dial"
+msgstr "Te"
+
+msgid "Reply"
+msgstr "Fesi"
+
+msgid "Send"
+msgstr "Fi ranse"
+
+msgid "Cancel"
+msgstr "Fagile"
+
+msgid "Phone number on this simulator"
+msgstr "Nomba foonu lori afarawe yii"
+
+msgid "SMS inbox"
+msgstr "Apoti SMS"
+
+msgid "Send an SMS to VoteTrail"
+msgstr "Fi SMS ranse si VoteTrail"
+
+msgid "Send SMS"
+msgstr "Fi SMS ranse"
+
+msgid "undo"
+msgstr "da pada"
+
+msgid "Accessibility"
+msgstr "Iraye si"
+
+msgid "HELP"
+msgstr "IRANLOWO"
+
+msgid "Elderly and disabled voters"
+msgstr "Awon agba ati alaabo oludibo"
+
+msgid ""
+"If you're blind, visually impaired or have a disability, a person of your "
+"choice can help you vote. Tell the presiding officer."
+msgstr ""
+"Ti o ba je afoju, ti oju re ko riran daradara tabi ti o ni ailera, eniyan ti"
+" o yan le ran o lowo lati dibo. So fun oga ibudo."
+
+msgid "Ask about priority in the queue and assistive materials."
+msgstr "Beere nipa anfani ninu ila ati ohun elo iranlowo."
+
+msgid "Prefer talking? Use Ask in your language."
+msgstr "Se o fe soro? Lo Beere ni ede re."
+
+msgid ""
+"No smartphone? Dial the short code. Community leaders also get voice notes "
+"to share."
+msgstr ""
+"Ko si foonu igbalode? Te koodu kukuru. Awon olori agbegbe tun n gba ohun "
+"gbigbasile lati pin."
+
+msgid "YOUR UNIT"
+msgstr "IBUDO RE"
+
+msgid "SOURCE"
+msgstr "ORISUN"
+
+msgid "Everything,"
+msgstr "Ohun gbogbo,"
+
+msgid "in one place."
+msgstr "ni ibi kan."
+
+msgid "Your uploads, rumour checks, alerts and reports, as they happen."
+msgstr "Awon foto re, ayewo agbaso oro, itaniji ati iroyin, bi won se n sele."
+
+msgid "Timeline"
+msgstr "Ago akoko"
+
+msgid "Nothing yet. Your uploads, rumour checks and alerts will appear here."
+msgstr "Ko si nnkan sibesibe. Awon foto re, ayewo ati itaniji yoo han nibi."
+
+msgid "Your upload · EC8A"
+msgstr "Foto re · EC8A"
+
+msgid "Not accepted. Use the in-app camera at the polling unit."
+msgstr "A ko gba a. Lo kamera inu ap ni ibudo idibo."
+
+msgid "Result uploads"
+msgstr "Foto esi"
+
+msgid "None yet"
+msgstr "Ko si sibesibe"
+
+msgid ""
+"When you photograph a result sheet, you'll see it move through: received, "
+"reading, checking, compared."
+msgstr ""
+"Nigba ti o ba ya foto iwe esi, iwo yoo ri bi o se n lo: a ti gba, a n ka, a "
+"n ye wo, a ti fi we."
+
+msgid "Go to Verify"
+msgstr "Lo si Ye e wo"
+
+msgid "FIND"
+msgstr "WA"
+
+msgid "Use my location"
+msgstr "Lo ibi ti mo wa"
+
+msgid "Or search by code or place"
+msgstr "Tabi wa pelu koodu tabi ibi"
+
+msgid "Search"
+msgstr "Wa"
+
+msgid "No polling unit found. Check the code on your voter's card."
+msgstr "A ko ri ibudo idibo. Wo koodu lori kaadi idibo re."
+
+msgid "NAMES FROM INEC'S OFFICIAL LOCATOR · FCT SAMPLE"
+msgstr "ORUKO LATI ODO OLUWARI OSISE INEC · APEERE FCT"
+
+msgid "Here's your vote."
+msgstr "Ibo re niyi."
+
+msgid "Time until polls open"
+msgstr "Akoko ki idibo to bere"
+
+msgid "DAYS"
+msgstr "OJO"
+
+msgid "HRS"
+msgstr "WAKATI"
+
+msgid "MIN"
+msgstr "ISEJU"
+
+msgid "Until"
+msgstr "Titi di"
+
+msgid "Moved"
+msgstr "Won ti gbe"
+
+msgid "Your polling unit has moved."
+msgstr "Won ti gbe ibudo idibo re kuro."
+
+msgid "Vote at"
+msgstr "Dibo ni"
+
+msgid "INEC notice"
+msgstr "Ikede INEC"
+
+msgid "See your new unit"
+msgstr "Wo ibudo tuntun re"
+
+msgid "Do this next"
+msgstr "Se eyi tele"
+
+msgid "Done"
+msgstr "Ti pari"
+
+msgid "Your voter details"
+msgstr "Alaye oludibo re"
+
+msgid "Your polling unit"
+msgstr "Ibudo idibo re"
+
+msgid "PVC: to do"
+msgstr "PVC: ko ti i se"
+
+msgid "CODE"
+msgstr "KOODU"
+
+msgid "WARD"
+msgstr "WOODU"
+
+msgid "Not set yet"
+msgstr "Ko ti i seto"
+
+msgid ""
+"Everything follows your polling unit: alerts, election day and result "
+"checks."
+msgstr "Ohun gbogbo tele ibudo idibo re: itaniji, ojo idibo ati ayewo esi."
+
+msgid "Set your polling unit"
+msgstr "Seto ibudo idibo re"
+
+msgid "Your journey"
+msgstr "Irin ajo re"
+
+#, python-format
+msgid "%(done)s of %(total)s done"
+msgstr "%(done)s ninu %(total)s ti pari"
+
+msgid "After counting"
+msgstr "Leyin kika"
+
+msgid "Check a result sheet"
+msgstr "Ye iwe esi wo"
+
+msgid ""
+"Photograph the sheet on the wall. We compare it with INEC's IReV upload."
+msgstr "Ya foto iwe ti o wa lori ogiri. A o fi we eyi ti INEC gbe si IReV."
+
+msgid "Heard something?"
+msgstr "Se o gbo nnkan kan?"
+
+msgid ""
+"Paste the message. Get a clear verdict, with reasons, in your language."
+msgstr "Fi oro naa si. Gba idajo to han kedere, pelu idi, ni ede re."
+
+msgid "Check it"
+msgstr "Ye e wo"
+
+msgid "Voice"
+msgstr "Ohun"
+
+msgid "Talk in your language. Answers come from INEC's information."
+msgstr "Soro ni ede re. Idahun wa lati inu alaye INEC."
+
+msgid "Start talking"
+msgstr "Bere si soro"
+
+msgid "DEMO SCENARIO"
+msgstr "APEERE ADANWO"
+
+msgid "Make this my polling unit"
+msgstr "Se eyi ni ibudo idibo mi"
+
+msgid "YOUR POLLING UNIT"
+msgstr "IBUDO IDIBO RE"
+
+msgid "location approximate"
+msgstr "ibi naa ko peye"
+
+msgid "Result check"
+msgstr "Ayewo esi"
+
+msgid "PENDING"
+msgstr "O N DURO"
+
+msgid "Alerts for this unit"
+msgstr "Itaniji fun ibudo yii"
+
+msgid "ALERTS ON"
+msgstr "ITANIJI TI TAN"
+
+msgid "to your saved number"
+msgstr "si nomba ti o fi pamo"
+
+msgid "Phone number"
+msgstr "Nomba foonu"
+
+msgid "Voice notes too"
+msgstr "Ohun gbigbasile pelu"
+
+msgid "Turn on SMS alerts"
+msgstr "Tan itaniji SMS"
+
+msgid "Stored encrypted. Send STOP to end."
+msgstr "A fi pamo ni ikoko. Fi STOP ranse lati duro."
+
+msgid "STEP · PVC"
+msgstr "IGBESE · PVC"
+
+msgid "Collect it yourself. No one can collect it for you."
+msgstr "Gba a funrare. Ko si eni ti o le gba a fun o."
+
+msgid "IN PERSON"
+msgstr "FUNRARE"
+
+msgid "Only voters with a PVC can vote."
+msgstr "Awon ti o ni PVC nikan lo le dibo."
+
+msgid "REQUIRED"
+msgstr "DANDAN"
+
+msgid ""
+"Nationwide collection began 9 Oct 2026, usually at your LGA INEC office."
+msgstr ""
+"Gbigba ni gbogbo orile-ede bere ni 9 Oct 2026, nigbagbogbo ni ofiisi INEC ni"
+" ijoba ibile re."
+
+msgid "Cards are usually ready 1–3 months after registration."
+msgstr "Kaadi maa n sese leyin osu 1–3 leyin iforukosile."
+
+msgid "SOURCES"
+msgstr "AWON ORISUN"
+
+msgid "Register or transfer"
+msgstr "Forukosile tabi gbe lo"
+
+msgid "STEP · REGISTRATION"
+msgstr "IGBESE · IFORUKOSILE"
+
+msgid "ONLY CVR.INECNIGERIA.ORG"
+msgstr "CVR.INECNIGERIA.ORG NIKAN"
+
+msgid ""
+"INEC has warned about fake registration websites. Registration is free."
+msgstr "INEC ti kilo nipa awon oju opo iforukosile iro. Iforukosile je ofe."
+
+msgid "Pre-register online on INEC's CVR portal"
+msgstr "Bere iforukosile lori ayelujara CVR ti INEC"
+
+msgid "Finish in person: fingerprints and photo at an INEC office"
+msgstr "Pari re funrare: ika owo ati foto ni ofiisi INEC"
+
+msgid ""
+"Moved house? Transfer on the same portal. You need the VIN on your card"
+msgstr "Se o ti ko ile? Gbe lo lori oju opo kan naa. O nilo VIN lori kaadi re"
+
+msgid "Open INEC's CVR portal"
+msgstr "Si oju opo CVR ti INEC"
+
+msgid "Rumour check"
+msgstr "Ayewo agbaso oro"
+
+msgid "RUMOUR CHECK"
+msgstr "AYEWO AGBASO ORO"
+
+msgid "Verdict"
+msgstr "Idajo"
+
+msgid "reports"
+msgstr "iroyin"
+
+msgid "forwarded"
+msgstr "won fi ranse"
+
+msgid "independent sources"
+msgstr "awon orisun otooto"
+
+msgid "Public sources checked"
+msgstr "Awon orisun gbangba ti a ye wo"
+
+msgid "Check another"
+msgstr "Ye omiiran wo"
+
+msgid ""
+"Paste a message you received or describe what you saw. We check it against "
+"other reports, verifiers and public sources."
+msgstr ""
+"Fi oro ti o gba si tabi se apejuwe ohun ti o ri. A o fi we awon iroyin "
+"miiran, oluyewo ati orisun gbangba."
+
+msgid "Message or what you saw"
+msgstr "Oro tabi ohun ti o ri"
+
+msgid "Type"
+msgstr "Iru"
+
+msgid "Polling unit or ward code (optional)"
+msgstr "Koodu ibudo tabi woodu (ko pon dandan)"
+
+msgid "I received this from someone else"
+msgstr "Elomiran lo fi eyi ranse si mi"
+
+msgid "Recent checks"
+msgstr "Awon ayewo aipe"
+
+msgid "Demo"
+msgstr "Adanwo"
+
+msgid "No rumours checked yet."
+msgstr "A ko ti ye agbaso oro kankan wo."
+
+msgid "Set up"
+msgstr "Seto"
+
+msgid "Ready"
+msgstr "O ti sese"
+
+msgid "You're set."
+msgstr "O ti seto."
+
+msgid "Everything now follows your polling unit and language."
+msgstr "Ohun gbogbo ti tele ibudo idibo ati ede re bayii."
+
+msgid "Open my vote"
+msgstr "Si ibo mi"
+
+#, python-format
+msgid "Setup · step %(step)s of 3"
+msgstr "Iseto · igbese %(step)s ninu 3"
+
+msgid "Choose your language."
+msgstr "Yan ede re."
+
+msgid "Used for alerts, voice and every screen."
+msgstr "A o lo o fun itaniji, ohun ati gbogbo oju-iwe."
+
+msgid "Continue"
+msgstr "Tesiwaju"
+
+msgid "Where do you vote?"
+msgstr "Nibo lo ti n dibo?"
+
+msgid "Use your location, or type the code on your voter's card."
+msgstr "Lo ibi ti o wa, tabi te koodu ti o wa lori kaadi idibo re."
+
+msgid "Or type your PU code"
+msgstr "Tabi te koodu PU re"
+
+msgid "This is my unit"
+msgstr "Eyi ni ibudo mi"
+
+msgid "Skip for now"
+msgstr "Fo o fun bayii"
+
+msgid "Get alerts?"
+msgstr "Se o fe itaniji?"
+
+msgid ""
+"If your unit moves or a result is checked, we'll tell you, even on a basic "
+"phone."
+msgstr ""
+"Ti won ba gbe ibudo re tabi ti won ba ye esi wo, a o so fun o, koda lori "
+"foonu kekere."
+
+msgid "Finish"
+msgstr "Pari"
+
+msgid "No thanks"
+msgstr "Rara o se"
+
+msgid "Stored encrypted. Send STOP any time."
+msgstr "A fi pamo ni ikoko. Fi STOP ranse nigbakugba."
+
+msgid "ELECTION DAY"
+msgstr "OJO IDIBO"
+
+msgid "Is it open?"
+msgstr "Se o ti si?"
+
+msgid "No reports yet. Officials check in by USSD; voters can report below."
+msgstr ""
+"Ko si iroyin sibesibe. Awon osise n forukosile pelu USSD; oludibo le royin "
+"ni isale."
+
+msgid "Updated"
+msgstr "Imudojuiwon"
+
+msgid "Are you there? Tell others"
+msgstr "Se o wa nibe? So fun awon miiran"
+
+msgid "Crowd reports show only when at least two different people agree."
+msgstr ""
+"Iroyin awon eniyan yoo han nikan ti o kere ju eniyan meji otooto ba gba."
+
+msgid "Check it,"
+msgstr "Ye e wo,"
+
+msgid "don't forward it."
+msgstr "ma fi ranse."
+
+msgid ""
+"Compare the result sheet on the wall with INEC's upload, or check a message "
+"before you share it."
+msgstr ""
+"Fi iwe esi ori ogiri we eyi ti INEC gbe soke, tabi ye oro wo ki o to pin in."
+
+msgid "What to check"
+msgstr "Ohun ti a o ye wo"
+
+msgid "Result sheet"
+msgstr "Iwe esi"
+
+msgid "Rumour"
+msgstr "Agbaso oro"
+
+msgid "Paste the message you received…"
+msgstr "Fi oro ti o gba si…"
+
+msgid "Someone sent this to me"
+msgstr "Elomiran fi eyi ranse si mi"
+
+msgid "Nothing checked yet."
+msgstr "A ko ti ye nnkan kankan wo."
+
+msgid "from your profile"
+msgstr "lati inu profaili re"
+
+msgid "No polling unit yet"
+msgstr "Ko si ibudo idibo sibesibe"
+
+msgid "Set your polling unit first, or type it on the next screen."
+msgstr "Seto ibudo idibo re koko, tabi te e ni oju-iwe to tele."
+
+msgid "Photograph the result sheet"
+msgstr "Ya foto iwe esi"
+
+msgid "Last check"
+msgstr "Ayewo to keyin"
+
+msgid "Party"
+msgstr "Egbe"
+
+msgid "Wall"
+msgstr "Ogiri"
+
+msgid "Full details"
+msgstr "Alaye kikun"
+
+msgid "How it works"
+msgstr "Bi o se n sise"
+
+msgid "After counting, the result sheet (Form EC8A) is posted on the wall"
+msgstr "Leyin kika, won a le iwe esi (Form EC8A) mo ogiri"
+
+msgid "Photograph it here. It works offline"
+msgstr "Ya foto re nibi. O n sise lai si ayelujara"
+
+msgid "We read it and compare it with INEC's IReV upload"
+msgstr "A ka a, a si fi we eyi ti INEC gbe si IReV"
+
+msgid "You get Match or Mismatch, with reasons"
+msgstr "Iwo yoo gba O ba mu tabi Ko ba mu, pelu idi"
+
+msgid "See an example"
+msgstr "Wo apeere"
+
+msgid "Photograph a result sheet"
+msgstr "Ya foto iwe esi"
+
+msgid ""
+"Take a clear photo of Form EC8A on the wall. Works offline: it's saved on "
+"your phone and sent when you have signal."
+msgstr ""
+"Ya foto to mo kedere ti Form EC8A lori ogiri. O n sise lai si ayelujara: a "
+"fi pamo sori foonu re, a si fi ranse nigba ti netiwoki ba de."
+
+msgid "Polling unit code"
+msgstr "Koodu ibudo idibo"
+
+msgid "Fill from my location"
+msgstr "Kun un lati ibi ti mo wa"
+
+msgid "Camera preview"
+msgstr "Iwoye kamera"
+
+msgid "Captured photo"
+msgstr "Foto ti a ya"
+
+msgid "Take photo"
+msgstr "Ya foto"
+
+msgid "Use phone camera"
+msgstr "Lo kamera foonu"
+
+msgid "Save and send"
+msgstr "Fi pamo ki o fi ranse"
+
+msgid "Your uploads"
+msgstr "Awon foto re"
+
+msgid "Nothing saved yet."
+msgstr "Ko si nnkan ti a fi pamo sibesibe."
+
+msgid "Demo data"
+msgstr "Data adanwo"
+
+msgid ""
+"VoteTrail compares citizen photos with INEC's IReV upload. Only INEC "
+"declares results."
+msgstr ""
+"VoteTrail n fi foto ara ilu we eyi ti INEC gbe si IReV. INEC nikan lo n kede"
+" esi."
+
+msgid "Wall sheet vs IReV"
+msgstr "Iwe ogiri ati IReV"
+
+msgid "Party scores from citizen photos and from IReV"
+msgstr "Ibo egbe lati foto ara ilu ati lati IReV"
+
+msgid "Wall photo"
+msgstr "Foto ogiri"
+
+msgid "mock"
+msgstr "adanwo"
+
+msgid "differs"
+msgstr "o yato"
+
+msgid "Photograph this result sheet"
+msgstr "Ya foto iwe esi yii"
+
+msgid "Download evidence pack"
+msgstr "Gba apo eri sile"
+
+msgid "History"
+msgstr "Itan"
+
+msgid "Ask by voice"
+msgstr "Beere pelu ohun"
+
+msgid ""
+"Talk in English, Pidgin, Hausa, Yoruba or Igbo. Answers come from INEC's "
+"published information."
+msgstr ""
+"Soro ni Geesi, Pidgin, Hausa, Yoruba tabi Igbo. Idahun wa lati inu alaye ti "
+"INEC gbe jade."
+
+msgid "Language"
+msgstr "Ede"
+
+msgid "Tap to talk"
+msgstr "Fowo kan lati soro"
+
+msgid "Conversation"
+msgstr "Ijiroro"
+
+msgid "Or send a voice note"
+msgstr "Tabi fi ohun gbigbasile ranse"
+
+msgid "Record up to 60 seconds: a question, or a rumour you heard."
+msgstr "Gba sile titi de iseju aaya 60: ibeere, tabi agbaso oro ti o gbo."
+
+msgid "Record voice note"
+msgstr "Gba ohun sile"

@@ -1,0 +1,13 @@
+{
+ "uploads": 200,
+ "status_codes": {
+  "201": 200
+ },
+ "wall_seconds": 2.6,
+ "p50_ms": 654,
+ "p95_ms": 1046,
+ "queue_drain_seconds": 1.0,
+ "jobs_left": 0,
+ "jobs_dead": 0,
+ "dead_errors": []
+}

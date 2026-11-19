@@ -1,0 +1,440 @@
+{
+  "summary": {
+    "sheets": 32,
+    "fields": 432,
+    "field_accuracy": 0.9861,
+    "readable_accuracy": 0.986,
+    "sheet_exact": 0.875,
+    "silent_wrong": 0,
+    "smudge_guessed": 0,
+    "confident_accuracy": 1.0,
+    "flag_rate": 0.1088,
+    "sheets_routed_to_review": 16,
+    "system_silent_wrong_sheets": 0
+  },
+  "misses": [
+    {
+      "sheet": "ec8a_01",
+      "field": "registered",
+      "expected": 1466,
+      "got": 1466,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_01",
+      "field": "accredited",
+      "expected": 789,
+      "got": 789,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_01",
+      "field": "ballots_issued",
+      "expected": 1466,
+      "got": 1466,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_01",
+      "field": "unused",
+      "expected": 678,
+      "got": 678,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_01",
+      "field": "total_valid",
+      "expected": 778,
+      "got": 778,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_01",
+      "field": "total_used",
+      "expected": 786,
+      "got": 786,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_08",
+      "field": "total_used",
+      "expected": 540,
+      "got": null,
+      "flagged": true,
+      "ok": false,
+      "kind": "wrong_flagged"
+    },
+    {
+      "sheet": "ec8a_11",
+      "field": "spoilt",
+      "expected": 1,
+      "got": null,
+      "flagged": true,
+      "ok": false,
+      "kind": "wrong_flagged"
+    },
+    {
+      "sheet": "ec8a_11",
+      "field": "rejected",
+      "expected": null,
+      "got": null,
+      "flagged": true,
+      "ok": true,
+      "kind": "smudge_flagged"
+    },
+    {
+      "sheet": "ec8a_14",
+      "field": "registered",
+      "expected": 1622,
+      "got": 1622,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_14",
+      "field": "accredited",
+      "expected": 902,
+      "got": 902,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_14",
+      "field": "ballots_issued",
+      "expected": 1622,
+      "got": 1622,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_14",
+      "field": "unused",
+      "expected": 722,
+      "got": 722,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_14",
+      "field": "rejected",
+      "expected": 14,
+      "got": 14,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_14",
+      "field": "total_valid",
+      "expected": 885,
+      "got": 885,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_14",
+      "field": "total_used",
+      "expected": 899,
+      "got": 899,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_17",
+      "field": "registered",
+      "expected": 1520,
+      "got": 1520,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_17",
+      "field": "accredited",
+      "expected": 746,
+      "got": 746,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_17",
+      "field": "ballots_issued",
+      "expected": 1520,
+      "got": 1520,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_17",
+      "field": "unused",
+      "expected": 775,
+      "got": 775,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_17",
+      "field": "total_valid",
+      "expected": 835,
+      "got": 835,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_17",
+      "field": "total_used",
+      "expected": 743,
+      "got": 743,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_18",
+      "field": "registered",
+      "expected": 1699,
+      "got": 1699,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_18",
+      "field": "ballots_issued",
+      "expected": 1699,
+      "got": 1699,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_18",
+      "field": "unused",
+      "expected": 698,
+      "got": 698,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_18",
+      "field": "total_valid",
+      "expected": 992,
+      "got": 992,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_19",
+      "field": "rejected",
+      "expected": null,
+      "got": null,
+      "flagged": true,
+      "ok": true,
+      "kind": "smudge_flagged"
+    },
+    {
+      "sheet": "ec8a_21",
+      "field": "unused",
+      "expected": 1054,
+      "got": 1054,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_22",
+      "field": "total_used",
+      "expected": 1109,
+      "got": null,
+      "flagged": true,
+      "ok": false,
+      "kind": "wrong_flagged"
+    },
+    {
+      "sheet": "ec8a_23",
+      "field": "unused",
+      "expected": 1245,
+      "got": 1245,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_23",
+      "field": "total_valid",
+      "expected": 519,
+      "got": 519,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_23",
+      "field": "total_used",
+      "expected": 532,
+      "got": 532,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "registered",
+      "expected": 1494,
+      "got": 1499,
+      "flagged": true,
+      "ok": false,
+      "kind": "wrong_flagged"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "accredited",
+      "expected": 696,
+      "got": 696,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "ballots_issued",
+      "expected": 1494,
+      "got": 1499,
+      "flagged": true,
+      "ok": false,
+      "kind": "wrong_flagged"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "unused",
+      "expected": 800,
+      "got": 800,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "spoilt",
+      "expected": 1,
+      "got": null,
+      "flagged": true,
+      "ok": false,
+      "kind": "wrong_flagged"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "rejected",
+      "expected": null,
+      "got": null,
+      "flagged": true,
+      "ok": true,
+      "kind": "smudge_flagged"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "total_valid",
+      "expected": 690,
+      "got": 690,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_26",
+      "field": "total_used",
+      "expected": 693,
+      "got": 693,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_30",
+      "field": "registered",
+      "expected": 1135,
+      "got": 1135,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_30",
+      "field": "accredited",
+      "expected": 1293,
+      "got": 1293,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_30",
+      "field": "ballots_issued",
+      "expected": 1135,
+      "got": 1135,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_30",
+      "field": "unused",
+      "expected": -158,
+      "got": -158,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_30",
+      "field": "total_valid",
+      "expected": 1285,
+      "got": 1285,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_30",
+      "field": "total_used",
+      "expected": 1290,
+      "got": 1290,
+      "flagged": true,
+      "ok": true,
+      "kind": "correct"
+    },
+    {
+      "sheet": "ec8a_31",
+      "field": "party:PB",
+      "expected": null,
+      "got": null,
+      "flagged": true,
+      "ok": true,
+      "kind": "smudge_flagged"
+    }
+  ]
+}

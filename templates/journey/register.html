@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Register or transfer" %}{% endblock %}
+{% block back %}{% include "_back.html" with back_url="/vote/" back_label="MY VOTE" %}{% endblock %}
+{% block content %}
+<div class="k">{% translate "STEP · REGISTRATION" %}</div>
+<h1>{% translate "Register or transfer" %}</h1>
+<section class="panel alert" role="note"><span class="tag warn">{% translate "ONLY CVR.INECNIGERIA.ORG" %}</span>
+<p class="p">{% translate "INEC has warned about fake registration websites. Registration is free." %}</p></section>
+<section class="panel" style="margin-top:12px">
+  <div class="jrow"><span><span class="num-step">01</span>{% translate "Pre-register online on INEC's CVR portal" %}</span></div>
+  <div class="jrow"><span><span class="num-step">02</span>{% translate "Finish in person: fingerprints and photo at an INEC office" %}</span></div>
+  <div class="jrow"><span><span class="num-step">03</span>{% translate "Moved house? Transfer on the same portal. You need the VIN on your card" %}</span></div>
+</section>
+<a class="btn block" style="margin-top:12px" href="https://cvr.inecnigeria.org" rel="noopener" target="_blank">{% translate "Open INEC's CVR portal" %} ↗</a>
+{% include "journey/_mark.html" with flag="registered" done=me.registered todo_label="I'm registered" done_label="Registered" %}
+<p class="k" style="margin-top:14px">{% translate "SOURCE" %} · INEC CVR PORTAL · P.M. NEWS, JUL 2026</p>
+{% endblock %}

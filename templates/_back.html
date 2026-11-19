@@ -1,0 +1,1 @@
+{% load i18n %}<nav class="backbar" aria-label="{% translate 'Back' %}"><a href="{{ back_url|default:"/vote/" }}">‹ {% if back_label %}{% translate back_label %}{% else %}{% translate "MY VOTE" %}{% endif %}</a></nav>

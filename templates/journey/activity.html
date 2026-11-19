@@ -1,0 +1,37 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Activity" %}{% endblock %}
+{% block main_class %}wide{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <div class="eyebrow">{% translate "Activity" %}</div>
+    <h1 data-split>{% translate "Everything," %} <em>{% translate "in one place." %}</em></h1>
+    <p class="lede">{% translate "Your uploads, rumour checks, alerts and reports, as they happen." %}</p>
+  </div>
+</div>
+<span hidden data-live-url="{% url 'journey:sync' %}" data-live-key="processing" data-live-value="{{ pipes|length|yesno:'x,0' }}"></span>
+<div class="split">
+  <section class="card">
+    <div class="k">{% translate "Timeline" %}</div>
+    <ul class="feed" style="margin-top:6px">{% for i in items %}
+    <li><span class="t">{{ i.at|date:"H:i" }}</span><span><span class="tag {{ i.tone }}">{{ i.tag }}</span><strong>{{ i.title }}</strong><span class="mute">{{ i.text }}</span>{% if i.url %} <a href="{{ i.url }}">{% translate "View" %} →</a>{% endif %}{% if i.audio %}<audio controls preload="none" src="{{ i.audio }}"></audio>{% endif %}</span></li>
+    {% empty %}<li class="mute" style="display:block">{% translate "Nothing yet. Your uploads, rumour checks and alerts will appear here." %}</li>{% endfor %}</ul>
+  </section>
+  <div class="stack">
+    {% for x in pipes %}
+    <section class="card">
+      <div class="row"><span class="k">{% translate "Your upload · EC8A" %}</span><span class="mono dim" style="font-size:.75rem">PU {{ x.u.polling_unit.code }}</span></div>
+      <div class="pipe">{% for s in x.steps %}<span class="{% if x.rejected and forloop.last %}bad{% elif forloop.counter0 < x.stage %}done{% elif forloop.counter0 == x.stage %}now{% endif %}">{{ s }}</span>{% endfor %}</div>
+      {% if x.label %}<p style="margin-top:14px"><span class="tag {{ x.tone }}">{{ x.label }}</span></p>{% elif x.rejected %}<p class="mute" style="margin-top:12px">{% translate "Not accepted. Use the in-app camera at the polling unit." %}</p>{% endif %}
+    </section>
+    {% empty %}
+    <section class="card">
+      <div class="k">{% translate "Result uploads" %}</div>
+      <h2 class="h3">{% translate "None yet" %}</h2>
+      <p class="mute">{% translate "When you photograph a result sheet, you'll see it move through: received, reading, checking, compared." %}</p>
+      <a class="btn" style="margin-top:14px" href="{% url 'journey:verify' %}">{% translate "Go to Verify" %} →</a>
+    </section>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

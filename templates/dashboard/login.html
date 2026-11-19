@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Verifier login{% endblock %}
+{% block content %}
+<h1>Verifier login</h1>
+<p class="mute">For accredited observers and CSO verifiers. You'll get a code by SMS.</p>
+{% if request.GET.denied %}<div class="flash tone-bad" role="alert">This account isn't a verified observer or verifier.</div>{% endif %}
+<form method="post" class="card stack">{% csrf_token %}
+  {% if form.errors %}<p class="tone-bad" role="alert">Wrong username or password.</p>{% endif %}
+  <div class="field"><label for="id_username">Username</label><input id="id_username" name="username" autocomplete="username" required></div>
+  <div class="field"><label for="id_password">Password</label><input id="id_password" name="password" type="password" autocomplete="current-password" required></div>
+  <button class="btn primary block">Continue</button>
+</form>
+{% endblock %}

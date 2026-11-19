@@ -1,0 +1,40 @@
+{% extends "base.html" %}{% load static i18n %}
+{% block title %}{% translate "Set up" %}{% endblock %}
+{% block nav %}{% endblock %}
+{% block main_class %}narrow{% endblock %}
+{% block content %}
+{% if step == "done" %}
+<div style="text-align:center;padding-top:40px">
+  <span class="tag ok">{% translate "Ready" %}</span>
+  <h1 data-split>{% translate "You're set." %}</h1>
+  <p class="mute">{% translate "Everything now follows your polling unit and language." %}</p>
+  <a class="btn go lg" style="margin-top:24px" href="{% url 'journey:home' %}">{% translate "Open my vote" %} →</a>
+</div>
+{% else %}
+<nav class="backbar" aria-label="Back"><a href="{% if step == '1' %}{% url 'journey:landing' %}{% elif step == '2' %}?step=1{% else %}?step=2{% endif %}">← {% translate "Back" %}</a></nav>
+<div class="progress" aria-hidden="true"><i class="on"></i><i {% if step != "1" %}class="on"{% endif %}></i><i {% if step == "3" %}class="on"{% endif %}></i></div>
+<div class="k">{% blocktranslate %}Setup · step {{ step }} of 3{% endblocktranslate %}</div>
+<form method="post">{% csrf_token %}<input type="hidden" name="step" value="{{ step }}">
+{% if step == "1" %}
+  <h1>{% translate "Choose your language." %}</h1><p class="mute">{% translate "Used for alerts, voice and every screen." %}</p>
+  {% for code, name in langs %}<label class="choice"><input type="radio" name="language" value="{{ code }}" {% if code == p.language %}checked{% endif %}><span class="dot"></span>{{ name }}</label>{% endfor %}
+  <button class="btn go lg block" style="margin-top:24px">{% translate "Continue" %} →</button>
+{% elif step == "2" %}
+  <h1>{% translate "Where do you vote?" %}</h1><p class="mute">{% translate "Use your location, or type the code on your voter's card." %}</p>
+  <button class="btn go block" type="button" style="margin-top:18px" data-nearby="near" data-mode="pick">◎ {% translate "Use my location" %}</button>
+  <div id="near" aria-live="polite"></div>
+  <div class="field" style="margin-top:22px"><label for="pu_code">{% translate "Or type your PU code" %}</label><input id="pu_code" name="pu_code" placeholder="37/06/02/002" value="{{ p.polling_unit.code|default:'' }}" autocomplete="off"></div>
+  <button class="btn lg block" id="confirm-unit" style="margin-top:16px">{% translate "This is my unit" %} →</button>
+  <button class="btn ghost block" style="margin-top:8px;border-color:transparent" name="pu_code" value="">{% translate "Skip for now" %}</button>
+{% else %}
+  <h1>{% translate "Get alerts?" %}</h1><p class="mute">{% translate "If your unit moves or a result is checked, we'll tell you, even on a basic phone." %}</p>
+  <div class="field" style="margin-top:18px"><label for="phone">{% translate "Phone number" %}</label><input id="phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="0803 123 4567"></div>
+  <label class="check" style="margin-top:8px"><input type="checkbox" name="voice" checked> {% translate "Voice notes too" %}</label>
+  <button class="btn go lg block" style="margin-top:18px">{% translate "Finish" %} ✓</button>
+  <button class="btn ghost block" style="margin-top:8px;border-color:transparent" name="phone" value="">{% translate "No thanks" %}</button>
+  <p class="mute" style="font-size:.82rem;text-align:center;margin-top:14px">{% translate "Stored encrypted. Send STOP any time." %}</p>
+{% endif %}
+</form>
+{% endif %}
+{% endblock %}
+{% block scripts %}<script type="module" src="{% static 'js/nearby.js' %}"></script>{% endblock %}

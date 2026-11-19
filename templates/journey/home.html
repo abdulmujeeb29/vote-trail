@@ -1,0 +1,91 @@
+{% extends "base.html" %}{% load static i18n %}
+{% block title %}{% translate "My vote" %}{% endblock %}
+{% block main_class %}wide{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <div class="eyebrow" data-reveal>{% translate "My vote" %}{% if unit %} · PU {{ unit.code }}{% endif %}</div>
+    <h1 data-split>{{ greeting }}. <em>{% translate "Here's your vote." %}</em></h1>
+  </div>
+  {% if countdown %}<div data-reveal>
+    <div class="count" aria-label="{% translate "Time until polls open" %}"><div><b data-decrypt>{{ countdown.days }}</b><span>{% translate "DAYS" %}</span></div><div><b data-decrypt>{{ countdown.hours }}</b><span>{% translate "HRS" %}</span></div><div><b data-decrypt>{{ countdown.minutes }}</b><span>{% translate "MIN" %}</span></div></div>
+    <p class="k" style="margin-top:10px">{% translate "Until" %} {{ countdown.label }}</p>
+  </div>{% endif %}
+</div>
+
+<div class="grid3">
+  {% if p.moved and not p.seen_move %}
+  <section class="panel alert span-all" role="alert" data-reveal>
+    <div class="row" style="justify-content:flex-start;gap:20px;flex-wrap:wrap">
+      <span class="tag warn">{% translate "Moved" %}</span>
+      <div style="flex:1;min-width:260px">
+        <strong>{% translate "Your polling unit has moved." %}</strong> {% translate "Vote at" %} {{ unit.name }}
+        <p class="mute" style="margin:2px 0 0">{% translate "INEC notice" %}{% if unit.landmark %} · {{ unit.landmark }}{% endif %}{% if unit.accessibility_notes %} · ♿ {{ unit.accessibility_notes }}{% endif %}</p>
+      </div>
+      <a class="btn" href="{% url 'journey:pu' unit.url_code %}">{% translate "See your new unit" %}</a>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="panel next span2" data-reveal style="min-height:300px">
+    <div class="k" style="color:var(--accent)">{% translate "Do this next" %}</div>
+    <h2 class="h3" style="max-width:460px">{{ action.title }}</h2>
+    <p class="mute" style="max-width:420px">{{ action.detail }}</p>
+    <div class="cta-row" style="margin-top:24px;position:relative;z-index:1">
+      <a class="btn go" href="{{ action.url }}">{{ action.cta }}</a>
+      {% if action.done_post %}<form method="post" action="{{ action.done_post }}">{% csrf_token %}<button class="btn ghost">{% translate "Done" %} ✓</button></form>{% endif %}
+    </div>
+    <div class="next-art" aria-hidden="true"><div class="iso" data-scene="unit"></div></div>
+  </section>
+
+  <section class="idcard" aria-label="{% translate "Your voter details" %}" data-reveal>
+    <div class="row"><span class="k">{% translate "Your polling unit" %}</span><span class="tag {% if p.pvc_collected %}ok{% else %}info{% endif %}">{% if p.pvc_collected %}{% translate "PVC collected" %}{% else %}{% translate "PVC: to do" %}{% endif %}</span></div>
+    {% if unit %}
+    <h2 class="h3" style="font-size:1.7rem">{{ unit.name }}</h2>
+    <dl class="idgrid">
+      <dt>{% translate "CODE" %}</dt><dd class="mono">{% if p.moved %}<s class="dim">{{ p.polling_unit.code }}</s> → {{ unit.code }}{% else %}{{ unit.code }}{% endif %}</dd>
+      <dt>{% translate "WARD" %}</dt><dd>{{ unit.ward.name }}</dd>
+      <dt>LGA</dt><dd>{{ unit.ward.lga.name }}</dd>
+    </dl>
+    {% else %}
+    <h2 class="h3" style="font-size:1.7rem">{% translate "Not set yet" %}</h2>
+    <p class="mute">{% translate "Everything follows your polling unit: alerts, election day and result checks." %}</p>
+    <a class="btn go" style="margin-top:12px" href="{% url 'journey:setup' %}?step=2">{% translate "Set your polling unit" %}</a>
+    {% endif %}
+  </section>
+
+  <section class="card span-all" data-reveal>
+    <div class="row" style="align-items:flex-end">
+      <div><div class="k">{% translate "Your journey" %}</div><h2 class="h3" style="margin-bottom:0">{% blocktranslate with done=done_count total=steps|length %}{{ done }} of {{ total }} done{% endblocktranslate %}</h2></div>
+      {% if countdown %}<span class="mute" style="font-size:.9rem">{% translate "Election day" %} · {{ countdown.label }}</span>{% endif %}
+    </div>
+    <nav class="timeline" style="--n:{{ steps|length }}" aria-label="{% translate "Your journey" %}">
+      <div class="prog" data-width="{{ progress_pct }}"></div>
+      {% for s in steps %}<a class="tl {{ s.tag.1 }}" href="{{ s.url }}"><div class="d"></div><h3>{{ s.title }}</h3><span class="s">{{ s.tag.0 }}</span></a>{% endfor %}
+    </nav>
+  </section>
+
+  <a class="card tile" data-reveal href="{% url 'journey:verify' %}">
+    <div class="k">{% translate "After counting" %}</div>
+    <h2 class="h3">{% translate "Check a result sheet" %}</h2>
+    <p>{% translate "Photograph the sheet on the wall. We compare it with INEC's IReV upload." %}</p>
+    <span class="go">{% translate "Open camera" %}</span>
+    <div class="tile-art" aria-hidden="true"><div class="mini-sheet a"><i></i><i></i><i style="width:60%"></i><i></i></div><div class="mini-sheet b"><i></i><i style="width:70%"></i><i></i><i></i></div></div>
+  </a>
+  <a class="card tile" data-reveal href="{% url 'journey:verify' %}?tab=rumour">
+    <div class="k">{% translate "Heard something?" %}</div>
+    <h2 class="h3">{% translate "Check a rumour" %}</h2>
+    <p>{% translate "Paste the message. Get a clear verdict, with reasons, in your language." %}</p>
+    <span class="go">{% translate "Check it" %}</span>
+    <div class="tile-art" aria-hidden="true"><div class="mini-fwd"></div><div class="mini-fwd"></div><div class="mini-fwd"></div></div>
+  </a>
+  <a class="card tile" data-reveal href="{% url 'voice:ask' %}">
+    <div class="k">{% translate "Voice" %}</div>
+    <h2 class="h3">{% translate "Ask" %} {{ APP_NAME }}</h2>
+    <p>{% translate "Talk in your language. Answers come from INEC's information." %}</p>
+    <span class="go">{% translate "Start talking" %}</span>
+    <div class="mini-orb" aria-hidden="true"></div>
+  </a>
+</div>
+{% endblock %}
+{% block scripts %}<script type="module" src="{% static 'js/scene3d.js' %}"></script>{% endblock %}

@@ -1,0 +1,161 @@
+{
+ "version": 1,
+ "built_at": "2026-11-18T23:16:56.585298+00:00",
+ "model": "gpt-5.6-terra-1",
+ "steps": {
+  "alert": {
+   "notice": "INDEPENDENT NATIONAL ELECTORAL COMMISSION. NOTICE (DEMO). Relocation of polling unit: voters registered at polling unit 37/06/02/002 (Garki Village/Near Da'a Social Club) will vote at 37/06/02/004 (Garki Village II/New Pri. Sch.) to improve access.",
+   "sms": "VoteTrail: Your polling unit 37/06/02/002 don move. Go vote for Garki Village II/New Pri. Sch. (37/06/02/004). Opposite the old dispensary, Garki Village. Source: www.inecnigeria.org",
+   "audio": "/static/demo/relocation-pcm.mp3",
+   "old": "37/06/02/002",
+   "new": "37/06/02/004",
+   "new_name": "Garki Village II/New Pri. Sch.",
+   "landmark": "Opposite the old dispensary, Garki Village",
+   "access": "Ramp at the main gate. Ask for the assisted-voting desk."
+  },
+  "ussd": [
+   {
+    "input": "*384*2027#",
+    "screen": "CON VoteTrail\n1 My polling unit\n2 Check rumour\n3 Result for my PU\n4 Collect alert\n5 Language"
+   },
+   {
+    "input": "5",
+    "screen": "CON 1 English\n2 Pidgin"
+   },
+   {
+    "input": "2",
+    "screen": "END We don set am: Pidgin."
+   },
+   {
+    "input": "*384*2027#",
+    "screen": "CON VoteTrail\n1 My polling unit\n2 Check rumour\n3 Result for my PU\n4 Collect alert\n5 Language"
+   },
+   {
+    "input": "1",
+    "screen": "CON Type your PU code, 9 numbers (e.g. 370602004)"
+   },
+   {
+    "input": "370602002",
+    "screen": "END PU 37/06/02/002: Garki Village/Near Da'a Social Club. E DON MOVE: go vote for Garki Village II/New Pri. Sch. (37/06/02/004)."
+   }
+  ],
+  "morning": {
+   "headline": "Open since 09:40",
+   "lines": [
+    "Polling unit opened at 09:40 (polling official)",
+    "Materials arrived at 09:15 (polling official)",
+    "BVAS working at 09:42 (polling official)"
+   ]
+  },
+  "results": {
+   "status": "mismatch",
+   "label": "Mismatch with IReV",
+   "explain": "2 independent uploads, including agents from different parties agree with each other but differ from the sheet on IReV. Observers have been alerted.",
+   "origins": 2,
+   "cross_party": true,
+   "diffs": {
+    "party:PB": [
+     187,
+     287
+    ],
+    "total_valid": [
+     456,
+     556
+    ],
+    "total_used": [
+     465,
+     565
+    ]
+   },
+   "citizen": {
+    "party_votes": {
+     "PA": 214,
+     "PB": 187,
+     "PC": 43,
+     "PD": 12
+    },
+    "registered": 644,
+    "accredited": 468,
+    "rejected": 9,
+    "total_valid": 456,
+    "total_used": 465,
+    "cancelled": false
+   },
+   "irev": {
+    "party_votes": {
+     "PA": 214,
+     "PB": 287,
+     "PC": 43,
+     "PD": 12
+    },
+    "registered": 676,
+    "accredited": 568,
+    "rejected": 9,
+    "total_valid": 556,
+    "total_used": 565,
+    "cancelled": false
+   },
+   "extracted": [
+    {
+     "PA": 214,
+     "PB": 187,
+     "PC": 43,
+     "PD": 12
+    },
+    {
+     "PA": 214,
+     "PB": 187,
+     "PC": 43,
+     "PD": 12
+    }
+   ],
+   "low_confidence": [
+    [
+     "accredited",
+     "registered",
+     "rejected",
+     "spoilt",
+     "unused"
+    ],
+    [
+     "accredited",
+     "rejected",
+     "total_used",
+     "total_valid"
+    ]
+   ],
+   "wall_image": "/static/demo/wall-ec8a.jpg",
+   "irev_image": "/static/demo/irev-ec8a.jpg",
+   "evidence_zip": "/static/demo/evidence-37-06-02-004.zip",
+   "evidence_bytes": 491411
+  },
+  "rumour": {
+   "text": "BREAKING!! They are buying votes with 5000 naira at Garki ward polling units in Abuja right now. Pls share before they delete it",
+   "status": "unconfirmed",
+   "forwards": 40,
+   "origins": 1,
+   "en": {
+    "status": "unconfirmed",
+    "headline": "Not confirmed",
+    "reasons": [
+     "Only one source has reported it.",
+     "It has been forwarded 40 times, but forwards are not confirmation."
+    ],
+    "unknown": "What we don't know: who saw it first and whether it is still happening.",
+    "language": "en"
+   },
+   "pcm": {
+    "status": "unconfirmed",
+    "headline": "We never confirm am",
+    "reasons": [
+     "Na only one person report am.",
+     "People don forward am 40 times, but forward no be confirmation."
+    ],
+    "unknown": "Wetin we no know: who first see am and whether e still dey happen.",
+    "language": "pcm"
+   },
+   "sources": []
+  }
+ },
+ "build_seconds": 59.3
+}

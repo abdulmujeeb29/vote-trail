@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Review PU {{ pu.code }}{% endblock %}
+{% block content %}
+{% include "dashboard/_nav.html" %}
+<p class="mono mute">PU {{ pu.code }}</p><h1>{{ pu.name }}</h1>
+<section class="card stack"><strong>{{ check.status|default:"pending" }}</strong><p>{{ explain }}</p>
+{% if check.diffs %}<ul class="list mono">{% for k, v in check.diffs.items %}<li>{{ k }}: wall {{ v.0 }} · IReV {{ v.1 }}</li>{% endfor %}</ul>{% endif %}
+<a class="btn" href="{% url 'results:evidence' pu.url_code %}">Download evidence pack</a></section>
+<h2>Uploads</h2>
+{% for u in uploads %}<article class="card stack" style="margin-bottom:12px">
+  <p class="mono">#{{ u.pk }} · {{ u.get_source_display }} · {{ u.participant.get_role_display|default:"Voter" }}{% if u.participant.party %} ({{ u.participant.party }}){% endif %} · {{ u.state }}</p>
+  {% if u.image %}<img src="{{ u.image.url }}" alt="Result sheet photo {{ u.pk }}" style="width:100%;border-radius:12px" loading="lazy">{% endif %}
+  {% if u.flags %}<p class="tone-warn" style="padding:6px 10px;border-radius:8px">Flags: {% for f in u.flags %}{{ f.code }} {% endfor %}</p>{% endif %}
+  {% if u.extraction %}<pre class="mono" style="white-space:pre-wrap;font-size:.8rem">{{ u.extraction.figures.party_votes }}{% if u.extraction.low_confidence_fields %}
+Low confidence: {{ u.extraction.low_confidence_fields|join:", " }}{% endif %}</pre>{% endif %}
+  <form method="post" action="{% url 'dashboard:upload_decision' u.pk %}" class="cta-row">{% csrf_token %}
+    <button class="btn" name="decision" value="correct">Upload is correct</button>
+    <button class="btn" name="decision" value="wrong">Upload is wrong</button>
+  </form>
+</article>{% empty %}<p class="mute">No uploads yet.</p>{% endfor %}
+{% if irev %}<h2>IReV{% if irev.is_mock %} (mock){% endif %}</h2>{% if irev.image %}<img src="{{ irev.image.url }}" alt="IReV result sheet" style="width:100%;border-radius:12px" loading="lazy">{% endif %}{% endif %}
+{% endblock %}

@@ -1,0 +1,173 @@
+{
+ "parties": [
+  "PA",
+  "PB",
+  "PC",
+  "PD"
+ ],
+ "spec": {
+  "accredited": null,
+  "ballots_issued": null,
+  "cancelled": false,
+  "damage": "none",
+  "election": "PRESIDENTIAL",
+  "lga": "Bwari",
+  "override_total_valid": null,
+  "parties": {
+   "PA": 358,
+   "PB": 24,
+   "PC": 93,
+   "PD": 6
+  },
+  "pu_code": "37/02/02/004",
+  "pu_name": "Kuchiko C.D.S. / Old Gss Bwari",
+  "registered": 2272,
+  "rejected": 14,
+  "seed": 1024,
+  "smudge": null,
+  "spoilt": 4,
+  "state": "FCT",
+  "ward": "Kuduru"
+ },
+ "truth": {
+  "accredited": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 498
+  },
+  "ballots_issued": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 2272
+  },
+  "cancelled": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": false
+  },
+  "election": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "PRESIDENTIAL"
+  },
+  "lga": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Bwari"
+  },
+  "parties": [
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 358
+    },
+    "party": "PA",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "three hundred and fifty-eight"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 24
+    },
+    "party": "PB",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "twenty-four"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 93
+    },
+    "party": "PC",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "ninety-three"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 6
+    },
+    "party": "PD",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "six"
+    }
+   }
+  ],
+  "pu_code": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "37/02/02/004"
+  },
+  "pu_name": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Kuchiko C.D.S. / Old Gss Bwari"
+  },
+  "registered": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 2272
+  },
+  "rejected": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 14
+  },
+  "signed_by_agents": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "spoilt": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 4
+  },
+  "stamped": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "state": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "FCT"
+  },
+  "total_used": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 495
+  },
+  "total_valid": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 481
+  },
+  "unused": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1773
+  },
+  "ward": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Kuduru"
+  }
+ }
+}

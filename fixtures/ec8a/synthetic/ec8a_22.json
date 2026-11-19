@@ -1,0 +1,203 @@
+{
+ "parties": [
+  "PA",
+  "PB",
+  "PC",
+  "PD",
+  "PE",
+  "PF"
+ ],
+ "spec": {
+  "accredited": null,
+  "ballots_issued": null,
+  "cancelled": true,
+  "damage": "light",
+  "election": "PRESIDENTIAL",
+  "lga": "Municipal",
+  "override_total_valid": null,
+  "parties": {
+   "PA": 213,
+   "PB": 128,
+   "PC": 34,
+   "PD": 418,
+   "PE": 101,
+   "PF": 197
+  },
+  "pu_code": "37/06/02/004",
+  "pu_name": "Garki Village Ii/New Pri. Sch.",
+  "registered": 2186,
+  "rejected": 18,
+  "seed": 1022,
+  "smudge": null,
+  "spoilt": 2,
+  "state": "FCT",
+  "ward": "Garki"
+ },
+ "truth": {
+  "accredited": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1112
+  },
+  "ballots_issued": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 2186
+  },
+  "cancelled": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "election": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "PRESIDENTIAL"
+  },
+  "lga": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Municipal"
+  },
+  "parties": [
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 213
+    },
+    "party": "PA",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "two hundred and thirteen"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 128
+    },
+    "party": "PB",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "one hundred and twenty-eight"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 34
+    },
+    "party": "PC",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "thirty-four"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 418
+    },
+    "party": "PD",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "four hundred and eighteen"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 101
+    },
+    "party": "PE",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "one hundred and one"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 197
+    },
+    "party": "PF",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "one hundred and ninety-seven"
+    }
+   }
+  ],
+  "pu_code": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "37/06/02/004"
+  },
+  "pu_name": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Garki Village Ii/New Pri. Sch."
+  },
+  "registered": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 2186
+  },
+  "rejected": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 18
+  },
+  "signed_by_agents": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "spoilt": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 2
+  },
+  "stamped": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "state": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "FCT"
+  },
+  "total_used": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1109
+  },
+  "total_valid": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1091
+  },
+  "unused": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1075
+  },
+  "ward": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Garki"
+  }
+ }
+}

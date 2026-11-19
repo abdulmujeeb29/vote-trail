@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+{% include "dashboard/_nav.html" %}
+<h1>Verifier dashboard</h1>
+<p class="mute">{{ election.name }}</p>
+<div class="kpi" role="list">
+  <div role="listitem"><b class="num" data-decrypt>{{ counts.mismatch|default:0 }}</b><span>Mismatch with IReV</span></div>
+  <div role="listitem"><b class="num" data-decrypt>{{ counts.needs_review|default:0 }}</b><span>Need review</span></div>
+  <div role="listitem"><b class="num" data-decrypt>{{ counts.matches|default:0 }}</b><span>Match IReV</span></div>
+  <div role="listitem"><b class="num">{{ counts.pending|default:0 }}</b><span>Pending</span></div>
+  <div role="listitem"><b class="num">{{ claims_open }}</b><span>Rumours</span></div>
+  <div role="listitem"><b class="num">{{ announcements_pending }}</b><span>Notices to approve</span></div>
+</div>
+<form method="get" class="lang-grid" style="margin-top:14px" aria-label="Filters">
+  <label class="sr-only" for="lga">LGA</label>
+  <select id="lga" name="lga" class="btn"><option value="">All LGAs</option>{% for l in lgas %}<option value="{{ l.code }}" {% if l.code == lga %}selected{% endif %}>{{ l.name }}</option>{% endfor %}</select>
+  <label class="sr-only" for="status">Status</label>
+  <select id="status" name="status" class="btn"><option value="">All statuses</option>{% for k, v in labels.items %}<option value="{{ k }}" {% if k == status %}selected{% endif %}>{{ v }}</option>{% endfor %}</select>
+  <button class="btn">Filter</button>
+</form>
+<table class="card" style="width:100%;margin-top:12px;border-collapse:collapse">
+  <caption class="sr-only">Polling units by result status</caption>
+  <thead><tr><th scope="col" style="text-align:left">PU</th><th scope="col" style="text-align:left">Status</th><th scope="col" style="text-align:right">Sources</th></tr></thead>
+  <tbody>{% for r in rows %}<tr style="border-top:1px solid var(--line)">
+    <td style="padding:8px 4px"><a href="{% url 'dashboard:result' r.pu.url_code %}" class="mono">{{ r.pu.code }}</a><br><span class="mute" style="font-size:.8rem">{{ r.pu.name|truncatechars:34 }}</span></td>
+    <td><span class="badge tone-{{ r.tone }}" style="font-size:.78rem">{{ r.label }}</span></td>
+    <td style="text-align:right" class="num">{{ r.check.origin_count|default:0 }}{% if r.check.cross_party %} ✦{% endif %}</td></tr>{% endfor %}</tbody>
+</table>
+<p class="mute" style="font-size:.8rem">✦ = agents from different parties agree.</p>
+<h2>Audit trail</h2>
+<ul class="list mono" style="font-size:.8rem">{% for a in audit %}<li>{{ a.created_at|date:"j M H:i:s" }} · {{ a.actor }} · {{ a.action }} · {{ a.object_type }}:{{ a.object_id }}</li>{% endfor %}</ul>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Check a rumour" %}{% endblock %}
+{% block content %}
+<h1>{% translate "Check a rumour" %}</h1>
+<p class="mute">{% translate "Paste a message you received or describe what you saw. We check it against other reports, verifiers and public sources." %}</p>
+<form method="post" action="{% url 'journey:rumour_submit' %}" class="card stack">{% csrf_token %}
+  <div class="field"><label for="text">{% translate "Message or what you saw" %}</label><textarea id="text" name="text" required maxlength="2000"></textarea></div>
+  <div class="field"><label for="category">{% translate "Type" %}</label><select id="category" name="category">{% for v, l in categories %}<option value="{{ v }}">{{ l }}</option>{% endfor %}</select></div>
+  <div class="field"><label for="location">{% translate "Polling unit or ward code (optional)" %}</label><input id="location" name="location" placeholder="37/06/02"></div>
+  <label class="check"><input type="checkbox" name="forwarded"> {% translate "I received this from someone else" %}</label>
+  <button class="btn primary block">{% translate "Check it" %}</button>
+</form>
+<h2>{% translate "Recent checks" %}</h2>
+<ul class="list">{% for it in items %}
+  <li><a href="{% url 'journey:rumour' it.claim.pk %}">{{ it.claim.text|truncatechars:90 }}</a><br>
+  <span class="badge tone-{% if it.verdict.status == 'corroborated' or it.verdict.status == 'confirmed_by_source' %}warn{% elif it.verdict.status == 'refuted_by_source' %}ok{% else %}info{% endif %}" style="margin-top:6px">{{ it.verdict.headline }}</span>
+  <span class="tag">{{ it.reports }} {% translate "reports" %}</span>{% if it.claim.is_demo %} <span class="chip mock">{% translate "Demo" %}</span>{% endif %}</li>
+{% empty %}<li class="mute">{% translate "No rumours checked yet." %}</li>{% endfor %}</ul>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Verify" %}{% endblock %}
+{% block main_class %}wide{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <div class="eyebrow">{% translate "Verify" %}</div>
+    <h1 data-split>{% translate "Check it," %} <em>{% translate "don't forward it." %}</em></h1>
+    <p class="lede">{% translate "Compare the result sheet on the wall with INEC's upload, or check a message before you share it." %}</p>
+  </div>
+  <nav class="seg" aria-label="{% translate "What to check" %}"><a href="?tab=result" aria-current="{% if tab != 'rumour' %}true{% else %}false{% endif %}">{% translate "Result sheet" %}</a><a href="?tab=rumour" aria-current="{% if tab == 'rumour' %}true{% else %}false{% endif %}">{% translate "Rumour" %}</a></nav>
+</div>
+
+{% if tab == "rumour" %}
+<div class="split">
+  <form method="post" action="{% url 'journey:rumour_submit' %}" class="card stack">{% csrf_token %}
+    <div class="k">{% translate "Check a rumour" %}</div>
+    <div class="field"><label for="text">{% translate "Message or what you saw" %}</label><textarea id="text" name="text" required maxlength="2000" placeholder="{% translate "Paste the message you received…" %}"></textarea></div>
+    <div class="field"><label for="category">{% translate "Type" %}</label><select id="category" name="category">{% for v, l in categories %}<option value="{{ v }}">{{ l }}</option>{% endfor %}</select></div>
+    <label class="check"><input type="checkbox" name="forwarded" checked> {% translate "Someone sent this to me" %}</label>
+    <button class="btn go lg block">{% translate "Check it" %} →</button>
+  </form>
+  <section class="card">
+    <div class="k">{% translate "Recent checks" %}</div>
+    <ul class="list" style="margin-top:8px">{% for it in recent %}<li><a href="{% url 'journey:rumour' it.claim.pk %}" style="text-decoration:none">{{ it.claim.text|truncatechars:90 }}</a><div style="margin-top:10px"><span class="tag info">{{ it.verdict.headline }}</span></div></li>{% empty %}<li class="mute">{% translate "Nothing checked yet." %}</li>{% endfor %}</ul>
+  </section>
+</div>
+{% else %}
+<div class="split">
+  <section class="card">
+    <div class="k">{% translate "Your polling unit" %}</div>
+    {% if unit %}
+    <h2 class="h3">{{ unit.name }}</h2>
+    <p class="mute">PU <span class="mono">{{ unit.code }}</span> · {% translate "from your profile" %}</p>
+    {% else %}<h2 class="h3">{% translate "No polling unit yet" %}</h2><p class="mute">{% translate "Set your polling unit first, or type it on the next screen." %}</p>{% endif %}
+    <a class="btn go lg" style="margin-top:20px" href="{% if unit %}{% url 'results:capture_pu' unit.url_code %}{% else %}{% url 'results:capture' %}{% endif %}">{% translate "Photograph the result sheet" %}</a>
+    {% if check %}
+    <div style="margin-top:34px">
+      <div class="row"><span class="k">{% translate "Last check" %}</span><span class="tag {{ tone }}">{{ label }}</span></div>
+      {% if rows %}<table class="data" style="margin-top:10px"><thead><tr><th>{% translate "Party" %}</th><th class="num">{% translate "Wall" %}</th><th class="num">IReV</th></tr></thead><tbody>
+      {% for r in rows %}<tr{% if r.differs %} class="diff"{% endif %}><td>{{ r.party }}</td><td class="num"><span data-decrypt>{{ r.citizen|default:"—" }}</span></td><td class="num"><span data-decrypt>{{ r.irev|default:"—" }}</span></td></tr>{% endfor %}</tbody></table>{% endif %}
+      <p class="mute">{{ explain }}</p>
+      <a class="btn" style="margin-top:10px" href="{% url 'results:pu_result' unit.url_code %}">{% translate "Full details" %} →</a>
+    </div>
+    {% endif %}
+  </section>
+  <section class="card">
+    <div class="row"><span class="k">{% translate "How it works" %}</span><span class="tag info">{% translate "After counting" %}</span></div>
+    <div style="margin-top:10px">
+      <div class="jrow"><span><span class="num-step">01</span>{% translate "After counting, the result sheet (Form EC8A) is posted on the wall" %}</span></div>
+      <div class="jrow"><span><span class="num-step">02</span>{% translate "Photograph it here. It works offline" %}</span></div>
+      <div class="jrow"><span><span class="num-step">03</span>{% translate "We read it and compare it with INEC's IReV upload" %}</span></div>
+      <div class="jrow"><span><span class="num-step">04</span>{% translate "You get Match or Mismatch, with reasons" %}</span></div>
+    </div>
+    <a class="btn" style="margin-top:18px" href="/demo/">{% translate "See an example" %} ▶</a>
+  </section>
+</div>
+{% endif %}
+{% endblock %}

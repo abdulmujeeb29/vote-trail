@@ -1,0 +1,1027 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 14:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ig\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Vote buying"
+msgstr "Izu votu"
+
+msgid "Violence"
+msgstr "Ime ihe ike"
+
+msgid "Officials late"
+msgstr "Ndi oru egbuola oge"
+
+msgid "Missing materials"
+msgstr "Ihe ntuli aka adighi"
+
+msgid "BVAS failure"
+msgstr "BVAS emebiela"
+
+msgid "Polling unit moved"
+msgstr "Ebugharila ebe ntuli aka"
+
+msgid "Results"
+msgstr "Nsonaazu"
+
+msgid "Other"
+msgstr "Ihe ozo"
+
+msgid "MY VOTE"
+msgstr "VOTU M"
+
+msgid "VERIFY"
+msgstr "NYOCHAA"
+
+msgid "POLLING UNIT"
+msgstr "EBE NTULI AKA"
+
+msgid "BACK"
+msgstr "LAGHACHI"
+
+msgid "I'm registered"
+msgstr "Edebanyela m aha"
+
+msgid "Registered"
+msgstr "Edebanyela aha"
+
+msgid "I have my PVC"
+msgstr "Enwere m PVC m"
+
+msgid "PVC collected"
+msgstr "Anatala PVC"
+
+msgid "Polling unit opened"
+msgstr "Emeghere ebe ntuli aka"
+
+msgid "Materials arrived"
+msgstr "Ihe ntuli aka eruola"
+
+msgid "BVAS working"
+msgstr "BVAS na-aru oru"
+
+msgid "BVAS not working"
+msgstr "BVAS anaghi aru oru"
+
+msgid "Long queue"
+msgstr "Ahiri ogologo"
+
+msgid "Not open yet"
+msgstr "Emebeghi ya"
+
+msgid "Find your polling unit"
+msgstr "Choo ebe ntuli aka gi"
+
+msgid "Use your location or the code on your voter's card."
+msgstr "Jiri ebe i no ma obu koodu di na kaadi ntuli aka gi."
+
+msgid "Find it"
+msgstr "Choo ya"
+
+msgid "Visit your new polling unit before election day"
+msgstr "Gaa leta ebe ntuli aka ohuru gi tupu ubochi ntuli aka"
+
+msgid "So you know the way on the morning."
+msgstr "Ka i mara uzo n'ututu ahu."
+
+msgid "Directions"
+msgstr "Ntuziaka uzo"
+
+msgid "Is your polling unit open?"
+msgstr "Emeghere ebe ntuli aka gi?"
+
+msgid "See live check-ins from officials and voters."
+msgstr "Lee akuko ndi oru na ndi ntuli aka ozigbo."
+
+msgid "Check now"
+msgstr "Lelee ugbu a"
+
+msgid "Photograph the result sheet on the wall"
+msgstr "See foto mpempe nsonaazu di na mgbidi"
+
+msgid ""
+"We compare it with IReV. Two independent photos are needed to flag a "
+"mismatch."
+msgstr ""
+"Anyi ga-eji ya tunyere IReV. Achoro foto abuo site n'aka mmadu di iche iche "
+"tupu anyi ekwuo na o kwekoritaghi."
+
+msgid "Open camera"
+msgstr "Mepee kamera"
+
+msgid "See your polling unit's result check"
+msgstr "Lee nyocha nsonaazu ebe ntuli aka gi"
+
+msgid "Wall sheet vs IReV, with reasons."
+msgstr "Mpempe mgbidi na IReV, ya na ihe kpatara ya."
+
+msgid "View"
+msgstr "Lee"
+
+msgid "Make sure you're registered"
+msgstr "Gbaa mbo hu na i debanyela aha"
+
+msgid ""
+"Pre-register online, then finish in person. Only on cvr.inecnigeria.org."
+msgstr ""
+"Bido n'intaneti, wee gaa mechaa ya n'onwe gi. Naani na cvr.inecnigeria.org."
+
+msgid "How to register"
+msgstr "Otu esi edebanye aha"
+
+msgid "Collect your PVC"
+msgstr "Nata PVC gi"
+
+msgid "In person only. Only voters with a PVC can vote."
+msgstr "Naani gi onwe gi. Naani ndi nwere PVC nwere ike itu vootu."
+
+msgid "Where and how"
+msgstr "Ebee na otu esi"
+
+msgid "Turn on alerts"
+msgstr "Gbanye ozi"
+
+msgid "Get an SMS if your unit moves or a result is checked."
+msgstr "I ga-anata SMS ma ebughari ebe gi ma o bu nyochaa nsonaazu."
+
+msgid "Turn on"
+msgstr "Gbanye"
+
+msgid "Heard something? Check it before you forward it"
+msgstr "I nuru ihe? Nyochaa ya tupu i zigharia ya"
+
+msgid "Forwards are not confirmation."
+msgstr "Izigharia abughi nkwado."
+
+msgid "Check a rumour"
+msgstr "Nyochaa akuko"
+
+msgid "MOVED"
+msgstr "EBUGHARILA"
+
+msgid "SET"
+msgstr "EDOZILA"
+
+msgid "TO DO"
+msgstr "EMEBEGHI"
+
+msgid "DONE"
+msgstr "EMEELA"
+
+msgid "Know your unit"
+msgstr "Mara ebe gi"
+
+msgid "Election day"
+msgstr "Ubochi ntuli aka"
+
+msgid "TODAY"
+msgstr "TAA"
+
+msgid "Check the result"
+msgstr "Lelee nsonaazu"
+
+msgid "NOW"
+msgstr "UGBU A"
+
+msgid "OPEN"
+msgstr "MEGHERE"
+
+msgid "AFTER COUNT"
+msgstr "MGBE AGUCHARA"
+
+msgid "Accessibility help"
+msgstr "Enyemaka maka ndi agadi na ndi nwere nkwaru"
+
+msgid "INFO"
+msgstr "OZI"
+
+#, python-format
+msgid "%(what)s at %(time)s (polling official)"
+msgstr "%(what)s na %(time)s (onye oru ntuli aka)"
+
+#, python-format
+msgid "%(what)s: reported by %(n)d people"
+msgstr "%(what)s: mmadu %(n)d koro ya"
+
+msgid "BVAS problem reported"
+msgstr "Akoola nsogbu BVAS"
+
+#, python-format
+msgid "Open since %(time)s"
+msgstr "Emeghere ya kemgbe %(time)s"
+
+msgid "Not open yet (crowd reports)"
+msgstr "Emebeghi ya (akuko ndi mmadu)"
+
+msgid "No updates yet"
+msgstr "O nweghi ozi ohuru"
+
+msgid "Good morning"
+msgstr "Ututu oma"
+
+msgid "Good afternoon"
+msgstr "Ehihie oma"
+
+msgid "Good evening"
+msgstr "Mgbede oma"
+
+msgid "We couldn't find that code. Check your voter's card."
+msgstr "Anyi ahughi koodu a. Lelee kaadi ntuli aka gi."
+
+#, python-format
+msgid "Saved. %(code)s is now your polling unit."
+msgstr "Echekwala. %(code)s bu ebe ntuli aka gi ugbu a."
+
+msgid "Too many reports. Try again in a few minutes."
+msgstr "Akuko adiela otutu. Nwaa ozo mgbe nkeji ole na ole gasiri."
+
+msgid "SAVED"
+msgstr "ECHEKWALA"
+
+msgid "SENT"
+msgstr "EZIGALA"
+
+msgid "READING"
+msgstr "NA-AGU"
+
+msgid "COMPARED"
+msgstr "ETUNYERELA"
+
+msgid "RESULT"
+msgstr "NSONAAZU"
+
+msgid "Rumour you checked"
+msgstr "Akuko i nyochara"
+
+msgid "Alert sent to your phone"
+msgstr "Ezigara ozi na ekwenti gi"
+
+msgid "REPORTED"
+msgstr "I KORO"
+
+#, python-format
+msgid "You reported: %(what)s"
+msgstr "I koro: %(what)s"
+
+#, python-format
+msgid "Alerts on for PU %(code)s. We sent a confirmation SMS."
+msgstr "Agbanyela ozi maka PU %(code)s. Anyi ezigala SMS nkwado."
+
+msgid "Thanks. Your report helps other voters."
+msgstr "Daalu. Akuko gi na-enyere ndi ntuli aka ndi ozo aka."
+
+msgid "Pending"
+msgstr "Na-eche"
+
+msgid "Matches IReV"
+msgstr "O kwekoritara IReV"
+
+msgid "Mismatch with IReV"
+msgstr "O kwekoritaghi IReV"
+
+msgid "Needs review"
+msgstr "O choro nyocha"
+
+msgid "Result cancelled"
+msgstr "Akagbuola nsonaazu"
+
+msgid ""
+"No result-sheet photos yet. Results appear after counting at the polling "
+"unit."
+msgstr ""
+"O nweghi foto mpempe nsonaazu ugbu a. Nsonaazu ga-apu mgbe aguchara na ebe "
+"ntuli aka."
+
+#, python-format
+msgid "%(n)d independent upload"
+msgid_plural "%(n)d independent uploads"
+msgstr[0] "foto %(n)d di iche"
+msgstr[1] "foto %(n)d di iche iche"
+
+msgid ", including agents from different parties"
+msgstr ", gunyere ndi nnochite anya otu di iche iche"
+
+#, python-format
+msgid "%(who)s match the sheet on IReV."
+msgstr "%(who)s kwekoritara mpempe IReV."
+
+#, python-format
+msgid ""
+"%(who)s agree with each other but differ from the sheet on IReV. Observers "
+"have been alerted."
+msgstr ""
+"%(who)s kwekoritara onwe ha mana ha di iche na mpempe IReV. Agwala ndi na-"
+"ele anya."
+
+msgid "The result sheet is endorsed 'Result Cancelled'."
+msgstr "Edere 'Result Cancelled' na mpempe nsonaazu."
+
+#, python-format
+msgid "%(who)s received. Waiting for INEC's IReV upload to compare."
+msgstr ""
+"Anatala %(who)s. Anyi na-eche ka INEC tinye ya na IReV ka anyi tunyere."
+
+msgid "Waiting for result-sheet photos from this polling unit."
+msgstr "Anyi na-eche foto mpempe nsonaazu site na ebe a."
+
+msgid ""
+"One upload differs from IReV. We need a second independent upload before "
+"flagging a mismatch."
+msgstr ""
+"Otu foto di iche na IReV. Anyi choro foto ozo site n'aka onye ozo tupu anyi "
+"ekwuo na o kwekoritaghi."
+
+msgid "Part of the sheet was hard to read. A verifier will check it."
+msgstr "Akuku mpempe ahu siri ike igu. Onye nyocha ga-elele ya."
+
+msgid "The numbers on a sheet don't add up. A verifier will check it."
+msgstr "Onu ogugu di na mpempe ahu adabaghi. Onye nyocha ga-elele ya."
+
+msgid "Uploads from different people don't agree. A verifier will check them."
+msgstr ""
+"Foto site n'aka mmadu di iche iche ekwekoritaghi. Onye nyocha ga-elele ha."
+
+msgid "A verifier needs to check this before we show a result status."
+msgstr "Onye nyocha ga-ebu uzo lelee ya tupu anyi egosi onodu nsonaazu."
+
+msgid "Back"
+msgstr "Laghachi"
+
+msgid "Skip to content"
+msgstr "Gafee gaa n'ihe di n'ime"
+
+msgid "My vote"
+msgstr "Votu m"
+
+msgid "Verify"
+msgstr "Nyochaa"
+
+msgid "Ask"
+msgstr "Juo"
+
+msgid "Activity"
+msgstr "Ihe mere"
+
+msgid "Larger text"
+msgstr "Mkpuru edemede buru ibu"
+
+msgid "Low power: fewer effects"
+msgstr "Chekwaa batri: obere mmetuta"
+
+msgid "Low power mode"
+msgstr "Onodu nchekwa batri"
+
+msgid "Basic phone simulator"
+msgstr "Ihe nnomi ekwenti nkiti"
+
+msgid "Basic phone"
+msgstr "Ekwenti nkiti"
+
+msgid ""
+"This simulator runs the real USSD and SMS service. On a real phone, dial the"
+" code; no data needed."
+msgstr ""
+"Ihe nnomi a na-eji ezigbo oru USSD na SMS. Na ezigbo ekwenti, kpoo koodu "
+"ahu; achoghi data."
+
+msgid "Simulator"
+msgstr "Ihe nnomi"
+
+msgid "Dial"
+msgstr "Kpoo"
+
+msgid "Reply"
+msgstr "Zaghachi"
+
+msgid "Send"
+msgstr "Zipu"
+
+msgid "Cancel"
+msgstr "Kagbuo"
+
+msgid "Phone number on this simulator"
+msgstr "Nomba ekwenti na ihe nnomi a"
+
+msgid "SMS inbox"
+msgstr "Igbe SMS"
+
+msgid "Send an SMS to VoteTrail"
+msgstr "Zipu SMS na VoteTrail"
+
+msgid "Send SMS"
+msgstr "Zipu SMS"
+
+msgid "undo"
+msgstr "gbanwee"
+
+msgid "Accessibility"
+msgstr "Nnweta"
+
+msgid "HELP"
+msgstr "ENYEMAKA"
+
+msgid "Elderly and disabled voters"
+msgstr "Ndi agadi na ndi nwere nkwaru na-atu vootu"
+
+msgid ""
+"If you're blind, visually impaired or have a disability, a person of your "
+"choice can help you vote. Tell the presiding officer."
+msgstr ""
+"O buru na i kpuru isi, anya gi adighi ahu nke oma ma o bu i nwere nkwaru, "
+"onye i horo nwere ike inyere gi aka itu vootu. Gwa onye isi ebe ntuli aka."
+
+msgid "Ask about priority in the queue and assistive materials."
+msgstr "Juo maka ibu uzo n'ahiri na ihe enyemaka."
+
+msgid "Prefer talking? Use Ask in your language."
+msgstr "I choro ikwu okwu? Jiri Juo n'asusu gi."
+
+msgid ""
+"No smartphone? Dial the short code. Community leaders also get voice notes "
+"to share."
+msgstr ""
+"Enweghi smartphone? Kpoo koodu mkpumkpu. Ndi isi obodo na-anatakwa ozi olu "
+"ka ha kesaa."
+
+msgid "YOUR UNIT"
+msgstr "EBE GI"
+
+msgid "SOURCE"
+msgstr "ISI MMALITE"
+
+msgid "Everything,"
+msgstr "Ihe niile,"
+
+msgid "in one place."
+msgstr "n'otu ebe."
+
+msgid "Your uploads, rumour checks, alerts and reports, as they happen."
+msgstr "Foto gi, nyocha akuko, ozi na akuko, ka ha na-eme."
+
+msgid "Timeline"
+msgstr "Usoro oge"
+
+msgid "Nothing yet. Your uploads, rumour checks and alerts will appear here."
+msgstr "O nweghi ihe ugbu a. Foto gi, nyocha na ozi ga-apu ebe a."
+
+msgid "Your upload · EC8A"
+msgstr "Foto gi · EC8A"
+
+msgid "Not accepted. Use the in-app camera at the polling unit."
+msgstr "Anabataghi ya. Jiri kamera di n'ime ngwa na ebe ntuli aka."
+
+msgid "Result uploads"
+msgstr "Foto nsonaazu"
+
+msgid "None yet"
+msgstr "O nweghi ugbu a"
+
+msgid ""
+"When you photograph a result sheet, you'll see it move through: received, "
+"reading, checking, compared."
+msgstr ""
+"Mgbe i sere foto mpempe nsonaazu, i ga-ahu ka o si aga: anatala, a na-agu, a"
+" na-enyocha, etunyerela."
+
+msgid "Go to Verify"
+msgstr "Gaa na Nyochaa"
+
+msgid "FIND"
+msgstr "CHOO"
+
+msgid "Use my location"
+msgstr "Jiri ebe m no"
+
+msgid "Or search by code or place"
+msgstr "Ma o bu choo site na koodu ma o bu ebe"
+
+msgid "Search"
+msgstr "Choo"
+
+msgid "No polling unit found. Check the code on your voter's card."
+msgstr "Ahughi ebe ntuli aka. Lelee koodu di na kaadi ntuli aka gi."
+
+msgid "NAMES FROM INEC'S OFFICIAL LOCATOR · FCT SAMPLE"
+msgstr "AHA SITE NA NCHOTA GOOMENTI INEC · NLELE FCT"
+
+msgid "Here's your vote."
+msgstr "Lee votu gi."
+
+msgid "Time until polls open"
+msgstr "Oge tupu ntuli aka amalite"
+
+msgid "DAYS"
+msgstr "UBOCHI"
+
+msgid "HRS"
+msgstr "AWA"
+
+msgid "MIN"
+msgstr "NKEJI"
+
+msgid "Until"
+msgstr "Ruo"
+
+msgid "Moved"
+msgstr "Ebugharila"
+
+msgid "Your polling unit has moved."
+msgstr "Ebugharila ebe ntuli aka gi."
+
+msgid "Vote at"
+msgstr "Tuo vootu na"
+
+msgid "INEC notice"
+msgstr "Ozi INEC"
+
+msgid "See your new unit"
+msgstr "Lee ebe ohuru gi"
+
+msgid "Do this next"
+msgstr "Mee nke a ozo"
+
+msgid "Done"
+msgstr "Emeela"
+
+msgid "Your voter details"
+msgstr "Nkowa onye ntuli aka gi"
+
+msgid "Your polling unit"
+msgstr "Ebe ntuli aka gi"
+
+msgid "PVC: to do"
+msgstr "PVC: emebeghi"
+
+msgid "CODE"
+msgstr "KOODU"
+
+msgid "WARD"
+msgstr "WOD"
+
+msgid "Not set yet"
+msgstr "Edozibeghi ya"
+
+msgid ""
+"Everything follows your polling unit: alerts, election day and result "
+"checks."
+msgstr ""
+"Ihe niile na-eso ebe ntuli aka gi: ozi, ubochi ntuli aka na nyocha nsonaazu."
+
+msgid "Set your polling unit"
+msgstr "Doo ebe ntuli aka gi"
+
+msgid "Your journey"
+msgstr "Njem gi"
+
+#, python-format
+msgid "%(done)s of %(total)s done"
+msgstr "Emeela %(done)s n'ime %(total)s"
+
+msgid "After counting"
+msgstr "Mgbe aguchara"
+
+msgid "Check a result sheet"
+msgstr "Nyochaa mpempe nsonaazu"
+
+msgid ""
+"Photograph the sheet on the wall. We compare it with INEC's IReV upload."
+msgstr ""
+"See foto mpempe di na mgbidi. Anyi ga-eji ya tunyere nke INEC tinyere na "
+"IReV."
+
+msgid "Heard something?"
+msgstr "I nuru ihe?"
+
+msgid ""
+"Paste the message. Get a clear verdict, with reasons, in your language."
+msgstr ""
+"Tinye ozi ahu. Nweta mkpebi doro anya, ya na ihe kpatara ya, n'asusu gi."
+
+msgid "Check it"
+msgstr "Nyochaa ya"
+
+msgid "Voice"
+msgstr "Olu"
+
+msgid "Talk in your language. Answers come from INEC's information."
+msgstr "Kwuo okwu n'asusu gi. Aziza na-esite na ozi INEC."
+
+msgid "Start talking"
+msgstr "Bido ikwu okwu"
+
+msgid "DEMO SCENARIO"
+msgstr "NNOMI NGOSI"
+
+msgid "Make this my polling unit"
+msgstr "Mee nke a ebe ntuli aka m"
+
+msgid "YOUR POLLING UNIT"
+msgstr "EBE NTULI AKA GI"
+
+msgid "location approximate"
+msgstr "ebe ahu abughi kpomkwem"
+
+msgid "Result check"
+msgstr "Nyocha nsonaazu"
+
+msgid "PENDING"
+msgstr "NA-ECHE"
+
+msgid "Alerts for this unit"
+msgstr "Ozi maka ebe a"
+
+msgid "ALERTS ON"
+msgstr "AGBANYELA OZI"
+
+msgid "to your saved number"
+msgstr "na nomba i chekwara"
+
+msgid "Phone number"
+msgstr "Nomba ekwenti"
+
+msgid "Voice notes too"
+msgstr "Ozi olu kwa"
+
+msgid "Turn on SMS alerts"
+msgstr "Gbanye ozi SMS"
+
+msgid "Stored encrypted. Send STOP to end."
+msgstr "Echekwara ya na nzuzo. Zite STOP ka o kwusi."
+
+msgid "STEP · PVC"
+msgstr "NZO · PVC"
+
+msgid "Collect it yourself. No one can collect it for you."
+msgstr "Nata ya n'onwe gi. O nweghi onye nwere ike inatara gi ya."
+
+msgid "IN PERSON"
+msgstr "N'ONWE GI"
+
+msgid "Only voters with a PVC can vote."
+msgstr "Naani ndi nwere PVC nwere ike itu vootu."
+
+msgid "REQUIRED"
+msgstr "ACHORO YA"
+
+msgid ""
+"Nationwide collection began 9 Oct 2026, usually at your LGA INEC office."
+msgstr ""
+"Nnata n'obodo niile malitere 9 Oct 2026, otutu oge na ulo oru INEC di na LGA"
+" gi."
+
+msgid "Cards are usually ready 1–3 months after registration."
+msgstr "Kaadi na-adikari njikere onwa 1–3 mgbe edebanyechara aha."
+
+msgid "SOURCES"
+msgstr "ISI MMALITE"
+
+msgid "Register or transfer"
+msgstr "Debanye aha ma o bu bufee"
+
+msgid "STEP · REGISTRATION"
+msgstr "NZO · NDEBANYE AHA"
+
+msgid "ONLY CVR.INECNIGERIA.ORG"
+msgstr "NAANI CVR.INECNIGERIA.ORG"
+
+msgid ""
+"INEC has warned about fake registration websites. Registration is free."
+msgstr ""
+"INEC adoola aka na ntiti maka saiti ndebanye aha na-abughi eziokwu. Ndebanye"
+" aha bu n'efu."
+
+msgid "Pre-register online on INEC's CVR portal"
+msgstr "Bido ndebanye aha n'intaneti na portal CVR nke INEC"
+
+msgid "Finish in person: fingerprints and photo at an INEC office"
+msgstr "Mechaa ya n'onwe gi: aka mkpisiaka na foto na ulo oru INEC"
+
+msgid ""
+"Moved house? Transfer on the same portal. You need the VIN on your card"
+msgstr "I kwagara ulo? Bufee na otu portal ahu. I choro VIN di na kaadi gi"
+
+msgid "Open INEC's CVR portal"
+msgstr "Mepee portal CVR nke INEC"
+
+msgid "Rumour check"
+msgstr "Nyocha akuko"
+
+msgid "RUMOUR CHECK"
+msgstr "NYOCHA AKUKO"
+
+msgid "Verdict"
+msgstr "Mkpebi"
+
+msgid "reports"
+msgstr "akuko"
+
+msgid "forwarded"
+msgstr "ezigharitere"
+
+msgid "independent sources"
+msgstr "isi mmalite di iche iche"
+
+msgid "Public sources checked"
+msgstr "Isi mmalite oha anyi lebara"
+
+msgid "Check another"
+msgstr "Nyochaa ozo"
+
+msgid ""
+"Paste a message you received or describe what you saw. We check it against "
+"other reports, verifiers and public sources."
+msgstr ""
+"Tinye ozi i natara ma o bu kowaa ihe i huru. Anyi ga-eji ya tunyere akuko "
+"ndi ozo, ndi nyocha na isi mmalite oha."
+
+msgid "Message or what you saw"
+msgstr "Ozi ma o bu ihe i huru"
+
+msgid "Type"
+msgstr "Udi"
+
+msgid "Polling unit or ward code (optional)"
+msgstr "Koodu ebe ntuli aka ma o bu wod (o bughi iwu)"
+
+msgid "I received this from someone else"
+msgstr "Onye ozo zitere m nke a"
+
+msgid "Recent checks"
+msgstr "Nyocha ndi na-adiehbeghi anya"
+
+msgid "Demo"
+msgstr "Ngosi"
+
+msgid "No rumours checked yet."
+msgstr "Anyochabeghi akuko o bula."
+
+msgid "Set up"
+msgstr "Hazie"
+
+msgid "Ready"
+msgstr "Njikere"
+
+msgid "You're set."
+msgstr "I dozirila."
+
+msgid "Everything now follows your polling unit and language."
+msgstr "Ihe niile na-eso ebe ntuli aka gi na asusu gi ugbu a."
+
+msgid "Open my vote"
+msgstr "Mepee votu m"
+
+#, python-format
+msgid "Setup · step %(step)s of 3"
+msgstr "Nhazi · nzo %(step)s n'ime 3"
+
+msgid "Choose your language."
+msgstr "Horo asusu gi."
+
+msgid "Used for alerts, voice and every screen."
+msgstr "A ga-eji ya maka ozi, olu na ihuenyo niile."
+
+msgid "Continue"
+msgstr "Gaa n'ihu"
+
+msgid "Where do you vote?"
+msgstr "Ebee ka i na-atu vootu?"
+
+msgid "Use your location, or type the code on your voter's card."
+msgstr "Jiri ebe i no, ma o bu tinye koodu di na kaadi ntuli aka gi."
+
+msgid "Or type your PU code"
+msgstr "Ma o bu tinye koodu PU gi"
+
+msgid "This is my unit"
+msgstr "Nke a bu ebe m"
+
+msgid "Skip for now"
+msgstr "Gafee ya ugbu a"
+
+msgid "Get alerts?"
+msgstr "I choro ozi?"
+
+msgid ""
+"If your unit moves or a result is checked, we'll tell you, even on a basic "
+"phone."
+msgstr ""
+"Ma ebughari ebe gi ma o bu nyochaa nsonaazu, anyi ga-agwa gi, obuna na "
+"ekwenti nkiti."
+
+msgid "Finish"
+msgstr "Mechaa"
+
+msgid "No thanks"
+msgstr "Mba daalu"
+
+msgid "Stored encrypted. Send STOP any time."
+msgstr "Echekwara ya na nzuzo. Zite STOP oge obula."
+
+msgid "ELECTION DAY"
+msgstr "UBOCHI NTULI AKA"
+
+msgid "Is it open?"
+msgstr "Emeghere ya?"
+
+msgid "No reports yet. Officials check in by USSD; voters can report below."
+msgstr ""
+"O nweghi akuko ugbu a. Ndi oru na-edebanye aha site na USSD; ndi ntuli aka "
+"nwere ike ikoo n'okpuru."
+
+msgid "Updated"
+msgstr "Emelitere"
+
+msgid "Are you there? Tell others"
+msgstr "I no ebe ahu? Gwa ndi ozo"
+
+msgid "Crowd reports show only when at least two different people agree."
+msgstr ""
+"Akuko ndi mmadu na-apu naani mgbe opekata mpe mmadu abuo di iche iche "
+"kwekoritara."
+
+msgid "Check it,"
+msgstr "Nyochaa ya,"
+
+msgid "don't forward it."
+msgstr "ezigharila ya."
+
+msgid ""
+"Compare the result sheet on the wall with INEC's upload, or check a message "
+"before you share it."
+msgstr ""
+"Tunyere mpempe nsonaazu di na mgbidi na nke INEC tinyere, ma o bu nyochaa "
+"ozi tupu i kesaa ya."
+
+msgid "What to check"
+msgstr "Ihe a ga-enyocha"
+
+msgid "Result sheet"
+msgstr "Mpempe nsonaazu"
+
+msgid "Rumour"
+msgstr "Akuko"
+
+msgid "Paste the message you received…"
+msgstr "Tinye ozi i natara…"
+
+msgid "Someone sent this to me"
+msgstr "Mmadu zitere m nke a"
+
+msgid "Nothing checked yet."
+msgstr "Anyochabeghi ihe o bula."
+
+msgid "from your profile"
+msgstr "site na profaili gi"
+
+msgid "No polling unit yet"
+msgstr "O nweghi ebe ntuli aka ugbu a"
+
+msgid "Set your polling unit first, or type it on the next screen."
+msgstr "Buru uzo doo ebe ntuli aka gi, ma o bu tinye ya na ihuenyo ozo."
+
+msgid "Photograph the result sheet"
+msgstr "See foto mpempe nsonaazu"
+
+msgid "Last check"
+msgstr "Nyocha ikpeazu"
+
+msgid "Party"
+msgstr "Otu"
+
+msgid "Wall"
+msgstr "Mgbidi"
+
+msgid "Full details"
+msgstr "Nkowa zuru oke"
+
+msgid "How it works"
+msgstr "Otu o si aru oru"
+
+msgid "After counting, the result sheet (Form EC8A) is posted on the wall"
+msgstr "Mgbe aguchara, a na-amado mpempe nsonaazu (Form EC8A) na mgbidi"
+
+msgid "Photograph it here. It works offline"
+msgstr "See foto ya ebe a. O na-aru oru na-enweghi intaneti"
+
+msgid "We read it and compare it with INEC's IReV upload"
+msgstr "Anyi na-agu ya ma tunyere ya na nke INEC tinyere na IReV"
+
+msgid "You get Match or Mismatch, with reasons"
+msgstr "I ga-anata Kwekoritara ma o bu Ekwekoritaghi, ya na ihe kpatara ya"
+
+msgid "See an example"
+msgstr "Lee ihe nlere"
+
+msgid "Photograph a result sheet"
+msgstr "See foto mpempe nsonaazu"
+
+msgid ""
+"Take a clear photo of Form EC8A on the wall. Works offline: it's saved on "
+"your phone and sent when you have signal."
+msgstr ""
+"See foto doro anya nke Form EC8A na mgbidi. O na-aru oru na-enweghi "
+"intaneti: a na-echekwa ya na ekwenti gi ma ziga ya mgbe netwok biara."
+
+msgid "Polling unit code"
+msgstr "Koodu ebe ntuli aka"
+
+msgid "Fill from my location"
+msgstr "Juputa site na ebe m no"
+
+msgid "Camera preview"
+msgstr "Nlele kamera"
+
+msgid "Captured photo"
+msgstr "Foto e sere"
+
+msgid "Take photo"
+msgstr "See foto"
+
+msgid "Use phone camera"
+msgstr "Jiri kamera ekwenti"
+
+msgid "Save and send"
+msgstr "Chekwaa ma zipu"
+
+msgid "Your uploads"
+msgstr "Foto gi"
+
+msgid "Nothing saved yet."
+msgstr "Echekwabeghi ihe o bula."
+
+msgid "Demo data"
+msgstr "Data ngosi"
+
+msgid ""
+"VoteTrail compares citizen photos with INEC's IReV upload. Only INEC "
+"declares results."
+msgstr ""
+"VoteTrail na-atunyere foto ndi obodo na nke INEC tinyere na IReV. Naani INEC"
+" na-ekwuputa nsonaazu."
+
+msgid "Wall sheet vs IReV"
+msgstr "Mpempe mgbidi na IReV"
+
+msgid "Party scores from citizen photos and from IReV"
+msgstr "Votu otu site na foto ndi obodo na IReV"
+
+msgid "Wall photo"
+msgstr "Foto mgbidi"
+
+msgid "mock"
+msgstr "nnomi"
+
+msgid "differs"
+msgstr "o di iche"
+
+msgid "Photograph this result sheet"
+msgstr "See foto mpempe nsonaazu a"
+
+msgid "Download evidence pack"
+msgstr "Budata ngwugwu ihe akaebe"
+
+msgid "History"
+msgstr "Akuko ihe mere"
+
+msgid "Ask by voice"
+msgstr "Juo site n'olu"
+
+msgid ""
+"Talk in English, Pidgin, Hausa, Yoruba or Igbo. Answers come from INEC's "
+"published information."
+msgstr ""
+"Kwuo okwu n'Bekee, Pidgin, Hausa, Yoruba ma o bu Igbo. Aziza na-esite na ozi"
+" INEC biputara."
+
+msgid "Language"
+msgstr "Asusu"
+
+msgid "Tap to talk"
+msgstr "Pinye ka i kwuo okwu"
+
+msgid "Conversation"
+msgstr "Mkparita uka"
+
+msgid "Or send a voice note"
+msgstr "Ma o bu zipu ozi olu"
+
+msgid "Record up to 60 seconds: a question, or a rumour you heard."
+msgstr "Dekoo ruo sekond 60: ajuju, ma o bu akuko i nuru."
+
+msgid "Record voice note"
+msgstr "Dekoo ozi olu"

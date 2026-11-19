@@ -1,0 +1,203 @@
+{
+ "parties": [
+  "PA",
+  "PB",
+  "PC",
+  "PD",
+  "PE",
+  "PF"
+ ],
+ "spec": {
+  "accredited": null,
+  "ballots_issued": null,
+  "cancelled": false,
+  "damage": "none",
+  "election": "PRESIDENTIAL",
+  "lga": "Bwari",
+  "override_total_valid": null,
+  "parties": {
+   "PA": 327,
+   "PB": 273,
+   "PC": 30,
+   "PD": 232,
+   "PE": 72,
+   "PF": 87
+  },
+  "pu_code": "37/02/01/003",
+  "pu_name": "Bwari Sarki / Near Chief Palace",
+  "registered": 2036,
+  "rejected": 15,
+  "seed": 1028,
+  "smudge": null,
+  "spoilt": 1,
+  "state": "FCT",
+  "ward": "Bwari Central"
+ },
+ "truth": {
+  "accredited": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1039
+  },
+  "ballots_issued": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 2036
+  },
+  "cancelled": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": false
+  },
+  "election": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "PRESIDENTIAL"
+  },
+  "lga": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Bwari"
+  },
+  "parties": [
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 327
+    },
+    "party": "PA",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "three hundred and twenty-seven"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 273
+    },
+    "party": "PB",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "two hundred and seventy-three"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 30
+    },
+    "party": "PC",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "thirty"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 232
+    },
+    "party": "PD",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "two hundred and thirty-two"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 72
+    },
+    "party": "PE",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "seventy-two"
+    }
+   },
+   {
+    "figures": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": 87
+    },
+    "party": "PF",
+    "words": {
+     "confidence": 1.0,
+     "unreadable": false,
+     "value": "eighty-seven"
+    }
+   }
+  ],
+  "pu_code": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "37/02/01/003"
+  },
+  "pu_name": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Bwari Sarki / Near Chief Palace"
+  },
+  "registered": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 2036
+  },
+  "rejected": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 15
+  },
+  "signed_by_agents": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "spoilt": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1
+  },
+  "stamped": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": true
+  },
+  "state": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "FCT"
+  },
+  "total_used": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1036
+  },
+  "total_valid": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 1021
+  },
+  "unused": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": 999
+  },
+  "ward": {
+   "confidence": 1.0,
+   "unreadable": false,
+   "value": "Bwari Central"
+  }
+ }
+}

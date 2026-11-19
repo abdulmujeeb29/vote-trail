@@ -1,0 +1,142 @@
+{
+ "source": "https://cvr.inecnigeria.org/pu (INEC CVR polling unit locator)",
+ "fetched": "2026-11-19",
+ "state": {
+  "code": "37",
+  "name": "FCT"
+ },
+ "lgas": [
+  {
+   "id": "281",
+   "label": "06 - MUNICIPAL",
+   "wards": [
+    {
+     "id": "3284",
+     "label": "01 - CITY CENTRE",
+     "pus": [
+      {
+       "id": "42177",
+       "label": "001 - AREA I, SECT. I/AREA I PRI. SCH. I"
+      },
+      {
+       "id": "42178",
+       "label": "002 - AREA I, SECT. I/AREA I PRI. SCH. II"
+      },
+      {
+       "id": "42179",
+       "label": "003 - AREA I, SECT. I/AREA I PRI. SCH. III"
+      },
+      {
+       "id": "42180",
+       "label": "004 - AREA II, SECT. II/F.G. GUEST HOUSE"
+      },
+      {
+       "id": "42181",
+       "label": "005 - AREA II, SECT.I I/PARK & GARDEN"
+      },
+      {
+       "id": "42182",
+       "label": "006 - AREA 2, SECT.I I/NAT. LIBRARY,MOKWA STREET I"
+      }
+     ]
+    },
+    {
+     "id": "3285",
+     "label": "02 - GARKI",
+     "pus": [
+      {
+       "id": "42203",
+       "label": "001 - GARKI VILLAGE/GARKI DISPENSARY"
+      },
+      {
+       "id": "42204",
+       "label": "002 - GARKI VILLAGE/NEAR DA'A SOCIAL CLUB"
+      },
+      {
+       "id": "42205",
+       "label": "003 - KOFAR NAMADI "
+      },
+      {
+       "id": "42206",
+       "label": "004 - GARKI VILLAGE II/NEW PRI. SCH."
+      },
+      {
+       "id": "42207",
+       "label": "005 - GARKI VILLAGE/LEA PRI. SCH. GARKI VILLAGE"
+      },
+      {
+       "id": "42208",
+       "label": "006 - SECURITY POST  /  GARKI MODEL   MKT. SECURITY POST"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "277",
+   "label": "02 - BWARI",
+   "wards": [
+    {
+     "id": "3244",
+     "label": "01 - BWARI CENTRAL",
+     "pus": [
+      {
+       "id": "41896",
+       "label": "001 - BWARI  I   /  CENTRAL PRY. SCHOOL"
+      },
+      {
+       "id": "41897",
+       "label": "002 - BWARI   II  /  CENTRAL PRY. SCHOOL"
+      },
+      {
+       "id": "41898",
+       "label": "003 - BWARI SARKI  /   NEAR CHIEF PALACE"
+      },
+      {
+       "id": "41899",
+       "label": "004 - BWARI IV  /   KOGO  /  NEAR FSP MILLING"
+      },
+      {
+       "id": "41900",
+       "label": "005 - BARAN GONI  /  PRY. SCHOOL"
+      },
+      {
+       "id": "41901",
+       "label": "006 - ZUMA  /    ZUMA  VILLAGE SQUARE"
+      }
+     ]
+    },
+    {
+     "id": "3245",
+     "label": "02 - KUDURU",
+     "pus": [
+      {
+       "id": "41903",
+       "label": "001 - BWARI  /  TUDUN WADA/JAMB SECRETARIAT I"
+      },
+      {
+       "id": "41904",
+       "label": "002 - BWARI  /   TUDUN WADA/JAMB SECRETARIAT II"
+      },
+      {
+       "id": "41905",
+       "label": "003 - BWARI STAFF QTRS  /  SECURITY POST FGGC."
+      },
+      {
+       "id": "41906",
+       "label": "004 - KUCHIKO C.D.S.  /  OLD GSS BWARI"
+      },
+      {
+       "id": "41907",
+       "label": "005 - SABON GARI  /  RUGAN FULANI NOMADIC PRIMARY SCHOOL"
+      },
+      {
+       "id": "41908",
+       "label": "006 - ZANGO   /  BWARI ZANGO"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

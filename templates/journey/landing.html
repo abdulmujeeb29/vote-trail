@@ -1,0 +1,184 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}Every vote, every voice{% endblock %}
+{% block head %}<link rel="stylesheet" href="{% static 'css/landing.css' %}">{% endblock %}
+{% block hdr_class %}{% endblock %}
+{% block main_class %}full{% endblock %}
+{% block nav %}
+<nav class="appnav lp-nav" aria-label="On this page">
+  <a href="#problem">The problem</a>
+  <a href="#how">How it works</a>
+  <a href="#phones">Any phone</a>
+  <a href="#trust">Trust</a>
+</nav>
+{% endblock %}
+{% block top_right %}
+<div class="lp-hdr-actions">
+  <button class="icon-btn" type="button" data-toggle="data-low-power" aria-pressed="false" title="Low power: fewer effects">◐<span class="sr-only">Low power mode</span></button>
+  <a class="btn" href="{% url 'voice:ask' %}">Ask {{ APP_NAME }}</a>
+  {% if returning %}<a class="btn primary" href="{% url 'journey:home' %}">Open my vote</a>
+  {% else %}<a class="btn primary" href="{% url 'journey:setup' %}">Get started</a>{% endif %}
+</div>
+{% endblock %}
+
+{% block content %}
+<section class="lp-wrap lp-hero">
+  <div>
+    <div class="eyebrow" data-reveal>Nigeria · General election · 16 January 2027</div>
+    <h1 data-split>Every vote, <em>every voice.</em></h1>
+    <p class="lede" data-reveal>{{ APP_NAME }} tells you what changed at your polling unit, in your language, and lets you check that what was counted is what you saw.</p>
+    <div class="lp-ctas" data-reveal>
+      {% if returning %}
+      <a class="btn primary lg" href="{% url 'journey:home' %}">Open my vote</a>
+      {% else %}
+      <a class="btn primary lg" href="{% url 'journey:setup' %}">Get started</a>
+      <a class="btn lg" href="{% url 'journey:home' %}?skip=1">Just look around</a>
+      {% endif %}
+    </div>
+    <div class="lp-channels" data-reveal><span>Web</span><span>USSD</span><span>SMS</span><span>Voice</span></div>
+  </div>
+  <div class="lp-hero-stage" aria-hidden="true"><div class="iso" id="hero-iso"></div></div>
+</section>
+
+<section class="lp-block" id="problem">
+  <div class="lp-wrap">
+    <div class="eyebrow">The problem</div>
+    <h2 class="h2" data-split>INEC puts it online. <em>Voters still miss it.</em></h2>
+    <div class="lp-cols3">
+      <div class="lp-stat" data-reveal>
+        <div class="n">01</div>
+        <div class="big">Up to <em>5</em> hours</div>
+        <h3>Units opened late</h3>
+        <p>Some polling units opened hours late in 2023, or not at all. Voters waited without knowing.</p>
+      </div>
+      <div class="lp-stat" data-reveal>
+        <div class="n">02</div>
+        <div class="big"><em>1</em> in <em>5</em></div>
+        <h3>Results on IReV by next noon</h3>
+        <p>Most result sheets weren't online when people needed them, so nobody could check what was on the wall.</p>
+      </div>
+      <div class="lp-stat" data-reveal>
+        <div class="n">03</div>
+        <div class="big">Nobody <em>told</em> them</div>
+        <h3>Polling units moved</h3>
+        <p>Voters weren't told in time that their unit had moved, and rumours filled the gap.</p>
+      </div>
+    </div>
+    <div class="lp-source">Sources: EU Election Observation Mission, Nigeria 2023 final report; INEC IReV.</div>
+  </div>
+</section>
+
+<section class="lp-story" id="how">
+  <div class="lp-sticky">
+    <div>
+      <div class="eyebrow">How it works · Amaka's election</div>
+      <h2 class="h2" data-split>Four moments. <em>One companion.</em></h2>
+      <div class="lp-steps">
+        <div class="bar"></div>
+        <button class="lp-step on" type="button"><span class="k">01 · Weeks before</span><h3>Her polling unit moves</h3><p>AI reads INEC's notice, rules check it came from INEC, and she gets an SMS and a Pidgin voice note.</p></button>
+        <button class="lp-step" type="button"><span class="k">02 · Election morning</span><h3>Is it open yet?</h3><p>No smartphone, no data. She dials a short code. Officials check in by USSD when they arrive.</p></button>
+        <button class="lp-step" type="button"><span class="k">03 · After counting</span><h3>The numbers don't match</h3><p>Two rival agents photograph the wall result sheet. AI reads it, rules check it, and it's compared with IReV.</p></button>
+        <button class="lp-step" type="button"><span class="k">04 · That night</span><h3>A rumour goes viral</h3><p>Forty forwards of one message are still one source. The verdict comes back in her language.</p></button>
+      </div>
+      <a class="btn lp-replay" href="/demo/">Watch the full replay ▶</a>
+    </div>
+
+    {% if demo %}
+    <div class="lp-stage" aria-hidden="true">
+      <div class="lp-scene">
+        <div class="lp-notice">
+          <div class="t">INEC · NOTICE OF RELOCATION (DEMO)</div>
+          <h4>Polling unit {{ demo.alert.old }} has moved</h4>
+          <p>Voters will now vote at {{ demo.alert.new_name }} ({{ demo.alert.new }}), {{ demo.alert.landmark|lower }}.</p>
+          <div class="src">inecnigeria.org · verified source</div>
+        </div>
+        <div class="lp-beam"></div>
+        <div class="lp-phone">
+          <div class="ph-h">{{ APP_NAME }} · now</div>
+          <div class="lp-bubble"><span class="src">SMS · 07:02</span>{{ demo.alert.sms }}</div>
+          <div class="lp-bubble lp-voice"><span class="play"></span><span class="lp-wave">{% for i in "123456789012" %}<i></i>{% endfor %}</span><span class="dim">0:14</span></div>
+          <div class="lp-bubble"><span class="src">ACCESS</span>♿ {{ demo.alert.access }}</div>
+        </div>
+        <div class="lp-chip" style="left:60px;bottom:60px;transform:translateZ(160px)"><span class="dot"></span>ONLY VOTERS AT THIS UNIT</div>
+      </div>
+
+      <div class="lp-scene">
+        <div class="lp-fphone" id="fphone"></div>
+        <div class="lp-chip" style="right:20px;top:110px;transform:translateZ(180px)"><span class="dot"></span>OFFICIAL CHECK-IN · {{ demo.morning.headline|upper }}</div>
+        <div class="lp-chip warn" style="left:10px;bottom:120px;transform:translateZ(140px)"><span class="dot"></span>NO DATA NEEDED</div>
+      </div>
+
+      <div class="lp-scene" id="lp-results">
+        <div class="lp-sheet wall"><div class="t">WALL · FORM EC8A · PHOTO</div>{% for r in rows %}<div class="r{% if r.differs %} hot{% endif %}"><span>{{ r.party }}</span><b>{{ r.wall }}</b></div>{% endfor %}</div>
+        <div class="lp-sheet irev"><div class="t">IReV · UPLOADED SHEET (MOCK)</div>{% for r in rows %}<div class="r{% if r.differs %} hot{% endif %}"><span>{{ r.party }}</span><b>{{ r.irev }}</b></div>{% endfor %}</div>
+        <div class="lp-compare">
+          <div class="hd"><span>PARTY</span><span>WALL</span><span>IREV</span><span></span></div>
+          {% for r in rows %}<div class="r{% if r.differs %} bad{% endif %}"><span>{{ r.party }}</span><span class="v" data-to="{{ r.wall }}">{{ r.wall }}</span><span class="v" data-to="{{ r.irev }}">{{ r.irev }}</span>{% if r.differs %}<span class="no">✕</span>{% else %}<span class="ok">✓</span>{% endif %}</div>{% endfor %}
+        </div>
+        <div class="lp-stamp">MISMATCH</div>
+        <div class="lp-chip bad" style="left:50%;margin-left:-170px;bottom:40px;transform:translateZ(160px)"><span class="dot"></span>{{ demo.results.origins }} RIVAL AGENTS AGREE · EVIDENCE PACK READY</div>
+      </div>
+
+      <div class="lp-scene">
+        <div class="lp-counter"><div class="n" id="fcount">{{ demo.rumour.forwards }}×</div><div class="l" id="flabel">FORWARDS</div></div>
+        <div id="fwds" style="position:absolute;inset:0;transform-style:preserve-3d" data-text="{{ demo.rumour.text }}" data-forwards="{{ demo.rumour.forwards }}" data-origins="{{ demo.rumour.origins }}"></div>
+        <div class="lp-verdict">
+          <div class="lab">● UNCONFIRMED · PIDGIN</div>
+          <h4>{{ demo.rumour.pcm.headline }}.</h4>
+          {% for r in demo.rumour.pcm.reasons %}<p>{{ r }}</p>{% endfor %}
+        </div>
+      </div>
+    </div>
+    {{ demo.ussd|json_script:"ussd-data" }}
+    {% endif %}
+  </div>
+</section>
+
+<section class="lp-block" id="phones">
+  <div class="lp-wrap lp-split">
+    <div>
+      <div class="eyebrow">One service · every phone</div>
+      <h2 class="h2" data-split>Smartphone or not, <em>nobody is left out.</em></h2>
+      <div class="lp-features">
+        <div data-reveal><h3>Web app</h3><p>Installable, works offline, and sends result photos when signal comes back.</p></div>
+        <div data-reveal><h3>USSD and SMS</h3><p>A short code and plain text for basic phones. No data needed. <a href="{% url 'channels:simulator' %}">Try the basic-phone simulator →</a></p></div>
+        <div data-reveal><h3>Voice</h3><p>Ask out loud in English or Pidgin. Every answer comes from INEC's own information.</p></div>
+      </div>
+    </div>
+    <div class="lp-board" aria-hidden="true"><div class="iso" id="board-iso"></div></div>
+  </div>
+</section>
+
+<section class="lp-block lp-trust" id="trust">
+  <div class="lp-wrap">
+    <div class="eyebrow">Trust</div>
+    <h2 class="h2" data-split>AI reads. <em>Rules decide.</em></h2>
+    <p class="lede" data-reveal>{{ APP_NAME }} never says who won. Only INEC declares results. We show what was counted, and what doesn't add up.</p>
+    <div class="lp-pillars">
+      <div class="card" data-reveal><div class="k">01</div><h3>Two sources, or no mismatch</h3><p>Two independent people must agree before a result is flagged. Rival party agents count the most.</p></div>
+      <div class="card" data-reveal><div class="k">02</div><h3>Forwards aren't proof</h3><p>The same message, image or device counts once, however many times it's shared.</p></div>
+      <div class="card" data-reveal><div class="k">03</div><h3>Every quote is checked</h3><p>If AI quotes a source and the words aren't really there, the quote is thrown out.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="lp-block">
+  <div class="lp-wrap lp-cta">
+    <div>
+      <div class="eyebrow">Your next election</div>
+      <h2 class="h2" data-split>Walk in already <em>knowing.</em></h2>
+      <div class="lp-ctas">
+        {% if returning %}<a class="btn primary lg" href="{% url 'journey:home' %}">Open my vote</a>
+        {% else %}<a class="btn primary lg" href="{% url 'journey:setup' %}">Get started · 3 quick steps</a>{% endif %}
+        <a class="btn lg" href="/demo/">Watch the replay</a>
+      </div>
+    </div>
+    {% if countdown %}<div class="count" data-reveal aria-label="Time until election day">
+      <div><b data-decrypt>{{ countdown.days }}</b><span>DAYS</span></div>
+      <div><b data-decrypt>{{ countdown.hours }}</b><span>HOURS</span></div>
+      <div><b data-decrypt>{{ countdown.minutes }}</b><span>MINUTES</span></div>
+    </div>{% endif %}
+  </div>
+</section>
+{% endblock %}
+{% block footer %}<footer class="site-foot"><div class="in"><span>{{ APP_NAME }} · KTech Fest 3.0 · Every Vote, Every Voice</span><span>Demo data is labelled. Polling units are real (INEC CVR locator).</span></div></footer>{% endblock %}
+{% block scripts %}<script type="module" src="{% static 'js/landing.js' %}"></script>{% endblock %}

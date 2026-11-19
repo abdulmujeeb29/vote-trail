@@ -1,0 +1,1031 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 14:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ha\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Vote buying"
+msgstr "Sayen kuri'a"
+
+msgid "Violence"
+msgstr "Tashin hankali"
+
+msgid "Officials late"
+msgstr "Jami'ai sun makara"
+
+msgid "Missing materials"
+msgstr "Kayan zabe sun bata"
+
+msgid "BVAS failure"
+msgstr "BVAS ya lalace"
+
+msgid "Polling unit moved"
+msgstr "An mayar da rumfar zabe"
+
+msgid "Results"
+msgstr "Sakamako"
+
+msgid "Other"
+msgstr "Wani"
+
+msgid "MY VOTE"
+msgstr "ZABE NA"
+
+msgid "VERIFY"
+msgstr "TANTANCE"
+
+msgid "POLLING UNIT"
+msgstr "RUMFAR ZABE"
+
+msgid "BACK"
+msgstr "KOMA BAYA"
+
+msgid "I'm registered"
+msgstr "Na yi rajista"
+
+msgid "Registered"
+msgstr "An yi rajista"
+
+msgid "I have my PVC"
+msgstr "Ina da PVC dina"
+
+msgid "PVC collected"
+msgstr "An karbi PVC"
+
+msgid "Polling unit opened"
+msgstr "An bude rumfar zabe"
+
+msgid "Materials arrived"
+msgstr "Kayan zabe sun iso"
+
+msgid "BVAS working"
+msgstr "BVAS na aiki"
+
+msgid "BVAS not working"
+msgstr "BVAS baya aiki"
+
+msgid "Long queue"
+msgstr "Dogon layi"
+
+msgid "Not open yet"
+msgstr "Ba a bude ba tukuna"
+
+msgid "Find your polling unit"
+msgstr "Nemo rumfar zabenka"
+
+msgid "Use your location or the code on your voter's card."
+msgstr "Yi amfani da wurin da kake ko lambar da ke kan katin zabenka."
+
+msgid "Find it"
+msgstr "Nemo ta"
+
+msgid "Visit your new polling unit before election day"
+msgstr "Ziyarci sabuwar rumfar zabenka kafin ranar zabe"
+
+msgid "So you know the way on the morning."
+msgstr "Don ka san hanya a safiyar ranar."
+
+msgid "Directions"
+msgstr "Kwatance"
+
+msgid "Is your polling unit open?"
+msgstr "An bude rumfar zabenka?"
+
+msgid "See live check-ins from officials and voters."
+msgstr "Duba rahotannin jami'ai da masu zabe kai tsaye."
+
+msgid "Check now"
+msgstr "Duba yanzu"
+
+msgid "Photograph the result sheet on the wall"
+msgstr "Dauki hoton takardar sakamako a bango"
+
+msgid ""
+"We compare it with IReV. Two independent photos are needed to flag a "
+"mismatch."
+msgstr ""
+"Za mu kwatanta shi da IReV. Ana bukatar hotuna biyu daga mutane daban-daban "
+"kafin a ce bai yi daidai ba."
+
+msgid "Open camera"
+msgstr "Bude kyamara"
+
+msgid "See your polling unit's result check"
+msgstr "Duba binciken sakamakon rumfarka"
+
+msgid "Wall sheet vs IReV, with reasons."
+msgstr "Takardar bango da IReV, tare da dalilai."
+
+msgid "View"
+msgstr "Duba"
+
+msgid "Make sure you're registered"
+msgstr "Tabbatar ka yi rajista"
+
+msgid ""
+"Pre-register online, then finish in person. Only on cvr.inecnigeria.org."
+msgstr ""
+"Fara rajista a yanar gizo, sannan ka kammala da kanka. A cvr.inecnigeria.org"
+" kadai."
+
+msgid "How to register"
+msgstr "Yadda ake rajista"
+
+msgid "Collect your PVC"
+msgstr "Karbi katin PVC dinka"
+
+msgid "In person only. Only voters with a PVC can vote."
+msgstr "Da kanka kadai. Masu PVC ne kadai za su iya zabe."
+
+msgid "Where and how"
+msgstr "Ina da yaya"
+
+msgid "Turn on alerts"
+msgstr "Kunna sanarwa"
+
+msgid "Get an SMS if your unit moves or a result is checked."
+msgstr "Za ka sami SMS idan rumfarka ta koma ko an duba sakamako."
+
+msgid "Turn on"
+msgstr "Kunna"
+
+msgid "Heard something? Check it before you forward it"
+msgstr "Ka ji wani abu? Duba shi kafin ka tura shi"
+
+msgid "Forwards are not confirmation."
+msgstr "Turawa ba tabbaci ba ne."
+
+msgid "Check a rumour"
+msgstr "Duba jita-jita"
+
+msgid "MOVED"
+msgstr "AN MAYAR"
+
+msgid "SET"
+msgstr "AN SAITA"
+
+msgid "TO DO"
+msgstr "BA A YI BA"
+
+msgid "DONE"
+msgstr "AN GAMA"
+
+msgid "Know your unit"
+msgstr "San rumfarka"
+
+msgid "Election day"
+msgstr "Ranar zabe"
+
+msgid "TODAY"
+msgstr "YAU"
+
+msgid "Check the result"
+msgstr "Duba sakamako"
+
+msgid "NOW"
+msgstr "YANZU"
+
+msgid "OPEN"
+msgstr "A BUDE"
+
+msgid "AFTER COUNT"
+msgstr "BAYAN KIRGA"
+
+msgid "Accessibility help"
+msgstr "Taimako ga tsofaffi da nakasassu"
+
+msgid "INFO"
+msgstr "BAYANI"
+
+#, python-format
+msgid "%(what)s at %(time)s (polling official)"
+msgstr "%(what)s da karfe %(time)s (jami'in zabe)"
+
+#, python-format
+msgid "%(what)s: reported by %(n)d people"
+msgstr "%(what)s: mutane %(n)d sun ruwaito"
+
+msgid "BVAS problem reported"
+msgstr "An ruwaito matsalar BVAS"
+
+#, python-format
+msgid "Open since %(time)s"
+msgstr "A bude tun %(time)s"
+
+msgid "Not open yet (crowd reports)"
+msgstr "Ba a bude ba tukuna (rahoton jama'a)"
+
+msgid "No updates yet"
+msgstr "Babu sabon labari tukuna"
+
+msgid "Good morning"
+msgstr "Barka da safiya"
+
+msgid "Good afternoon"
+msgstr "Barka da rana"
+
+msgid "Good evening"
+msgstr "Barka da yamma"
+
+msgid "We couldn't find that code. Check your voter's card."
+msgstr "Ba mu sami wannan lambar ba. Duba katin zabenka."
+
+#, python-format
+msgid "Saved. %(code)s is now your polling unit."
+msgstr "An ajiye. %(code)s ce rumfar zabenka yanzu."
+
+msgid "Too many reports. Try again in a few minutes."
+msgstr "Rahotanni sun yi yawa. Sake gwadawa bayan 'yan mintuna."
+
+msgid "SAVED"
+msgstr "AN AJIYE"
+
+msgid "SENT"
+msgstr "AN TURA"
+
+msgid "READING"
+msgstr "ANA KARANTAWA"
+
+msgid "COMPARED"
+msgstr "AN KWATANTA"
+
+msgid "RESULT"
+msgstr "SAKAMAKO"
+
+msgid "Rumour you checked"
+msgstr "Jita-jitar da ka duba"
+
+msgid "Alert sent to your phone"
+msgstr "An tura sanarwa zuwa wayarka"
+
+msgid "REPORTED"
+msgstr "AN RUWAITO"
+
+#, python-format
+msgid "You reported: %(what)s"
+msgstr "Ka ruwaito: %(what)s"
+
+#, python-format
+msgid "Alerts on for PU %(code)s. We sent a confirmation SMS."
+msgstr "An kunna sanarwa ga PU %(code)s. Mun tura SMS na tabbatarwa."
+
+msgid "Thanks. Your report helps other voters."
+msgstr "Na gode. Rahotonka yana taimaka wa sauran masu zabe."
+
+msgid "Pending"
+msgstr "Ana jira"
+
+msgid "Matches IReV"
+msgstr "Ya yi daidai da IReV"
+
+msgid "Mismatch with IReV"
+msgstr "Bai yi daidai da IReV ba"
+
+msgid "Needs review"
+msgstr "Yana bukatar dubawa"
+
+msgid "Result cancelled"
+msgstr "An soke sakamako"
+
+msgid ""
+"No result-sheet photos yet. Results appear after counting at the polling "
+"unit."
+msgstr ""
+"Babu hoton takardar sakamako tukuna. Sakamako zai bayyana bayan kirga a "
+"rumfar zabe."
+
+#, python-format
+msgid "%(n)d independent upload"
+msgid_plural "%(n)d independent uploads"
+msgstr[0] "hoto %(n)d mai zaman kansa"
+msgstr[1] "hotuna %(n)d masu zaman kansu"
+
+msgid ", including agents from different parties"
+msgstr ", har da wakilan jam'iyyu daban-daban"
+
+#, python-format
+msgid "%(who)s match the sheet on IReV."
+msgstr "%(who)s sun yi daidai da takardar IReV."
+
+#, python-format
+msgid ""
+"%(who)s agree with each other but differ from the sheet on IReV. Observers "
+"have been alerted."
+msgstr ""
+"%(who)s sun yarda da juna amma sun bambanta da takardar IReV. An sanar da "
+"masu sa ido."
+
+msgid "The result sheet is endorsed 'Result Cancelled'."
+msgstr "An rubuta 'Result Cancelled' a takardar sakamako."
+
+#, python-format
+msgid "%(who)s received. Waiting for INEC's IReV upload to compare."
+msgstr "An karbi %(who)s. Ana jiran INEC ta dora a IReV don kwatantawa."
+
+msgid "Waiting for result-sheet photos from this polling unit."
+msgstr "Ana jiran hotunan takardar sakamako daga wannan rumfa."
+
+msgid ""
+"One upload differs from IReV. We need a second independent upload before "
+"flagging a mismatch."
+msgstr ""
+"Hoto daya ya bambanta da IReV. Muna bukatar wani daga wani mutum kafin mu ce"
+" bai yi daidai ba."
+
+msgid "Part of the sheet was hard to read. A verifier will check it."
+msgstr ""
+"Wani bangare na takardar ya yi wahalar karantawa. Mai tantancewa zai duba."
+
+msgid "The numbers on a sheet don't add up. A verifier will check it."
+msgstr "Lambobin takardar ba su yi daidai ba. Mai tantancewa zai duba."
+
+msgid "Uploads from different people don't agree. A verifier will check them."
+msgstr ""
+"Hotunan mutane daban-daban ba su yi daidai ba. Mai tantancewa zai duba."
+
+msgid "A verifier needs to check this before we show a result status."
+msgstr "Mai tantancewa dole ya duba kafin mu nuna matsayin sakamako."
+
+msgid "Back"
+msgstr "Koma baya"
+
+msgid "Skip to content"
+msgstr "Tsallaka zuwa abun ciki"
+
+msgid "My vote"
+msgstr "Zabe na"
+
+msgid "Verify"
+msgstr "Tantance"
+
+msgid "Ask"
+msgstr "Tambaya"
+
+msgid "Activity"
+msgstr "Ayyuka"
+
+msgid "Larger text"
+msgstr "Babban rubutu"
+
+msgid "Low power: fewer effects"
+msgstr "Ajiye caji: karancin tasiri"
+
+msgid "Low power mode"
+msgstr "Yanayin ajiye caji"
+
+msgid "Basic phone simulator"
+msgstr "Kwaikwayon wayar hannu ta yau da kullum"
+
+msgid "Basic phone"
+msgstr "Wayar hannu ta yau da kullum"
+
+msgid ""
+"This simulator runs the real USSD and SMS service. On a real phone, dial the"
+" code; no data needed."
+msgstr ""
+"Wannan kwaikwayo yana amfani da ainihin sabis na USSD da SMS. A wayar gaske,"
+" kira lambar; ba a bukatar data."
+
+msgid "Simulator"
+msgstr "Kwaikwayo"
+
+msgid "Dial"
+msgstr "Kira"
+
+msgid "Reply"
+msgstr "Amsa"
+
+msgid "Send"
+msgstr "Tura"
+
+msgid "Cancel"
+msgstr "Soke"
+
+msgid "Phone number on this simulator"
+msgstr "Lambar waya a wannan kwaikwayo"
+
+msgid "SMS inbox"
+msgstr "Akwatin SMS"
+
+msgid "Send an SMS to VoteTrail"
+msgstr "Tura SMS zuwa VoteTrail"
+
+msgid "Send SMS"
+msgstr "Tura SMS"
+
+msgid "undo"
+msgstr "soke"
+
+msgid "Accessibility"
+msgstr "Saukin amfani"
+
+msgid "HELP"
+msgstr "TAIMAKO"
+
+msgid "Elderly and disabled voters"
+msgstr "Tsofaffi da nakasassun masu zabe"
+
+msgid ""
+"If you're blind, visually impaired or have a disability, a person of your "
+"choice can help you vote. Tell the presiding officer."
+msgstr ""
+"Idan kai makaho ne, ba ka gani sosai ko kana da nakasa, wanda ka zaba zai "
+"iya taimaka maka ka yi zabe. Gaya wa jami'in da ke jagoranci."
+
+msgid "Ask about priority in the queue and assistive materials."
+msgstr "Tambayi fifiko a layi da kayan taimako."
+
+msgid "Prefer talking? Use Ask in your language."
+msgstr "Ka fi son magana? Yi amfani da Tambaya a harshenka."
+
+msgid ""
+"No smartphone? Dial the short code. Community leaders also get voice notes "
+"to share."
+msgstr ""
+"Babu wayar zamani? Kira gajeren lamba. Shugabannin al'umma ma suna samun "
+"sakon murya don yadawa."
+
+msgid "YOUR UNIT"
+msgstr "RUMFARKA"
+
+msgid "SOURCE"
+msgstr "MAJIYA"
+
+msgid "Everything,"
+msgstr "Komai,"
+
+msgid "in one place."
+msgstr "a wuri daya."
+
+msgid "Your uploads, rumour checks, alerts and reports, as they happen."
+msgstr ""
+"Hotunanka, binciken jita-jita, sanarwa da rahotanni, yayin da suke faruwa."
+
+msgid "Timeline"
+msgstr "Jerin lokaci"
+
+msgid "Nothing yet. Your uploads, rumour checks and alerts will appear here."
+msgstr ""
+"Babu komai tukuna. Hotunanka, binciken jita-jita da sanarwa za su bayyana a "
+"nan."
+
+msgid "Your upload · EC8A"
+msgstr "Hotonka · EC8A"
+
+msgid "Not accepted. Use the in-app camera at the polling unit."
+msgstr "Ba a karba ba. Yi amfani da kyamarar manhajar a rumfar zabe."
+
+msgid "Result uploads"
+msgstr "Hotunan sakamako"
+
+msgid "None yet"
+msgstr "Babu tukuna"
+
+msgid ""
+"When you photograph a result sheet, you'll see it move through: received, "
+"reading, checking, compared."
+msgstr ""
+"Idan ka dauki hoton takardar sakamako, za ka ga matakanta: an karba, ana "
+"karantawa, ana dubawa, an kwatanta."
+
+msgid "Go to Verify"
+msgstr "Je zuwa Tantance"
+
+msgid "FIND"
+msgstr "NEMO"
+
+msgid "Use my location"
+msgstr "Yi amfani da wurina"
+
+msgid "Or search by code or place"
+msgstr "Ko nema da lamba ko wuri"
+
+msgid "Search"
+msgstr "Nema"
+
+msgid "No polling unit found. Check the code on your voter's card."
+msgstr "Ba a sami rumfar zabe ba. Duba lambar da ke kan katin zabenka."
+
+msgid "NAMES FROM INEC'S OFFICIAL LOCATOR · FCT SAMPLE"
+msgstr "SUNAYE DAGA MANEMIN INEC NA HUKUMA · SAMFURIN FCT"
+
+msgid "Here's your vote."
+msgstr "Ga zabenka."
+
+msgid "Time until polls open"
+msgstr "Lokaci kafin a fara zabe"
+
+msgid "DAYS"
+msgstr "KWANAKI"
+
+msgid "HRS"
+msgstr "AWOYI"
+
+msgid "MIN"
+msgstr "MINTI"
+
+msgid "Until"
+msgstr "Har zuwa"
+
+msgid "Moved"
+msgstr "An mayar"
+
+msgid "Your polling unit has moved."
+msgstr "An mayar da rumfar zabenka."
+
+msgid "Vote at"
+msgstr "Ka yi zabe a"
+
+msgid "INEC notice"
+msgstr "Sanarwar INEC"
+
+msgid "See your new unit"
+msgstr "Duba sabuwar rumfarka"
+
+msgid "Do this next"
+msgstr "Yi wannan na gaba"
+
+msgid "Done"
+msgstr "An gama"
+
+msgid "Your voter details"
+msgstr "Bayanan zabenka"
+
+msgid "Your polling unit"
+msgstr "Rumfar zabenka"
+
+msgid "PVC: to do"
+msgstr "PVC: ba a yi ba"
+
+msgid "CODE"
+msgstr "LAMBA"
+
+msgid "WARD"
+msgstr "MAZABA"
+
+msgid "Not set yet"
+msgstr "Ba a saita ba tukuna"
+
+msgid ""
+"Everything follows your polling unit: alerts, election day and result "
+"checks."
+msgstr ""
+"Komai yana bin rumfar zabenka: sanarwa, ranar zabe da binciken sakamako."
+
+msgid "Set your polling unit"
+msgstr "Saita rumfar zabenka"
+
+msgid "Your journey"
+msgstr "Tafiyarka"
+
+#, python-format
+msgid "%(done)s of %(total)s done"
+msgstr "An gama %(done)s cikin %(total)s"
+
+msgid "After counting"
+msgstr "Bayan kirga"
+
+msgid "Check a result sheet"
+msgstr "Duba takardar sakamako"
+
+msgid ""
+"Photograph the sheet on the wall. We compare it with INEC's IReV upload."
+msgstr ""
+"Dauki hoton takardar a bango. Za mu kwatanta shi da abin da INEC ta dora a "
+"IReV."
+
+msgid "Heard something?"
+msgstr "Ka ji wani abu?"
+
+msgid ""
+"Paste the message. Get a clear verdict, with reasons, in your language."
+msgstr "Lika sakon. Sami hukunci bayyananne, tare da dalilai, a harshenka."
+
+msgid "Check it"
+msgstr "Duba shi"
+
+msgid "Voice"
+msgstr "Murya"
+
+msgid "Talk in your language. Answers come from INEC's information."
+msgstr "Yi magana a harshenka. Amsoshi suna fitowa daga bayanan INEC."
+
+msgid "Start talking"
+msgstr "Fara magana"
+
+msgid "DEMO SCENARIO"
+msgstr "MISALIN GWAJI"
+
+msgid "Make this my polling unit"
+msgstr "Mai da wannan rumfar zabena"
+
+msgid "YOUR POLLING UNIT"
+msgstr "RUMFAR ZABENKA"
+
+msgid "location approximate"
+msgstr "wurin kimanin ne"
+
+msgid "Result check"
+msgstr "Binciken sakamako"
+
+msgid "PENDING"
+msgstr "ANA JIRA"
+
+msgid "Alerts for this unit"
+msgstr "Sanarwa ga wannan rumfa"
+
+msgid "ALERTS ON"
+msgstr "AN KUNNA SANARWA"
+
+msgid "to your saved number"
+msgstr "zuwa lambar da ka ajiye"
+
+msgid "Phone number"
+msgstr "Lambar waya"
+
+msgid "Voice notes too"
+msgstr "Har da sakon murya"
+
+msgid "Turn on SMS alerts"
+msgstr "Kunna sanarwar SMS"
+
+msgid "Stored encrypted. Send STOP to end."
+msgstr "An ajiye a boye. Tura STOP don dainawa."
+
+msgid "STEP · PVC"
+msgstr "MATAKI · PVC"
+
+msgid "Collect it yourself. No one can collect it for you."
+msgstr "Karba da kanka. Babu wanda zai iya karba maka."
+
+msgid "IN PERSON"
+msgstr "DA KANKA"
+
+msgid "Only voters with a PVC can vote."
+msgstr "Masu PVC ne kadai za su iya zabe."
+
+msgid "REQUIRED"
+msgstr "DOLE"
+
+msgid ""
+"Nationwide collection began 9 Oct 2026, usually at your LGA INEC office."
+msgstr ""
+"An fara karba a fadin kasa ranar 9 ga Oktoba 2026, galibi a ofishin INEC na "
+"karamar hukumarka."
+
+msgid "Cards are usually ready 1–3 months after registration."
+msgstr "Galibi katuna suna shiryawa bayan wata 1–3 da rajista."
+
+msgid "SOURCES"
+msgstr "MAJIYOYI"
+
+msgid "Register or transfer"
+msgstr "Rajista ko canja wuri"
+
+msgid "STEP · REGISTRATION"
+msgstr "MATAKI · RAJISTA"
+
+msgid "ONLY CVR.INECNIGERIA.ORG"
+msgstr "CVR.INECNIGERIA.ORG KADAI"
+
+msgid ""
+"INEC has warned about fake registration websites. Registration is free."
+msgstr ""
+"INEC ta yi gargadi game da shafukan rajista na bogi. Rajista kyauta ne."
+
+msgid "Pre-register online on INEC's CVR portal"
+msgstr "Fara rajista a shafin CVR na INEC"
+
+msgid "Finish in person: fingerprints and photo at an INEC office"
+msgstr "Kammala da kanka: zanen yatsa da hoto a ofishin INEC"
+
+msgid ""
+"Moved house? Transfer on the same portal. You need the VIN on your card"
+msgstr ""
+"Ka koma wani gida? Canja wuri a shafin guda. Kana bukatar VIN da ke kan "
+"katinka"
+
+msgid "Open INEC's CVR portal"
+msgstr "Bude shafin CVR na INEC"
+
+msgid "Rumour check"
+msgstr "Binciken jita-jita"
+
+msgid "RUMOUR CHECK"
+msgstr "BINCIKEN JITA-JITA"
+
+msgid "Verdict"
+msgstr "Hukunci"
+
+msgid "reports"
+msgstr "rahotanni"
+
+msgid "forwarded"
+msgstr "an tura"
+
+msgid "independent sources"
+msgstr "majiyoyi masu zaman kansu"
+
+msgid "Public sources checked"
+msgstr "Majiyoyin jama'a da aka duba"
+
+msgid "Check another"
+msgstr "Duba wani"
+
+msgid ""
+"Paste a message you received or describe what you saw. We check it against "
+"other reports, verifiers and public sources."
+msgstr ""
+"Lika sakon da ka karba ko ka bayyana abin da ka gani. Za mu duba shi da wasu"
+" rahotanni, masu tantancewa da majiyoyin jama'a."
+
+msgid "Message or what you saw"
+msgstr "Sako ko abin da ka gani"
+
+msgid "Type"
+msgstr "Iri"
+
+msgid "Polling unit or ward code (optional)"
+msgstr "Lambar rumfa ko mazaba (ba dole ba)"
+
+msgid "I received this from someone else"
+msgstr "Na karbi wannan daga wani"
+
+msgid "Recent checks"
+msgstr "Bincike na kwanan nan"
+
+msgid "Demo"
+msgstr "Gwaji"
+
+msgid "No rumours checked yet."
+msgstr "Ba a duba jita-jita ba tukuna."
+
+msgid "Set up"
+msgstr "Saita"
+
+msgid "Ready"
+msgstr "A shirye"
+
+msgid "You're set."
+msgstr "Ka shirya."
+
+msgid "Everything now follows your polling unit and language."
+msgstr "Komai yanzu yana bin rumfar zabenka da harshenka."
+
+msgid "Open my vote"
+msgstr "Bude zabe na"
+
+#, python-format
+msgid "Setup · step %(step)s of 3"
+msgstr "Saitawa · mataki %(step)s cikin 3"
+
+msgid "Choose your language."
+msgstr "Zabi harshenka."
+
+msgid "Used for alerts, voice and every screen."
+msgstr "Za a yi amfani da shi a sanarwa, murya da kowane shafi."
+
+msgid "Continue"
+msgstr "Ci gaba"
+
+msgid "Where do you vote?"
+msgstr "A ina kake yin zabe?"
+
+msgid "Use your location, or type the code on your voter's card."
+msgstr "Yi amfani da wurinka, ko ka rubuta lambar da ke kan katin zabenka."
+
+msgid "Or type your PU code"
+msgstr "Ko ka rubuta lambar PU dinka"
+
+msgid "This is my unit"
+msgstr "Wannan ce rumfata"
+
+msgid "Skip for now"
+msgstr "Tsallake yanzu"
+
+msgid "Get alerts?"
+msgstr "Kana son sanarwa?"
+
+msgid ""
+"If your unit moves or a result is checked, we'll tell you, even on a basic "
+"phone."
+msgstr ""
+"Idan rumfarka ta koma ko an duba sakamako, za mu sanar da kai, ko a wayar "
+"hannu ta yau da kullum."
+
+msgid "Finish"
+msgstr "Kammala"
+
+msgid "No thanks"
+msgstr "A'a na gode"
+
+msgid "Stored encrypted. Send STOP any time."
+msgstr "An ajiye a boye. Tura STOP a kowane lokaci."
+
+msgid "ELECTION DAY"
+msgstr "RANAR ZABE"
+
+msgid "Is it open?"
+msgstr "An bude?"
+
+msgid "No reports yet. Officials check in by USSD; voters can report below."
+msgstr ""
+"Babu rahoto tukuna. Jami'ai suna shiga ta USSD; masu zabe za su iya ruwaito "
+"a kasa."
+
+msgid "Updated"
+msgstr "An sabunta"
+
+msgid "Are you there? Tell others"
+msgstr "Kana can? Gaya wa wasu"
+
+msgid "Crowd reports show only when at least two different people agree."
+msgstr ""
+"Rahoton jama'a yana bayyana ne kawai idan akalla mutane biyu daban-daban sun"
+" yarda."
+
+msgid "Check it,"
+msgstr "Duba shi,"
+
+msgid "don't forward it."
+msgstr "kada ka tura shi."
+
+msgid ""
+"Compare the result sheet on the wall with INEC's upload, or check a message "
+"before you share it."
+msgstr ""
+"Kwatanta takardar sakamako a bango da abin da INEC ta dora, ko ka duba sako "
+"kafin ka yada shi."
+
+msgid "What to check"
+msgstr "Abin da za a duba"
+
+msgid "Result sheet"
+msgstr "Takardar sakamako"
+
+msgid "Rumour"
+msgstr "Jita-jita"
+
+msgid "Paste the message you received…"
+msgstr "Lika sakon da ka karba…"
+
+msgid "Someone sent this to me"
+msgstr "Wani ya turo min wannan"
+
+msgid "Nothing checked yet."
+msgstr "Ba a duba komai ba tukuna."
+
+msgid "from your profile"
+msgstr "daga bayananka"
+
+msgid "No polling unit yet"
+msgstr "Babu rumfar zabe tukuna"
+
+msgid "Set your polling unit first, or type it on the next screen."
+msgstr "Saita rumfar zabenka da farko, ko ka rubuta ta a shafi na gaba."
+
+msgid "Photograph the result sheet"
+msgstr "Dauki hoton takardar sakamako"
+
+msgid "Last check"
+msgstr "Bincike na karshe"
+
+msgid "Party"
+msgstr "Jam'iyya"
+
+msgid "Wall"
+msgstr "Bango"
+
+msgid "Full details"
+msgstr "Cikakken bayani"
+
+msgid "How it works"
+msgstr "Yadda yake aiki"
+
+msgid "After counting, the result sheet (Form EC8A) is posted on the wall"
+msgstr "Bayan kirga, ana lika takardar sakamako (Form EC8A) a bango"
+
+msgid "Photograph it here. It works offline"
+msgstr "Dauki hotonta a nan. Yana aiki ba tare da intanet ba"
+
+msgid "We read it and compare it with INEC's IReV upload"
+msgstr "Muna karanta shi kuma mu kwatanta shi da abin da INEC ta dora a IReV"
+
+msgid "You get Match or Mismatch, with reasons"
+msgstr "Za ka sami Ya yi daidai ko Bai yi daidai ba, tare da dalilai"
+
+msgid "See an example"
+msgstr "Duba misali"
+
+msgid "Photograph a result sheet"
+msgstr "Dauki hoton takardar sakamako"
+
+msgid ""
+"Take a clear photo of Form EC8A on the wall. Works offline: it's saved on "
+"your phone and sent when you have signal."
+msgstr ""
+"Dauki hoto mai kyau na Form EC8A a bango. Yana aiki ba intanet: ana ajiye "
+"shi a wayarka kuma a tura idan sigina ta zo."
+
+msgid "Polling unit code"
+msgstr "Lambar rumfar zabe"
+
+msgid "Fill from my location"
+msgstr "Cika daga wurina"
+
+msgid "Camera preview"
+msgstr "Hangen kyamara"
+
+msgid "Captured photo"
+msgstr "Hoton da aka dauka"
+
+msgid "Take photo"
+msgstr "Dauki hoto"
+
+msgid "Use phone camera"
+msgstr "Yi amfani da kyamarar waya"
+
+msgid "Save and send"
+msgstr "Ajiye ka tura"
+
+msgid "Your uploads"
+msgstr "Hotunanka"
+
+msgid "Nothing saved yet."
+msgstr "Ba a ajiye komai ba tukuna."
+
+msgid "Demo data"
+msgstr "Bayanan gwaji"
+
+msgid ""
+"VoteTrail compares citizen photos with INEC's IReV upload. Only INEC "
+"declares results."
+msgstr ""
+"VoteTrail yana kwatanta hotunan 'yan kasa da abin da INEC ta dora a IReV. "
+"INEC ce kadai take bayyana sakamako."
+
+msgid "Wall sheet vs IReV"
+msgstr "Takardar bango da IReV"
+
+msgid "Party scores from citizen photos and from IReV"
+msgstr "Makin jam'iyyu daga hotunan 'yan kasa da IReV"
+
+msgid "Wall photo"
+msgstr "Hoton bango"
+
+msgid "mock"
+msgstr "na gwaji"
+
+msgid "differs"
+msgstr "ya bambanta"
+
+msgid "Photograph this result sheet"
+msgstr "Dauki hoton wannan takardar sakamako"
+
+msgid "Download evidence pack"
+msgstr "Sauke kunshin shaida"
+
+msgid "History"
+msgstr "Tarihi"
+
+msgid "Ask by voice"
+msgstr "Tambaya da murya"
+
+msgid ""
+"Talk in English, Pidgin, Hausa, Yoruba or Igbo. Answers come from INEC's "
+"published information."
+msgstr ""
+"Yi magana da Turanci, Pidgin, Hausa, Yoruba ko Igbo. Amsoshi suna fitowa "
+"daga bayanan da INEC ta wallafa."
+
+msgid "Language"
+msgstr "Harshe"
+
+msgid "Tap to talk"
+msgstr "Taba don magana"
+
+msgid "Conversation"
+msgstr "Tattaunawa"
+
+msgid "Or send a voice note"
+msgstr "Ko tura sakon murya"
+
+msgid "Record up to 60 seconds: a question, or a rumour you heard."
+msgstr "Nada har zuwa dakika 60: tambaya, ko jita-jitar da ka ji."
+
+msgid "Record voice note"
+msgstr "Nadi sakon murya"

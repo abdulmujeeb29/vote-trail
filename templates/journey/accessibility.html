@@ -1,0 +1,16 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Accessibility" %}{% endblock %}
+{% block back %}{% include "_back.html" with back_url="/vote/" back_label="MY VOTE" %}{% endblock %}
+{% block content %}
+<div class="k">{% translate "HELP" %}</div>
+<h1>{% translate "Elderly and disabled voters" %}</h1>
+<section class="panel">
+  <div class="jrow"><span>{% translate "If you're blind, visually impaired or have a disability, a person of your choice can help you vote. Tell the presiding officer." %}</span></div>
+  <div class="jrow"><span>{% translate "Ask about priority in the queue and assistive materials." %}</span></div>
+  <div class="jrow"><span>{% translate "Prefer talking? Use Ask in your language." %} <a href="{% url 'voice:ask' %}">{% translate "Ask" %} →</a></span></div>
+  <div class="jrow"><span>{% translate "No smartphone? Dial the short code. Community leaders also get voice notes to share." %}</span></div>
+</section>
+{% if unit and unit.accessibility_notes %}<section class="panel" style="margin-top:12px"><div class="k">{% translate "YOUR UNIT" %} · {{ unit.code }}</div><p class="p">♿ {{ unit.accessibility_notes }}</p></section>{% endif %}
+<p style="margin-top:12px"><button class="btn block" type="button" data-toggle="data-large-text" aria-pressed="false">A+ {% translate "Larger text" %}</button></p>
+<p class="k" style="margin-top:14px">{% translate "SOURCE" %} · ELECTORAL ACT (PLAC BILL TRACKER)</p>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Announcements{% endblock %}
+{% block content %}
+{% include "dashboard/_nav.html" %}
+<h1>Announcements</h1>
+<p class="mute">Official INEC sources apply automatically. Everything else needs a verifier.</p>
+{% for a in items %}<article class="card stack" style="margin-bottom:12px">
+  <p class="mono">#{{ a.pk }} · {{ a.state }} · {{ a.kind|default:"?" }}{% if a.is_mock %} · mock{% endif %}</p>
+  <p><a href="{{ a.source_url }}" rel="noopener nofollow" target="_blank">{{ a.source_url|truncatechars:60 }}</a></p>
+  <p>{{ a.text|truncatechars:240 }}</p>
+  {% if a.extracted.affected %}<ul class="list mono">{% for r in a.extracted.affected %}<li>{{ r.pu_code }} → {{ r.new_pu_code|default:"—" }}</li>{% endfor %}</ul>{% endif %}
+  {% if a.errors %}<p class="tone-warn">{{ a.errors|join:", " }}</p>{% endif %}
+  {% if a.state == "pending_approval" %}<form method="post" action="{% url 'dashboard:announcement_decision' a.pk %}" class="cta-row">{% csrf_token %}
+    <button class="btn" name="decision" value="approve">Approve and alert</button><button class="btn" name="decision" value="reject">Reject</button></form>{% endif %}
+</article>{% empty %}<p class="mute">No announcements.</p>{% endfor %}
+{% endblock %}

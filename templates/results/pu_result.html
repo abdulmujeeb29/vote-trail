@@ -1,0 +1,42 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Result check" %} {{ pu.code }}{% endblock %}
+{% block back %}{% include "_back.html" with back_url="/verify/" back_label="VERIFY" %}{% endblock %}
+{% block content %}
+<div class="k">RESULT CHECK · PU {{ pu.code }}</div>
+<h1>{{ pu.name }}</h1>
+<p class="mute">{{ election.name }} {% if election.is_mock %}<span class="chip mock">{% translate "Demo data" %}</span>{% endif %}</p>
+
+<span hidden data-live-url="{% url 'results:pu_result_api' pu.url_code %}" data-live-key="result.revision" data-live-value="{{ result.revision }}"></span>
+<section class="card stack" aria-live="polite">
+  {% with tone=result.status %}
+  <span class="badge tone-{% if result.status == 'matches' %}ok{% elif result.status == 'mismatch' or result.status == 'needs_review' %}warn{% elif result.status == 'cancelled' %}bad{% else %}info{% endif %}">
+    {% include "results/_icon.html" with name=result.icon %}{{ result.label }}
+  </span>
+  {% endwith %}
+  <p>{{ result.explain }}</p>
+  <p class="mute" style="font-size:.85rem">{% translate "VoteTrail compares citizen photos with INEC's IReV upload. Only INEC declares results." %}</p>
+</section>
+
+{% if rows %}
+<h2>{% translate "Wall sheet vs IReV" %}</h2>
+<div class="decrypt">
+  <table>
+    <caption class="sr-only">{% translate "Party scores from citizen photos and from IReV" %}</caption>
+    <thead><tr><th scope="col">{% translate "Party" %}</th><th scope="col" class="num">{% translate "Wall photo" %}</th><th scope="col" class="num">IReV{% if irev.is_mock %} ({% translate "mock" %}){% endif %}</th></tr></thead>
+    <tbody>
+    {% for r in rows %}<tr{% if r.differs %} class="diff"{% endif %}><th scope="row">{{ r.party }}</th><td class="num"><span data-decrypt>{{ r.citizen|default:"—" }}</span></td><td class="num"><span data-decrypt>{{ r.irev|default:"—" }}</span>{% if r.differs %} <span class="sr-only">{% translate "differs" %}</span>⚠{% endif %}</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+
+<div class="stack" style="margin-top:16px">
+  <a class="btn primary block" href="{% url 'results:capture_pu' pu.url_code %}">{% translate "Photograph this result sheet" %}</a>
+  {% if can_export %}<a class="btn block" href="{% url 'results:evidence' pu.url_code %}">{% translate "Download evidence pack" %}</a>{% endif %}
+</div>
+
+{% if history %}
+<h2>{% translate "History" %}</h2>
+<ul class="history">{% for h in history %}<li class="mono">r{{ h.revision }} · {{ h.status }} · {{ h.created_at|date:"j M H:i" }}</li>{% endfor %}</ul>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,6 @@
+<nav class="lang-grid" aria-label="Dashboard" style="margin-bottom:14px">
+  <a class="btn" href="{% url 'dashboard:overview' %}">Overview</a>
+  <a class="btn" href="{% url 'dashboard:claims' %}">Rumours</a>
+  <a class="btn" href="{% url 'dashboard:announcements' %}">Announcements</a>
+  <form method="post" action="{% url 'dashboard:logout' %}">{% csrf_token %}<button class="btn">Log out</button></form>
+</nav>

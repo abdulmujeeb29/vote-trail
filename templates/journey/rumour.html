@@ -1,0 +1,18 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Rumour check" %}{% endblock %}
+{% block back %}{% include "_back.html" with back_url="/verify/?tab=rumour" back_label="VERIFY" %}{% endblock %}
+{% block content %}
+<div class="k">{% translate "RUMOUR CHECK" %} #{{ claim.pk }} · {{ claim.get_category_display|upper }}{% if claim.location_code %} · {{ claim.location_code }}{% endif %}</div>
+<blockquote class="card" style="margin-top:14px">“{{ claim.text }}”</blockquote>
+<section class="decrypt" style="margin-top:16px" aria-live="polite">
+  <div class="k" style="color:var(--amber)">{% translate "Verdict" %}</div>
+  <p class="verdict-head" style="margin-top:12px"><span data-decrypt>{{ verdict.headline }}</span></p>
+  <ul class="reasons">{% for r in verdict.reasons %}<li>{{ r }}</li>{% endfor %}</ul>
+  <p class="mute" style="margin-top:14px">{{ verdict.unknown }}</p>
+</section>
+<p class="mute" style="margin-top:10px">{{ reports }} {% translate "reports" %}{% if assessment %} · {{ assessment.forward_count }} {% translate "forwarded" %} · {{ assessment.origin_count }} {% translate "independent sources" %}{% endif %}</p>
+{% if sources %}<h2>{% translate "Public sources checked" %}</h2>
+<ul class="list">{% for s in sources %}<li><a href="{{ s.url }}" rel="noopener nofollow" target="_blank">{{ s.title|default:s.domain }}</a> <span class="tag">{{ s.stance }}</span><br><span class="mute">“{{ s.quote|truncatechars:200 }}”</span></li>{% endfor %}</ul>{% endif %}
+<span hidden data-live-url="{% url 'journey:rumour_api' claim.pk %}" data-live-key="revision" data-live-value="{{ assessment.revision|default:0 }}"></span>
+<a class="btn block" style="margin-top:16px" href="{% url 'journey:rumours' %}">{% translate "Check another" %}</a>
+{% endblock %}

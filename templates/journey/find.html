@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% load static i18n %}
+{% block title %}{% translate "Find your polling unit" %}{% endblock %}
+{% block back %}{% include "_back.html" with back_url="/vote/" back_label="MY VOTE" %}{% endblock %}
+{% block content %}
+<div class="k">{% translate "FIND" %}</div>
+<h1>{% translate "Find your polling unit" %}</h1>
+<button class="btn go block" type="button" data-nearby="nearby-list">◎ {% translate "Use my location" %}</button>
+<ul class="list" id="nearby-list" aria-live="polite" style="margin:10px 0 14px"></ul>
+<form method="get" class="stack" role="search">
+  <div class="field"><label for="q">{% translate "Or search by code or place" %}</label><input id="q" name="q" value="{{ q }}" placeholder="37/06/02/002 or Garki" autocomplete="off"></div>
+  <button class="btn block">{% translate "Search" %}</button>
+</form>
+{% if q %}{% if results %}<ul class="list" style="margin-top:12px">{% for pu in results %}<li><a href="{% url 'journey:pu' pu.url_code %}"><span class="mono">{{ pu.code }}</span> · {{ pu.name }}</a> <span class="tag">{{ pu.ward.name }}</span></li>{% endfor %}</ul>
+{% else %}<p class="mute" style="margin-top:12px">{% translate "No polling unit found. Check the code on your voter's card." %}</p>{% endif %}{% endif %}
+<p class="k" style="margin-top:16px">{% translate "NAMES FROM INEC'S OFFICIAL LOCATOR · FCT SAMPLE" %}</p>
+{% endblock %}
+{% block scripts %}<script type="module" src="{% static 'js/nearby.js' %}"></script>{% endblock %}

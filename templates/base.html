@@ -1,0 +1,50 @@
+{% load static i18n %}<!doctype html>
+<html lang="{{ request.LANGUAGE_CODE|default:'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="description" content="{{ APP_NAME }}: know where to vote, get alerts in your language, check results and rumours. Works on any phone.">
+<title>{% block title %}{{ APP_NAME }}{% endblock %} · {{ APP_NAME }}</title>
+<link rel="manifest" href="{% static 'manifest.webmanifest' %}">
+<link rel="icon" href="{% static 'icons/icon.svg' %}" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/app.css' %}">
+{% block head %}{% endblock %}
+</head>
+<body>
+<a class="skip" href="#main">{% translate "Skip to content" %}</a>
+<header class="hdr {% block hdr_class %}solid{% endblock %}">
+  <div class="hdr-in">
+    <a class="brand" href="{% url 'journey:landing' %}" aria-label="{{ APP_NAME }} home"><span class="brand-mark" aria-hidden="true"></span><span class="brand-name">{{ APP_NAME }}</span></a>
+    {% block nav %}
+    {% with path=request.path %}
+    <nav class="appnav" aria-label="Main">
+      <a href="{% url 'journey:home' %}" {% if path == '/vote/' or '/pu/' in path and '/result/' not in path or path == '/register/' or path == '/pvc/' or path == '/accessibility/' or path == '/find/' %}aria-current="page"{% endif %}>{% translate "My vote" %}</a>
+      <a href="{% url 'journey:verify' %}" {% if '/verify/' in path or '/capture/' in path or '/result/' in path or '/rumours/' in path %}aria-current="page"{% endif %}>{% translate "Verify" %}</a>
+      <a href="{% url 'voice:ask' %}" {% if '/ask/' in path %}aria-current="page"{% endif %}>{% translate "Ask" %}</a>
+      <a href="{% url 'journey:activity' %}" {% if '/activity/' in path %}aria-current="page"{% endif %}>{% translate "Activity" %}</a>
+    </nav>
+    {% endwith %}
+    {% endblock %}
+    {% block top_right %}
+    <div class="top-right">
+      <span class="sync" id="sync" role="status" aria-live="polite" data-sync-url="{% url 'journey:sync' %}"><i aria-hidden="true"></i><span id="sync-text">SYNCED</span></span>
+      <button class="icon-btn" type="button" data-toggle="data-large-text" aria-pressed="false" title="{% translate "Larger text" %}">A+</button>
+      <button class="icon-btn" type="button" data-toggle="data-low-power" aria-pressed="false" title="{% translate "Low power: fewer effects" %}">◐<span class="sr-only">{% translate "Low power mode" %}</span></button>
+    </div>
+    {% endblock %}
+  </div>
+</header>
+{% block ribbon %}{% endblock %}
+<main id="main" class="page {% block main_class %}{% endblock %}">
+  {% block back %}{% endblock %}
+  {% for message in messages %}<div class="flash {% if message.tags == 'error' %}tone-bad{% else %}tone-ok{% endif %}" role="status">{{ message }}</div>{% endfor %}
+  {% block content %}{% endblock %}
+</main>
+{% block footer %}{% endblock %}
+<script type="module" src="{% static 'js/ui.js' %}"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

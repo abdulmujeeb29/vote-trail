@@ -1,0 +1,120 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}Amaka's story · demo replay{% endblock %}
+{% block back %}{% include "_back.html" with back_url="/" back_label="BACK" %}{% endblock %}
+{% block ribbon %}<span class="demo-ribbon" role="note">Demo replay · saved from a real pipeline run · no live AI calls during playback</span>{% endblock %}
+{% block head %}<style>
+.stage{position:relative;min-height:540px}
+.scene{display:none}.scene.on{display:block;animation:rise .45s ease-out}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.rail{display:flex;gap:4px;margin:10px 0 14px}.rail i{flex:1;height:4px;border-radius:4px;background:var(--line);overflow:hidden}.rail i b{display:block;height:100%;width:0;background:var(--sig);box-shadow:0 0 8px var(--sig)}
+.controls{display:flex;gap:8px;justify-content:center;margin-top:14px}
+.controls .btn{min-width:56px}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;color:var(--sig)}
+.bubble{background:var(--panel-2);border:1px solid var(--line-2);border-radius:16px 16px 16px 4px;padding:12px 14px;margin:8px 0;max-width:92%}
+.bubble.me{background:#0b100d;border-color:var(--line);border-radius:16px 16px 4px 16px;margin-left:auto}
+.nokia{max-width:300px;margin:0 auto;padding:16px;border-radius:30px;background:#0b0d0c;border:1px solid var(--line-2)}
+.nokia pre{background:#b8c9a6;color:#16200e;border-radius:10px;padding:12px;min-height:190px;white-space:pre-wrap;font-family:var(--mono);margin:0}
+.nokia .key{margin-top:8px;text-align:center;font-family:var(--mono);color:var(--mute);font-size:.8rem}
+.sheets{display:grid;grid-template-columns:1fr 1fr;gap:8px}.sheets figure{margin:0}.sheets img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+.sheets figcaption{font-size:.75rem;color:var(--mute);text-align:center;margin-top:4px}
+.counter{font-family:var(--mono);font-size:1em;color:var(--warn)}
+.big-status{font-size:1.3rem}
+</style>{% endblock %}
+{% block content %}
+{% if not pack %}<h1>Demo pack missing</h1><p>Run <code>python manage.py build_demo_pack</code>.</p>{% else %}
+<div class="k">DEMO · AMAKA · GARKI, ABUJA</div>
+<div class="rail" id="rail" aria-hidden="true">{% for i in "1234567" %}<i><b></b></i>{% endfor %}</div>
+<div class="stage" aria-live="polite">
+
+<section class="scene" data-dur="12">
+  <h1>Amaka has her voter's card.</h1>
+  <p class="mute">She's subscribed to alerts for her polling unit, in Pidgin. Here's her election, with {{ APP_NAME }} beside her.</p>
+  <section class="idcard" style="margin-top:12px">
+    <div class="row"><span class="tag ok">PVC COLLECTED</span><span class="mono dim" style="font-size:.7rem">ID 37/06/02</span></div>
+    <dl class="idgrid"><dt>VOTER</dt><dd>Amaka O.</dd><dt>UNIT</dt><dd>{{ pack.steps.alert.old }}</dd><dt>WARD</dt><dd>Garki · Municipal</dd><dt>ALERTS</dt><dd>SMS + voice · Pidgin</dd></dl>
+  </section>
+</section>
+
+<section class="scene" data-dur="22">
+  <p class="kicker">1 · THE NOTICE</p>
+  <h1>Her polling unit moved.</h1>
+  <p class="mute">INEC posts a notice. AI reads it; rules check it came from INEC's own site; only affected voters are alerted.</p>
+  <div class="bubble"><span class="mono mute" style="font-size:.75rem">SMS · 07:02</span><br>{{ pack.steps.alert.sms }}</div>
+  {% if pack.steps.alert.audio %}<div class="bubble"><span class="mono mute" style="font-size:.75rem">VOICE NOTE · Pidgin</span><audio controls preload="none" src="{{ pack.steps.alert.audio }}" style="width:100%;margin-top:6px"></audio></div>{% endif %}
+  <p class="mute" style="font-size:.8rem">♿ {{ pack.steps.alert.access }}</p>
+</section>
+
+<section class="scene" data-dur="20">
+  <p class="kicker">2 · NO SMARTPHONE NEEDED</p>
+  <h1>She checks on a basic phone.</h1>
+  <div class="nokia"><pre id="ussd-screen" class="mono"></pre><div class="key" id="ussd-key"></div></div>
+  {{ pack.steps.ussd|json_script:"ussd-data" }}
+</section>
+
+<section class="scene" data-dur="14">
+  <p class="kicker">3 · ELECTION MORNING</p>
+  <h1>Is it open?</h1>
+  <div class="panel corner stack"><span class="tag ok big-status">{{ pack.steps.morning.headline|upper }}</span>
+  <ul class="list">{% for l in pack.steps.morning.lines %}<li>{{ l }}</li>{% endfor %}</ul></div>
+  <p class="mute">Officials check in by USSD. Crowd reports only count when two different people agree.</p>
+</section>
+
+<section class="scene" data-dur="38">
+  <p class="kicker">4 · THE COUNT</p>
+  <h1>The wall says one thing. IReV says another.</h1>
+  <div class="sheets">
+    <figure><img width="720" height="1018" loading="lazy" decoding="async" src="{{ pack.steps.results.wall_image }}" alt="Result sheet photographed on the polling unit wall"><figcaption>Wall photo (agents)</figcaption></figure>
+    <figure><img width="720" height="1018" loading="lazy" decoding="async" src="{{ pack.steps.results.irev_image }}" alt="Result sheet on IReV (mock)"><figcaption>IReV (mock)</figcaption></figure>
+  </div>
+  <div class="decrypt" style="margin-top:10px">
+    <table><caption class="sr-only">Wall versus IReV</caption>
+      <thead><tr><th>PARTY</th><th class="num">WALL</th><th class="num">IReV</th></tr></thead>
+      <tbody>{% for party, n in pack.steps.results.citizen.party_votes.items %}<tr data-party="{{ party }}"><th>{{ party }}</th><td class="num" data-scramble>{{ n }}</td><td class="num irev-cell" data-scramble></td></tr>{% endfor %}</tbody>
+    </table>
+    {{ pack.steps.results.irev.party_votes|json_script:"irev-data" }}
+  </div>
+  <div class="panel corner stack" style="margin-top:10px" id="result-card" hidden>
+    <span class="tag warn big-status">{{ pack.steps.results.label|upper }}</span>
+    <p>{{ pack.steps.results.explain }}</p>
+    <a class="btn" href="{{ pack.steps.results.evidence_zip }}" download>Evidence pack ({{ pack.steps.results.evidence_bytes|filesizeformat }})</a>
+  </div>
+</section>
+
+<section class="scene" data-dur="28">
+  <p class="kicker">5 · THE RUMOUR</p>
+  <h1>Forwarded <span class="counter" id="fwd">0</span> times.</h1>
+  <div class="bubble me">{{ pack.steps.rumour.text }}</div>
+  <div class="decrypt stack" style="margin-top:10px">
+    <p style="position:relative;z-index:1;font-size:1.15rem" id="rumour-head">CHECKING SOURCES…</p>
+    <div id="rumour-body" hidden style="position:relative;z-index:1">
+      {% for r in pack.steps.rumour.pcm.reasons %}<p>› {{ r }}</p>{% endfor %}
+      <p class="mute">EN: {{ pack.steps.rumour.en.headline }}. {{ pack.steps.rumour.en.reasons|join:" " }}</p>
+    </div>
+  </div>
+  <span hidden id="rumour-final">{{ pack.steps.rumour.pcm.headline }}</span>
+  <span hidden id="rumour-forwards">{{ pack.steps.rumour.forwards }}</span>
+</section>
+
+<section class="scene" data-dur="14">
+  <p class="kicker">TRUST WITHOUT FRICTION</p>
+  <h1>AI reads. Rules decide.</h1>
+  <ul class="list">
+    <li>Forwards are never confirmation; independent sources are.</li>
+    <li>Agents from rival parties agreeing is the strongest signal.</li>
+    <li>Only INEC declares results; we show where the wall and IReV differ.</li>
+    <li>Any phone, any language: app, USSD, SMS, voice.</li>
+  </ul>
+  <div class="cta-row" style="margin-top:12px"><a class="btn go" href="{% url 'journey:setup' %}">Get started</a><a class="btn" href="{% url 'channels:simulator' %}">Basic phone</a></div>
+</section>
+</div>
+
+<div class="controls" role="group" aria-label="Playback">
+  <button class="btn" id="prev" aria-label="Previous scene">‹</button>
+  <button class="btn primary" id="play">Play</button>
+  <button class="btn" id="next" aria-label="Next scene">›</button>
+  <button class="btn" id="restart" aria-label="Restart">↺</button>
+</div>
+<p class="mute" style="text-align:center;font-size:.8rem;margin-top:8px">Built {{ pack.built_at|slice:":16" }} with {{ pack.model }} · <span id="clock">0:00</span> / 2:28</p>
+{% endif %}
+{% endblock %}
+{% block scripts %}<script type="module" src="{% static 'js/demo.js' %}"></script>{% endblock %}

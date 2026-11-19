@@ -1,0 +1,27 @@
+services:
+  app:
+    build: .
+    env_file: .env
+    environment:
+      DJANGO_SETTINGS_MODULE: votetrail.settings.prod
+      SECURE_SSL_REDIRECT: "false"
+      DATABASE_URL: ${DATABASE_URL:-sqlite:////app/data/db.sqlite3}
+      SEED_ON_START: "1"
+      ALLOWED_HOSTS: localhost,127.0.0.1
+    ports: ["8000:8000"]
+    volumes:
+      - data:/app/data
+      - media:/app/media
+
+  postgres:
+    profiles: ["pg"]
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: votetrail
+      POSTGRES_PASSWORD: votetrail
+      POSTGRES_DB: votetrail
+    ports: ["5433:5432"]
+
+volumes:
+  data:
+  media:

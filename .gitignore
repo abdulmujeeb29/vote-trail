@@ -1,0 +1,49 @@
+# ---- Secrets (never commit) ----
+.env
+.env.*
+!.env.example
+
+# ---- Dependencies (reinstalled with `uv sync` / `npm install`) ----
+.venv/
+node_modules/
+
+# ---- Local databases, uploads and runtime files ----
+*.sqlite3
+*.sqlite3-*
+media/
+.worker-heartbeat
+.test-db.sqlite3*
+.test-media/
+.test-worker-heartbeat
+.e2e-db.sqlite3*
+.e2e-media/
+.e2e-heartbeat
+
+# ---- Build output (made by `collectstatic` at deploy) ----
+staticfiles/
+
+# ---- Test and tool caches ----
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+.ruff_cache/
+.coverage
+htmlcov/
+test-results/
+playwright-report/
+
+# ---- Editor, OS and local tooling ----
+.DS_Store
+.idea/
+.vscode/
+.claude/
+
+# ---- Internal planning and prep (not part of the submission) ----
+orchestrator.md
+prompts/
+research.md
+solution.md
+design/
+docs/demo-script.md
+docs/submission-checklist.md

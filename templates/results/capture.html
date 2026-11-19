@@ -1,0 +1,35 @@
+{% extends "base.html" %}{% load i18n static %}
+{% block title %}{% translate "Photograph a result sheet" %}{% endblock %}
+{% block back %}{% include "_back.html" with back_url="/verify/" back_label="VERIFY" %}{% endblock %}
+{% block content %}
+<h1>{% translate "Photograph the result sheet" %}</h1>
+<p class="mute">{% translate "Take a clear photo of Form EC8A on the wall. Works offline: it's saved on your phone and sent when you have signal." %}</p>
+
+<form id="capture-form" class="stack" novalidate>
+  <div class="field">
+    <label for="pu_code">{% translate "Polling unit code" %}</label>
+    <input id="pu_code" name="pu_code" inputmode="numeric" autocomplete="off" placeholder="37/06/02/004" value="{{ pu.code|default:'' }}" required>
+    {% if not pu %}<button type="button" class="btn block" style="margin-top:8px" data-nearby="pu-hint" data-mode="fill" data-target="pu_code">📍 {% translate "Fill from my location" %}</button>{% endif %}
+    <p id="pu-hint" class="mute" aria-live="polite" style="font-size:.85rem"></p>
+  </div>
+  <input type="hidden" name="election" value="{{ election.slug }}">
+  <div class="card stack">
+    <video id="camera" playsinline muted aria-label="{% translate 'Camera preview' %}"></video>
+    <canvas id="shot" class="preview" hidden aria-label="{% translate 'Captured photo' %}"></canvas>
+    <button type="button" class="btn block" id="start-camera">{% translate "Open camera" %}</button>
+    <button type="button" class="btn primary block" id="take-photo" hidden>{% translate "Take photo" %}</button>
+    <label class="btn block" id="fallback-label" hidden>
+      {% translate "Use phone camera" %}
+      <input type="file" accept="image/*" capture="environment" id="fallback-input" class="sr-only">
+    </label>
+  </div>
+  <p id="form-error" class="tone-bad" role="alert" hidden></p>
+  <button type="submit" class="btn primary block" id="save" disabled>{% translate "Save and send" %}</button>
+</form>
+
+<section class="card" style="margin-top:16px" aria-live="polite">
+  <h2 style="margin-top:0">{% translate "Your uploads" %}</h2>
+  <ol class="steps" id="queue-list"><li>{% translate "Nothing saved yet." %}</li></ol>
+</section>
+{% endblock %}
+{% block scripts %}<script type="module" src="{% static 'js/capture.js' %}"></script><script type="module" src="{% static 'js/nearby.js' %}"></script>{% endblock %}
