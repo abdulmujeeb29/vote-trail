@@ -1,10 +1,12 @@
 # VoteTrail
 
+| ▶ Demo video | 🌐 Live app | 📄 Problem brief + system sketch |
+|---|---|---|
+| **[youtu.be/ntpQpu8W5qg](https://youtu.be/ntpQpu8W5qg)** | **[vote-trail.apps.thalesops.com](https://vote-trail.apps.thalesops.com)** | **[docs/problem-brief.pdf](docs/problem-brief.pdf)** |
+
 **Every vote, every voice.** VoteTrail tells every Nigerian voter what changed at their polling unit, in their language, on any phone, and lets them check that what was counted is what they saw.
 
-- **Live:** https://vote-trail.apps.thalesops.com
-- **Problem brief + system sketch (PDF):** [docs/problem-brief.pdf](docs/problem-brief.pdf)
-- Built for KTech Fest 3.0, challenge *"Every Vote, Every Voice"* ([challenge.md](challenge.md))
+Built for KTech Fest 3.0, challenge *"Every Vote, Every Voice"* ([challenge.md](challenge.md)).
 
 ## The problem
 INEC publishes the information: polling unit changes, and a photo of every result sheet on IReV. **Voters don't get it, and can't check it.** It waits to be found, it's in English for smartphones, and the result on the wall is never compared with the result online. In 2023, only 1 in 5 presidential results was on IReV by noon the next day, and rumours filled the gap. Full brief: [docs/problem-brief.md](docs/problem-brief.md).
